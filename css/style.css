@@ -1,80 +1,70 @@
+html {
+    min-height: 100%;
+}
+
 body {
-    background: #E0E0E0;
+
     font-size: 100%;
+    height: 35em;
+    margin: 0px;
+    padding: 0px;
+    border: none;
+    background-color: #fffffe;
+}
+
+header {
+
+    background-color: #707078;
+    color: #ffffff;
+    height: 15%;
+    margin: 0em;
+    padding: 1em;
+
+}
+
+.web-icon {
+    display: inline-block;
+    padding: 0px;
+    margin-right: .5em;
+}
+
+.web-title {
+    margin-left: 5em;
+}
+main {
+    min-height: 75%;
+    max-width: 70%;
+    margin-left: 5em;
+
+}
+
+main.brief_introduction {
+    margin-left: 5em;
+
+}
+
+aside {
+    float: right;
+    margin-right: 5em;
+}
+.first-row {
+    display: inline-block;
+}
+
+.second-row {
+    display: inline-block;
+}
+.sticker {
+    margin-left: 5em;
+}
+
+footer {
+    background-color: #707078;
+    color: #ffffff;
+    height: 5%;
 
 }
 
 div {
-    background-color: #D0D0D0;
-    width: 300px;
-    border-right: 2px solid #A0A0A0;
-    border-bottom: 2px solid #A0A0A0;
-    position: absolute;
-    top: 0px;
-    left: 0px;
-    min-height: 100%;
-
-}
-
-
-
-
-
-
-
-header {
-    border: 2px solid #B0B0B0;
-    position: absolute;
-    top: 50px;
-    left: 100px;
-    align: center;
-}
-
-aside {
-    margin-top: 150px;
-
-
-}
-
-footer {
-    width: 250px;
-    border-top: 5px solid #B0B0B0;
-    position: absolute;
-    bottom: 0;
-
-}
-
-.contect {
-    font-size: 0.9em;
-
-}
-
-main {
-    background-color: #D0D0D0;
-    border-right: 2px solid #A0A0A0;
-    border-bottom: 2px solid #A0A0A0;
-    position: absolute;
-    width:1300px;
-    top: 0px;
-    left: 450px;
-    min-height: 100%;
-
-
-}
-
-article {
-    background-color: #B0B0B0;
-    width: 90%;
-    height: 300px;
-    position: relative;
-    top: 70px;
-    left: 50px;
-
-
-}
-
-
-.myphoto {
-    float: left;
-
+    display: block;
 }
