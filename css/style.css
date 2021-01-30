@@ -1,3 +1,36 @@
+@charset "utf-8";
+
+/* reset */
+
+html, body, div, span, object, iframe, h1, h2, h3, h4, h5, h6, p, blockquote, pre, a, abbr, acronym, address, code, del, dfn, em, img, q, dl, dt, dd, ol, ul, li, fieldset, form, label, legend, table, caption, tbody, tfoot, thead, tr, th, td, article, aside, dialog, figure, footer, header, hgroup, nav, section { margin: 0; padding: 0; border: 0; font-size: 100%; vertical-align: baseline; }
+article, aside, dialog, figure, footer, header, hgroup, nav, section { display: block !important; }
+table { border-collapse: separate; border-spacing: 0; vertical-align: top; }
+caption, th, td { text-align: left; font-weight: normal; }
+table, td, th { border-spacing: 0; width: 100%; }
+blockquote:before, blockquote:after, q:before, q:after {content:"";}
+blockquote, q {quotes:"" "";}
+a img {border:none;}
+ol,ul{list-style:none}
+hr { height: 1px; border: 0; border: none; width: 100%; background: #bfbfbf; color: #bfbfbf; margin: 15px 0; padding: 0; }
+
+/* general layout */
+
+body { position: relative; text-align: center; z-index: 0; background: #fafafa url("../images/body-bg.944990822890.svg") top left repeat; }
+.wrapper { position: relative; text-align: left; margin: 0 auto; padding: 0 10px; width: 800px; }
+
+div.wrapper > div.col-major {
+    display: block;
+    float: left;
+    width: 65%;
+    margin-right: 20px;
+}
+
+div.wrapper > div.col-minor {
+    overflow: auto;
+}
+
+
+/*fanghl*/
 html {
     min-height: 100%;
 }
@@ -5,66 +38,200 @@ html {
 body {
 
     font-size: 100%;
-    height: 35em;
-    margin: 0px;
+    font-family: Lato, Helvetica, Arial, sans-serif;
+
     padding: 0px;
     border: none;
-    background-color: #fffffe;
+    margin: 0px;
+
+    background-color: #fafafa;
+    
 }
 
+/* header style*/
 header {
 
     background-color: #707078;
     color: #ffffff;
-    height: 15%;
-    margin: 0em;
-    padding: 1em;
 
+    padding: 0em;
+    margin: 0em;
+
+    min-height: 200px;
+
+    position: relative;
+    top: 0px;
+    left: 0px;
+}
+
+.header-container {
+    display: inline-block;
+    text-align: left;
+    padding: 0px;
+    margin: 0px;
+
+    min-width: 61.8%;
+
+    position: relative;
+    top: 2.5rem;
 }
 
 .web-icon {
     display: inline-block;
+    vertical-align: middle;
+
+    margin-right: 0.5rem;
+    max-width: 5%;
+
+}
+
+.header-container p {
+
+    font-size: 1.5rem;
+    display: inline-block;
+    vertical-align: middle;
+}
+
+
+/* torso style*/
+.main-container {
+    color: #000000;
+
+    text-align: left;
+    display: inline-block;
+
     padding: 0px;
-    margin-right: .5em;
+    margin: 0px;
+
+    max-width: 61.8%;
+    min-height: 40rem;
+
+    /*position: relative;
+    left: 15rem;
+    top: 0px;*/
 }
 
-.web-title {
-    margin-left: 5em;
-}
 main {
-    min-height: 75%;
-    max-width: 70%;
-    margin-left: 5em;
+    display: inline-block;
 
-}
+    padding: 0px;
+    margin: 0px;
 
-main.brief_introduction {
-    margin-left: 5em;
+    max-width: 75%;
+    min-height: 29rem;
 
+    position: relative;
+    left: 0px;
+    top: 2rem;
 }
 
 aside {
+    display: inline-block;
     float: right;
-    margin-right: 5em;
-}
-.first-row {
-    display: inline-block;
+
+    padding: 0px;
+    margin: 0px;
+
+    min-width:20%;
+
+    position: relative;
+    top: 2rem;
 }
 
-.second-row {
-    display: inline-block;
+aside nav p {
+    margin-bottom: 0.5rem;
 }
+
+.brief-introduction {
+
+}
+
+.sticker-zone {
+    padding: 0px;
+    margin: 0px;
+
+    min-width: 90%;
+    min-height: 12rem;
+
+    position: relative;
+    top: 2rem;
+    left: 0rem;
+
+}
+
+h1 {
+    margin: 0.1rem;
+    font-size: 1.25rem;
+
+}
+
 .sticker {
-    margin-left: 5em;
+    padding: 0.2rem;
+    margin: 0.5rem;
+
+    width: 10rem;
+    height: 4.5rem;
+    overflow: hidden;
 }
 
+.sticker > p {
+    margin: 0rem;
+}
+
+.sticker-one {
+    position: absolute;
+    top: 0em;
+    left: 0em;
+}
+
+.sticker-two {
+    position: absolute;
+    top: 0rem;
+    right: 0rem;
+}
+
+.sticker-three {
+    position: absolute;
+    bottom: 0rem;
+    left: 0rem;
+}
+
+.sticker-four {
+    position: absolute;
+    bottom: 0rem;
+    right: 0rem;
+}
+
+/*footer style*/
 footer {
+    padding: 0px;
+    margin: 0px;
+    min-height: 4rem;
     background-color: #707078;
     color: #ffffff;
-    height: 5%;
 
 }
 
-div {
-    display: block;
+footer .footer-container {
+    color: #ffffff;
+
+    display: inline-block;
+    text-align: left;
+    padding: 0px;
+    margin: 0px;
+
+    min-width: 61.8%;
+    position: relative;
+    top: 0.8rem;
+
+}
+
+address {
+    font-size: 0.85rem;
+    font-style: normal;
+}
+
+address a {
+    color: #ffffff;
+    font-style: normal;
 }
