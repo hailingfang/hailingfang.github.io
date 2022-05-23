@@ -34,6 +34,7 @@ div.wrapper > div.col-minor {
 html {
     min-height: 100%;
 }
+    
 
 body {
 
@@ -43,6 +44,7 @@ body {
     padding: 0px;
     border: none;
     margin: 0px;
+    min-height: 100%;
 
     background-color: #fafafa;
     
@@ -118,7 +120,7 @@ main {
     margin: 0px;
 
     max-width: 75%;
-    min-height: 29rem;
+    min-height: 44rem;
 
     position: relative;
     left: 0px;
@@ -136,6 +138,7 @@ aside {
 
     position: relative;
     top: 2rem;
+
 }
 
 aside nav p {
