@@ -9,71 +9,51 @@
         <header>
             <div class="header-container"><img src="/imgs/icon.svg" class="web-icon" /><p>Benjamin Fang</p></div>
         </header>
-
-        <div class="main-container">
         <main>
-            <div class="brief-introduction">
-            <p>Hi, I'm Ben, wellcome to my webpage. I major biology and get my master degree in 2018, and now I'm working in
-            computational biology feild. Any thing you would like to know about me please contact me  without hesitation.</p> 
+            <div class="main-content">
+                <div class="brief-introduction" id="introduction">
+                    <p>Hi, I'm Ben, wellcome to my webpage. I major biology and get my master degree in 2018, and now I'm working in
+                    computational biology feild. Any thing you would like to know about me please contact me  without hesitation.</p> 
+                </div>
+                <div class="sticker-zone" id="stickers">
+                    <div class="sticker" id="stk1">
+                        <h1><a href="/about-me.html">About Me</a></h1>
+                        <p>my resume is here.</p>
+                    </div>
+                    <div class="sticker" id="stk2">
+                        <h1><a href="/study.html">Study</a></h1>
+                        <p>learing and rechrearches.</p>
+                    </div>
+                    <div class="sticker" id="stk3">
+                        <h1>Life</h1>
+                        <p>my career and dalily life.</p>
+                    </div>
+                    <div class="sticker" id="stk4">
+                        <h1>Futher</h1>
+                        <p>maybe here should be a futher part.</p>
+                    </div>
+                </div>
             </div>
-            <div class="sticker-zone">
-                <div class="sticker sticker-one">
-                <h1><a href="/about-me.html">About Me</a></h1>
-                <p>my resume is here.</p>
-                </div>
-                <div class="sticker sticker-two">
-                <h1><a href="/study.html">Study</a></h1>
-                <p>learing and rechrearches.</p>
-                </div>
-                <div class="sticker sticker-three">
-                <h1>Life</h1>
-                <p>my career and dalily life.</p>
-                </div>
-                <div class="sticker sticker-four">
-                <h1>Futher</h1>
-                <p>maybe here should be a futher part.</p>
-                </div>
-            </div>
+            
 
-            <div style="position: relative; top: 5rem;">
-            <label id="timelabel">MyTime(|)</label>
-            <progress id="mytime" max="1" value="1"></progress>
-            <script>
-                let mytime = document.getElementById("mytime");
-                let mylabel = document.getElementById("timelabel");
-                let birthday = new Date(1992, 9, 3);
-                let preend = new Date(2064, 9, 4);
-                let now_dt = new Date();
-                
-                let passed = (now_dt - birthday)/(1000 * 3600 * 24);
-                let left = (preend - now_dt)/(1000 * 3600 * 24);
-
-                mytime.max = passed + left;
-                mytime.value = left;
-                
-                mylabel.textContent = "MyTime" + "(" + left.toFixed(0) + "|" + passed.toFixed(0) + ")";
-
-            </script>
-            </div>
-
+            <aside>
+                <nav>
+                <p>Related links:</p>
+                <ul>
+                    <li><a href="https://github.com/benjaminfang">github</a></li>
+                    <li><a href="https://leetcode.com/benjaminfang/">leetcode</a></li>
+                    <li><a href="https://space.bilibili.com/513348269">bilibili</a></li>
+                </ul>
+                </nav>
+                <nav>
+                <p>Links:</p>
+                <ul>
+                    <li><a href="http://cmb.bnu.edu.cn/">CMB-BNU</a></li>
+                </ul>
+                </nav>
+            </aside>
         </main>
-        <aside>
-            <nav>
-            <p>Related links:</p>
-            <ul>
-                <li><a href="https://github.com/benjaminfang">github</a></li>
-                <li><a href="https://leetcode.com/benjaminfang/">leetcode</a></li>
-                <li><a href="https://space.bilibili.com/513348269">bilibili</a></li>
-            </ul>
-            </nav>
-            <nav>
-            <p>Links:</p>
-            <ul>
-                <li><a href="http://cmb.bnu.edu.cn/">CMB-BNU</a></li>
-            </ul>
-            </nav>
-        </aside>
-        </div>
+
 
 
         <footer>
@@ -83,6 +63,26 @@
                 My email address: <a href="mailto:benjaminfang.ol@outlook.com">benjaminfang.ol@outlook.com</a>
             </address>
             </div>
+            <div style="position: relative; top: 5rem;">
+                <label id="timelabel">MyTime(|)</label>
+                <progress id="mytime" max="1" value="1"></progress>
+                <script>
+                    let mytime = document.getElementById("mytime");
+                    let mylabel = document.getElementById("timelabel");
+                    let birthday = new Date(1992, 9, 3);
+                    let preend = new Date(2064, 9, 4);
+                    let now_dt = new Date();
+                    
+                    let passed = (now_dt - birthday)/(1000 * 3600 * 24);
+                    let left = (preend - now_dt)/(1000 * 3600 * 24);
+    
+                    mytime.max = passed + left;
+                    mytime.value = left;
+                    
+                    mylabel.textContent = "MyTime" + "(" + left.toFixed(0) + "|" + passed.toFixed(0) + ")";
+    
+                </script>
+                </div>
         </footer>
 
     </body>
