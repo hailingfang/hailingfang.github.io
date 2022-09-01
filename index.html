@@ -3,14 +3,16 @@
     <head>
         <meta charset="utf-8">
         <title>Benjamin Fang</title>
-        <link rel="stylesheet" href="/css/style.css" />
+        <link rel="stylesheet" href="/css/index.css" />
     </head>
     <body>
         <header>
-            <div class="header-container"><img src="/imgs/icon.svg" class="web-icon" /><p>Benjamin Fang</p></div>
+            <div class="header-wrapper">
+                <div id="logo"><img src="/imgs/icon.svg" id="logo-icon"><p id="myname">Benjamin Fang</p></div>
+            </div>
         </header>
         <main>
-            <div class="main-content">
+            <div class="main-wrapper">
                 <div class="brief-introduction" id="introduction">
                     <p>Hi, I'm Ben, wellcome to my webpage. I major biology and get my master degree in 2018, and now I'm working in
                     computational biology feild. Any thing you would like to know about me please contact me  without hesitation.</p> 
@@ -34,55 +36,53 @@
                     </div>
                 </div>
             </div>
-            
-
-            <aside>
-                <nav>
-                <p>Related links:</p>
-                <ul>
-                    <li><a href="https://github.com/benjaminfang">github</a></li>
-                    <li><a href="https://leetcode.com/benjaminfang/">leetcode</a></li>
-                    <li><a href="https://space.bilibili.com/513348269">bilibili</a></li>
-                </ul>
-                </nav>
-                <nav>
-                <p>Links:</p>
-                <ul>
-                    <li><a href="http://cmb.bnu.edu.cn/">CMB-BNU</a></li>
-                </ul>
-                </nav>
-            </aside>
         </main>
 
 
+        <aside>
+            <nav>
+            <p>Related links:</p>
+            <ul>
+                <li><a href="https://github.com/benjaminfang">github</a></li>
+                <li><a href="https://leetcode.com/benjaminfang/">leetcode</a></li>
+                <li><a href="https://space.bilibili.com/513348269">bilibili</a></li>
+            </ul>
+            </nav>
+            <nav>
+            <p>Links:</p>
+            <ul>
+                <li><a href="http://cmb.bnu.edu.cn/">CMB-BNU</a></li>
+            </ul>
+            </nav>
+        </aside>
 
         <footer>
-            <div class="footer-container">
-            <small>&copy; All rights reserved.</small>
-            <address>
-                My email address: <a href="mailto:benjaminfang.ol@outlook.com">benjaminfang.ol@outlook.com</a>
-            </address>
-            </div>
-            <div style="position: relative; top: 5rem;">
-                <label id="timelabel">MyTime(|)</label>
-                <progress id="mytime" max="1" value="1"></progress>
-                <script>
-                    let mytime = document.getElementById("mytime");
-                    let mylabel = document.getElementById("timelabel");
-                    let birthday = new Date(1992, 9, 3);
-                    let preend = new Date(2064, 9, 4);
-                    let now_dt = new Date();
-                    
-                    let passed = (now_dt - birthday)/(1000 * 3600 * 24);
-                    let left = (preend - now_dt)/(1000 * 3600 * 24);
-    
-                    mytime.max = passed + left;
-                    mytime.value = left;
-                    
-                    mylabel.textContent = "MyTime" + "(" + left.toFixed(0) + "|" + passed.toFixed(0) + ")";
-    
-                </script>
+            <div class="footer-wrapper">
+                <small>&copy; All rights reserved.</small>
+                <address>
+                    My email address: <a href="mailto:benjaminfang.ol@outlook.com">benjaminfang.ol@outlook.com</a>
+                </address>
+                <div>
+                    <label id="timelabel">MyTime(|)</label>
+                    <progress id="mytime" max="1" value="1"></progress>
+                    <script>
+                        let mytime = document.getElementById("mytime");
+                        let mylabel = document.getElementById("timelabel");
+                        let birthday = new Date(1992, 9, 3);
+                        let preend = new Date(2064, 9, 4);
+                        let now_dt = new Date();
+                        
+                        let passed = (now_dt - birthday)/(1000 * 3600 * 24);
+                        let left = (preend - now_dt)/(1000 * 3600 * 24);
+        
+                        mytime.max = passed + left;
+                        mytime.value = left;
+                        
+                        mylabel.textContent = "MyTime" + "(" + left.toFixed(0) + "|" + passed.toFixed(0) + ")";
+        
+                    </script>
                 </div>
+            </div>
         </footer>
 
     </body>
