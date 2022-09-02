@@ -21,7 +21,7 @@ header {
     padding: 0px;
     border: 0px solid red;
     margin: 0px;
-    background-color: cornflowerblue;
+    background-color: rgb(8, 27, 59);
 }
 
 .header-wrapper {
@@ -68,6 +68,7 @@ header {
     justify-self: left;
     font-size: 1.5em;
     font-weight: bold;
+    color: #e4d7d7;
 }
 
 #head-email {
@@ -80,6 +81,10 @@ header {
     border: 0px solid red;
     margin: 0px;
     margin-bottom: 0.1em;
+    color: #fafafa;
+}
+#head-email a {
+    color: #fafafa;
 }
 
 main {
@@ -134,7 +139,7 @@ main {
     margin: 7%;
     margin-left: 13%;
     margin-right: 13%;
-    background-color: rgb(182, 197, 238);
+    background-color: rgb(225, 225, 225);
     border-radius: 0.7em;
 }
 
@@ -170,7 +175,7 @@ main {
 footer {
     padding: 0px;
     border: 0px solid red;
-    background-color: rgb(74, 116, 194);
+    background-color: rgb(3, 13, 31);
 }
 
 .footer-wrapper {
@@ -181,11 +186,16 @@ footer {
     display: grid;
     grid-template-columns: 50% 50%;
     grid-template-rows: 20% 80%;
+    color: #fafafa;
 }
 
 .footer-wrapper ul {
     padding: 0px;
     list-style-type: none;
+}
+
+.footer-wrapper a {
+    color: #fafafa;
 }
 
 .footer-wrapper ul li {
@@ -204,7 +214,7 @@ footer {
 
 progress {
     border-radius: 0.5em;
-    background-color: burlywood;
+    background-color: rgb(214, 203, 189);
     height: 1em;
     box-shadow: 0.1em;
     border: 1px solid black;
