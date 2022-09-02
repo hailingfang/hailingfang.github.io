@@ -26,6 +26,8 @@ header {
 
 .header-wrapper {
     padding: 0px;
+    padding-top: 2em;
+    padding-bottom: 1.2em;
     border: 0px solid red;
     margin-top: 0px;
     margin-bottom: 0px;
