@@ -73,7 +73,7 @@ header {
 .page-nav p {
     padding: 0.5em;
     border: 2 solid red;
-    border-right: 3px solid #fafafa;
+    border-right: 3px solid #ddd6d6;
     margin: 0px;
     background-color: rgb(30, 20, 75);
     text-align: center;
