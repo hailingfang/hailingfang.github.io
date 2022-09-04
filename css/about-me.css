@@ -95,3 +95,50 @@ header {
     grid-column: 5;
     border-right: 0px solid red;
 }
+
+main {
+    padding: 0px;
+    border: 0px solid red;
+    margin: 0px;
+}
+
+.main-wrapper {
+    padding: 0px;
+    border: 0px solid red;
+    margin: 0px;
+    margin-left: 13%;
+    margin-right: 13%;
+}
+
+#myinfo {
+    padding: 0px;
+    border: 0px solid red;
+    margin: 0px;
+    display: grid;
+    grid-template-columns: 80% 20%;
+    /*grid-template-rows: 100%;*/
+}
+
+#keyinfo {
+    padding: 1em;
+    padding-left: 8em;
+    grid-column: 1;
+    grid-row: 1;
+}
+
+#myphoto {
+    margin-top: 1em;
+    grid-column: 2;
+}
+
+#myphoto img {
+    width: 55%;
+    border-radius: 10px;
+}
+
+#keyinfo {
+    display: grid;
+    grid-template-columns: 50% 50%;
+    grid-row: 50% 50%;
+    font-size: 1.2em;
+}
