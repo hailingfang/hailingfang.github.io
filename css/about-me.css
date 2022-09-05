@@ -68,8 +68,6 @@ header {
     grid-template-columns: 20% 20% 20% 20% 20%;
 }
 
-
-
 .page-nav p {
     padding: 0.5em;
     border: 2 solid red;
@@ -141,4 +139,75 @@ main {
     grid-template-columns: 50% 50%;
     grid-row: 50% 50%;
     font-size: 1.2em;
+}
+
+#myprofile {
+    padding: 1em;
+    padding-top: 2em;
+    border: 0px solid red;
+    border-top: 0.3em solid rgba(100, 100, 100, 0.5);
+    margin: 0px;
+    margin-top: 1em;
+    
+}
+
+.cv-block {
+    padding: 0px;
+    border: 0px solid red;
+    margin: 0px;
+    margin-top: 1em;
+}
+
+.headtxt {
+    font-weight: bold;
+    font-size: 1.3em;
+    padding: 0.2em;
+    border: 0.1em solid rgba(100, 100, 100, 0.5);
+    margin: 0px;
+}
+
+.detailtxt {
+    padding: 0px;
+    border: 0px solid red;
+    border-top: 3px solid rgba(100, 100, 100, 0.5);
+    margin: 0px;
+}
+
+.edu-degree {
+    margin-top: 1em;
+}
+
+.edu-fl {
+    padding: 0px;
+    border: 0px solid red;
+    margin: 0px;
+}
+
+.edu-sl {
+    display: grid;
+    grid-template-columns: 40% 30% 30%;
+    padding: 0em;
+    padding-top: 0.3em;
+    border: 0px solid red;
+    margin: 0px;
+    
+}
+
+.edu-sl > p {
+    padding: 0px;
+    border: 0px solid red;
+    margin: 0px;
+}
+
+.edu-tl {
+    padding: 0em;
+    border: 0px solid red;
+    margin: 0px;
+}
+
+.edu-tl > p {
+    padding: 0px;
+    border: 0px solid red;
+    margin: 0px;
+    padding-top: 0.3em;
 }
