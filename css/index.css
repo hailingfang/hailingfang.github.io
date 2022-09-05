@@ -1,5 +1,8 @@
 @charset "utf-8";
-  
+
+html {
+    min-height: 100%;
+}
 
 body {
 
@@ -114,7 +117,7 @@ main {
     padding-right: 1em;
     border: 0px solid red;
     margin: 0px;
-    margin-top: 1.5em;
+    margin-top: 2em;
     margin-bottom: 1.5em;
 }
 
@@ -123,7 +126,8 @@ main {
     padding: 0px;
     border: 0px solid blue;
     margin: 0px;
-    margin-bottom: 3em;
+    margin-bottom: 4em;
+    margin-top: 2em;
     display: grid;
     grid-template-columns: 50% 50%;
     grid-template-rows: 50% 50%;
@@ -180,6 +184,7 @@ footer {
 
 .footer-wrapper {
     padding: 0px;
+    padding-bottom: 2em;
     border: 0px solid red;
     margin-left: 13%;
     margin-right: 13%;
@@ -213,7 +218,7 @@ footer {
 }
 
 progress {
-    border-radius: 0.5em;
+    border-radius: 5px;
     background-color: rgb(214, 203, 189);
     height: 1em;
     box-shadow: 0.1em;
@@ -222,6 +227,7 @@ progress {
 }
 progress::-moz-progress-bar {
     background-color: brown;
+    border-radius: 3px;
 }
 
 .mylink {
