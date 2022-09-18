@@ -211,3 +211,44 @@ main {
     margin: 0px;
     padding-top: 0.3em;
 }
+
+
+.wkexp {
+    margin-top: 1em;
+}
+
+.ex-fl {
+    padding: 0px;
+    border: 0px solid red;
+    margin: 0px;
+
+}
+
+.ex-sl {
+    display: grid;
+    grid-template-columns: 40% 30% 30%;
+    padding: 0px;
+    padding-top: 0.3em;
+    border: 0px solid red;
+    margin: 0px;
+}
+
+.ex-sl > p {
+    padding: 0px;
+    border: 0px solid red;
+    margin: 0px;
+
+}
+
+.ex-tl {
+    padding: 0px;
+    border: 0px solid red;
+    margin: 0px;
+}
+
+.ex-tl > p {
+    padding: 0px;
+    padding-top: 0.3em;
+    border: 0px solid red;
+    margin: 0px;
+}
