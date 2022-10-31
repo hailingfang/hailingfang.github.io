@@ -20,6 +20,7 @@ a {
     text-decoration: none;
 }
 
+/* header css start*/
 header {
     padding: 0px;
     border: 0px solid red;
@@ -34,8 +35,8 @@ header {
     border: 0px solid red;
     margin-top: 0px;
     margin-bottom: 0px;
-    margin-left: 13%;
-    margin-right: 13%;
+    margin-left: 19%;
+    margin-right: 19%;
     display: grid;
     grid-template-columns: 30% 70%;
     align-items: center;
@@ -90,6 +91,9 @@ header {
     color: #fafafa;
 }
 
+/*header css end*/
+
+/*main css start*/
 main {
     padding: 0px;
     border: 0px solid red;
@@ -98,8 +102,8 @@ main {
 
 .main-wrapper {
     display: grid;
-    margin-left: 13%;
-    margin-right: 13%;
+    margin-left: 19%;
+    margin-right: 19%;
     grid-template-rows: 20% 80%;
     grid-template-columns: 100%;
 }
@@ -174,8 +178,9 @@ main {
     grid-row: 2;
     grid-column: 2;
 }
+/*main css end*/
 
-
+/*footer css start*/
 footer {
     padding: 0px;
     border: 0px solid red;
@@ -186,8 +191,8 @@ footer {
     padding: 0px;
     padding-bottom: 2em;
     border: 0px solid red;
-    margin-left: 13%;
-    margin-right: 13%;
+    margin-left: 19%;
+    margin-right: 19%;
     display: grid;
     grid-template-columns: 50% 50%;
     grid-template-rows: 20% 80%;
@@ -239,3 +244,4 @@ progress::-moz-progress-bar {
     grid-row: 2;
     grid-column: 2;
 }
+/*footer css end*/
