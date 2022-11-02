@@ -367,55 +367,6 @@ main {
     grid-column: 3;
 }
 
-/*
-.life-record table {
-    padding: 0px;
-    border: 0px solid rebeccapurple;
-    border-bottom: 0px solid gray;
-    margin: 0px;
-    margin-left: 2em;
-    margin-right: 2em;
-    margin-bottom: 1em;
-    border-collapse: collapse;
-}
-
-thead {
-    margin: 0.3em;
-}
-
-thead th {
-    color: rgb(27, 118, 184);
-    padding: 0.5em;
-}
-
-thead tr :first-child {
-    color: green;
-}
-
-thead tr :last-child {
-    color: rgb(172, 156, 36);
-}
-
-
-tbody tr {
-    border-left: 0.1em solid gray;
-    padding-left: 0.2em;
-}
-
-tbody td {
-    color: rgb(27, 118, 184);
-}
-
-tbody > tr :first-child{
-    color: green;
-}
-
-tbody > tr :last-child {
-    color: rgb(172, 156, 36);
-}
-*/
-
-
 /*<<<life record*/
 
 /*main css end*/
