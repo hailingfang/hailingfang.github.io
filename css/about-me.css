@@ -319,30 +319,36 @@ main {
 }
 
 .hrf2 {
-    text-align: center;
+    text-align: left;
     width: 40%;
 }
 
 .hrf3 {
-    text-align: center;
+    text-align: left;
     width: 40%;
 }
 
 #hrf1c {
     display: inline-block;
+    color: rgb(22, 94, 22);
+    font-weight: bold;
 }
 
 #hrf2c {
     display: inline-block;
+    color: rgb(39, 132, 172);
+    font-weight: bold;
 }
 
 #hrf3c {
     display: inline-block;
+    color: rgb(89, 89, 17);
+    font-weight: bold;
 }
 
 .body-row {
     display: grid;
-    grid-template-columns: 20% 40% 40%;
+    grid-template-columns: 6% 45% 45%;
     grid-template-rows: auto;
     padding: 0px;
     border-left: 1px solid gray;
@@ -355,16 +361,47 @@ main {
 .brf1 {
     text-align: left;
     grid-column: 1;
+    color: rgb(31, 134, 31);
+}
+
+.brf1 span {
+    display: inline-block;
+    padding: 0.1em;
+    padding-left: 0.2em;
+    margin: 1.1em;
+    margin-left: 0em;
 }
 
 .brf2 {
-    text-align: center;
+    text-align: left;
     grid-column: 2;
+    color: rgb(58, 108, 148);
+}
+
+.brf2 span {
+    display: inline-block;
+    padding: 0.2em;
+    padding-left: 0.4em;
+    border: 0.1em solid rgb(123, 132, 56);
+    border-left: 0.2em solid rgb(134, 152, 40);
+    border-radius: 0.5em;
+    margin: 1em;
 }
 
 .brf3 {
-    text-align: center;
+    text-align: left;
     grid-column: 3;
+    color: rgb(88, 88, 24);
+}
+
+.brf3 span {
+    display: inline-block;
+    padding: 0.2em;
+    padding-left: 0.4em;
+    border: 0.1em solid rgb(12, 72, 156);
+    border-left: 0.2em solid rgb(25, 108, 177);
+    border-radius: 0.5em;
+    margin: 1em;
 }
 
 /*<<<life record*/
