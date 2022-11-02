@@ -121,7 +121,7 @@ main {
     padding-right: 1em;
     border: 0px solid red;
     margin: 0px;
-    margin-top: 2em;
+    margin-top: 3em;
     margin-bottom: 1.5em;
 }
 
@@ -185,11 +185,14 @@ footer {
     padding: 0px;
     border: 0px solid red;
     background-color: rgb(3, 13, 31);
+    position: absolute;
+    min-width: 100%;
+    bottom: 0px;
 }
 
 .footer-wrapper {
     padding: 0px;
-    padding-bottom: 2em;
+    padding-bottom: 0em;
     border: 0px solid red;
     margin-left: 19%;
     margin-right: 19%;
