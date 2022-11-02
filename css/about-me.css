@@ -44,6 +44,11 @@ main {
     justify-items: flex-start;
 }
 
+#keyinfo-grid p {
+    margin-top: 0.5em;
+    margin-bottom: 0.5em;
+}
+
 #email-address {
     word-break: break-all;
 }
@@ -70,16 +75,18 @@ main {
     padding-top: 1em;
     border: 0px solid red;
     margin: 0px;
-    margin-top: 1em;
+    margin-top: 0em;
 }
 
 #myprofile > p {
     padding: 0px;
+    padding-top: 0.8em;
     border: 0px solid red;
     margin: 0px;
     text-align: justify;
     margin-left: 2em;
     margin-right: 2em;
+    line-height: 1.3em;
 }
 
 .cv-block {
@@ -102,7 +109,6 @@ main {
 
 .cv-block-body {
     padding: 0px;
-    padding-top: 1em;
     border: 0px solid red;
     margin-left: 2em;
     margin-right: 2em;
@@ -116,7 +122,9 @@ main {
     padding: 0px;
     border: 0px solid red;
     margin: 0px;
+    margin-bottom: 1em;
     font-weight: bold;
+
 }
 
 .edu-degree-info {
@@ -126,13 +134,8 @@ main {
     border: 0px solid red;
     margin: 0px;
     font-weight: bold;
+    margin-bottom: 1em;
     
-}
-
-.edu-degree-info > p {
-    padding: 0px;
-    border: 0px solid red;
-    margin: 0px;
 }
 
 .edu-degree-dissertation {
@@ -142,10 +145,12 @@ main {
 }
 
 .edu-degree-dissertation > p {
-    padding: 0px;
+    padding-top: 0.8px;
     border: 0px solid red;
     margin: 0px;
     padding-top: 0.3em;
+    line-height: 1.3em;
+    text-align: justify;
 }
 
 
@@ -153,47 +158,66 @@ main {
     font-weight: bold;
 }
 
-.wkexp {
-    margin-top: 1em;
+.work-experience {
+    margin-top: 2em;
     margin-left: 2em;
     margin-right: 2em;
 }
 
-.ex-fl {
+.experience-name {
     padding: 0px;
     border: 0px solid red;
-    margin: 0px;
+    margin-bottom: 1em;
+    font-weight: bold;
 
 }
 
-.ex-sl {
+.experience-info {
     display: grid;
     grid-template-columns: 40% 30% 30%;
     padding: 0px;
+    border: 0px solid red;
+    margin: 0px;
+    font-weight: bold;
+    margin-bottom: 1em;
+}
+
+.experience-info > p {
+    padding: 0px;
+    border: 0px solid red;
+    margin: 0px;
+
+}
+
+.experience-highlight-block {
+    padding: 0px;
+    border: 0px solid red;
+    margin: 0px;
+}
+
+.experience-highlight {
+    padding: 0px;
+    border: 0px solid red;
+    margin: 0px;
+    font-weight: bold;
+}
+
+.experience-highlight > p {
+    padding: 0px;
     padding-top: 0.3em;
     border: 0px solid red;
     margin: 0px;
 }
 
-.ex-sl > p {
-    padding: 0px;
-    border: 0px solid red;
-    margin: 0px;
-
+.skills-block {
+    margin-top: 2em;
 }
 
-.ex-tl {
-    padding: 0px;
-    border: 0px solid red;
-    margin: 0px;
+.skills-class {
+    font-weight: bold;
 }
 
-.ex-tl > p {
-    padding: 0px;
-    padding-top: 0.3em;
-    border: 0px solid red;
-    margin: 0px;
-}
+
 /*<<<cv block*/
 /*>>>life record*/
 

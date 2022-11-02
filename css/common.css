@@ -15,14 +15,9 @@ a {
 }
 
 p {
-    line-height: 1.2em;
     padding: 0px;
-    padding-top: 0.3em;
-    padding-bottom: 0.2em;
     border: 0px solid red;
     margin: 0px;
-    margin-top: 0.5em;
-    margin-bottom: 0.7em;
 }
 
 /*header css begin*/
