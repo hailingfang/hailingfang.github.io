@@ -55,10 +55,11 @@ main {
 
 #myphoto {
     grid-column: 2;
+    margin-right: 5em;
 }
 
 #myphoto img {
-    width: 60%;
+    width: 100%;
     border-radius: 0.5em;
 }
 
@@ -145,7 +146,6 @@ main {
 }
 
 .edu-degree-dissertation > p {
-    padding-top: 0.8px;
     border: 0px solid red;
     margin: 0px;
     padding-top: 0.3em;
@@ -215,8 +215,30 @@ main {
 
 .skills-class {
     font-weight: bold;
+    line-height: 1.3em;
+    padding-top: 0.3em;
 }
 
+
+.course-block {
+    margin-top: 2em;
+    line-height: 1.3em;
+}
+
+.course-degree {
+    font-weight: bold;
+}
+
+
+.publication-info {
+    margin-top: 2em;
+    line-height: 1.3em;
+    text-align: justify;
+}
+
+.pub-contribution {
+    margin-top: 1em;
+}
 
 .publication-info a {
     color: rgb(14, 85, 166);
