@@ -218,6 +218,12 @@ main {
 }
 
 
+.publication-info a {
+    color: rgb(14, 85, 166);
+    font-style: italic;
+    text-decoration: underline;
+}
+
 /*<<<cv block*/
 /*>>>life record*/
 
