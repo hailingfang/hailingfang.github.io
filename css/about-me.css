@@ -13,6 +13,15 @@ main {
     margin-right: 19%;
     margin-bottom: 2em;
 }
+
+@media (width <= 35em) {
+    .main-wrapper {
+        margin-left: 1.5em;
+        margin-right: 1.5em;
+    }
+
+}
+
 /*>>myinfo*/
 #myinfo {
     padding: 0px;

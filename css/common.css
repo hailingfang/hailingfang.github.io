@@ -40,6 +40,15 @@ header {
     color: #dfcece;
 }
 
+@media (width <= 35em) {
+    .header-wrapper {
+        margin-left: 1.5em;
+        margin-right: 1.5em;
+    }
+
+
+}
+
 .header-wrapper a {
     color: #dfcece;
 }

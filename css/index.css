@@ -42,6 +42,14 @@ header {
     align-items: center;
 }
 
+@media (width <= 35em) {
+    .header-wrapper {
+        margin-left: 1.5em;
+        margin-right: 1.5em;
+    }
+
+}
+
 #logo {
     padding: 0px;
     border: 0px solid red;
@@ -106,6 +114,14 @@ main {
     margin-right: 19%;
     grid-template-rows: 20% 80%;
     grid-template-columns: 100%;
+}
+
+@media (width <= 35em) {
+    .main-wrapper {
+        margin-left: 1.5em;
+        margin-right: 1.5em;
+    }
+
 }
 
 .brief-introduction {
@@ -206,6 +222,14 @@ footer {
     color: #fafafa;
 }
 
+@media (width <= 30em) {
+    .footer-wrapper {
+        margin-left: 1.5em;
+        margin-right: 1.5em;
+    }
+
+}
+
 .footer-wrapper ul {
     padding: 0px;
     list-style-type: none;
@@ -252,3 +276,4 @@ progress::-moz-progress-bar {
     grid-column: 2;
 }
 /*footer css end*/
+
