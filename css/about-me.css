@@ -9,17 +9,19 @@ main {
     padding: 0px;
     border: 0px solid red;
     margin: 0px;
-    margin-left: 19%;
-    margin-right: 19%;
     margin-bottom: 2em;
 }
-
-@media (width <= 35em) {
+@media (width > 60em) {
     .main-wrapper {
-        margin-left: 1.5em;
-        margin-right: 1.5em;
+        margin-left: 19%;
+        margin-right: 19%;
     }
-
+}
+@media (width <= 60em) {
+    .main-wrapper {
+        margin-left: 1em;
+        margin-right: 1em;
+    }
 }
 
 /*>>myinfo*/
