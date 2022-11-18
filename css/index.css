@@ -35,17 +35,23 @@ header {
     border: 0px solid red;
     margin-top: 0px;
     margin-bottom: 0px;
-    margin-left: 19%;
-    margin-right: 19%;
     display: grid;
     grid-template-columns: 30% 70%;
     align-items: center;
 }
 
-@media (width <= 35em) {
+@media (width > 60em) {
     .header-wrapper {
-        margin-left: 1.5em;
-        margin-right: 1.5em;
+        margin-left: 19%;
+        margin-right: 19%;
+    }
+
+}
+
+@media (width <= 60em) {
+    .header-wrapper {
+        margin-left: 1em;
+        margin-right: 1em;
     }
 
 }
@@ -109,17 +115,25 @@ main {
 }
 
 .main-wrapper {
+    padding: 0px;
+    border: 0px solid red;
     display: grid;
-    margin-left: 19%;
-    margin-right: 19%;
     grid-template-rows: 20% 80%;
     grid-template-columns: 100%;
 }
 
-@media (width <= 35em) {
+@media (width > 60em) {
     .main-wrapper {
-        margin-left: 1.5em;
-        margin-right: 1.5em;
+        margin-left: 19%;
+        margin-right: 19%;
+    }
+
+}
+
+@media (width <= 60em) {
+    .main-wrapper {
+        margin-left: 1em;
+        margin-right: 1em;
     }
 
 }
@@ -212,22 +226,24 @@ footer {
 
 .footer-wrapper {
     padding: 0px;
-    padding-bottom: 0em;
     border: 0px solid red;
-    margin-left: 19%;
-    margin-right: 19%;
     display: grid;
     grid-template-columns: 50% 50%;
     grid-template-rows: 20% 80%;
     color: #fafafa;
 }
-
-@media (width <= 30em) {
+@media (width > 60em) {
     .footer-wrapper {
-        margin-left: 1.5em;
-        margin-right: 1.5em;
+        margin-left: 19%;
+        margin-right: 19%;
     }
+}
 
+@media (width <= 60em) {
+    .footer-wrapper {
+        margin-left: 1em;
+        margin-right: 1em;
+    }
 }
 
 .footer-wrapper ul {
