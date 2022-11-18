@@ -33,6 +33,7 @@ header {
     padding-top: 2em;
     padding-bottom: 1.2em;
     border: 0px solid red;
+    max-width: 75em;
     margin-top: 0px;
     margin-bottom: 0px;
     display: grid;
@@ -42,8 +43,8 @@ header {
 
 @media (width > 60em) {
     .header-wrapper {
-        margin-left: 19%;
-        margin-right: 19%;
+        margin-left: auto;
+        margin-right: auto;
     }
 
 }
@@ -118,14 +119,15 @@ main {
     padding: 0px;
     border: 0px solid red;
     display: grid;
+    max-width: 75em;
     grid-template-rows: 20% 80%;
     grid-template-columns: 100%;
 }
 
 @media (width > 60em) {
     .main-wrapper {
-        margin-left: 19%;
-        margin-right: 19%;
+        margin-left: auto;
+        margin-right: auto;
     }
 
 }
@@ -227,6 +229,7 @@ footer {
 .footer-wrapper {
     padding: 0px;
     border: 0px solid red;
+    max-width: 75em;
     display: grid;
     grid-template-columns: 50% 50%;
     grid-template-rows: 20% 80%;
@@ -234,8 +237,8 @@ footer {
 }
 @media (width > 60em) {
     .footer-wrapper {
-        margin-left: 19%;
-        margin-right: 19%;
+        margin-left: auto;
+        margin-right: auto;
     }
 }
 
