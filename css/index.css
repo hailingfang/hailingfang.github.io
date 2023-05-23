@@ -159,6 +159,11 @@ main {
     line-height: 1.5em;
 }
 
+.brief-introduction #first-p::first-letter {
+    font-size: 200%;
+    color: rgb(18, 60, 196);
+}
+
 #stickers {
     grid-row: 2;
     padding: 0px;
