@@ -20,7 +20,7 @@ a {
     text-decoration: none;
 }
 
-/* header css start*/
+/*> header*/
 header {
     padding: 0px;
     border: 0px solid red;
@@ -28,196 +28,472 @@ header {
     background-color: rgb(8, 27, 59);
 }
 
-.header-wrapper {
-    padding: 0px;
-    padding-top: 2em;
-    padding-bottom: 1.2em;
-    border: 0px solid red;
-    max-width: 75em;
-    margin-top: 0px;
-    margin-bottom: 0px;
-    display: grid;
-    grid-template-columns: 30% 70%;
-    align-items: center;
-}
 
-@media (width > 60em) {
+
+@media screen and (width > 60em) {
+
     .header-wrapper {
+        padding: 0px;
+        padding-top: 2em;
+        padding-bottom: 1.2em;
+        border: 0px solid red;
+        max-width: 75em;
+        margin-top: 0px;
+        margin-bottom: 0px;
         margin-left: auto;
         margin-right: auto;
+
+    
+        display: grid;
+        grid-template-columns: 60% 40%;
+        align-items:center;
+        justify-items: center;
+
     }
 
-}
+        
+    #logo {
+        padding: 0px;
+        border: 0px solid red;
+        margin: 0px;
+        grid-column: 1;
 
-@media (width <= 60em) {
-    .header-wrapper {
+    }
+
+    #logo-icon {
+        padding: 0%;
+        border: 0px solid red;
+        margin: 0px;
         margin-left: 1em;
-        margin-right: 1em;
+        max-width: 50%;
+        max-height: 50%;
+
+    }
+
+    #head-email {
+        grid-column: 2;
+        align-self: end;
+
+    }
+    #head-email p {
+        padding: 0px;
+        border: 0px solid red;
+        margin: 0px;
+        margin-bottom: 0.1em;
+        color: #fafafa;
+    }
+    #head-email a {
+        color: #fafafa;
     }
 
 }
 
-#logo {
-    padding: 0px;
-    border: 0px solid red;
-    margin: 0px;
-    grid-column: 1;
-    display: grid;
-    grid-template-columns: 23% 72%;
-    grid-template-rows: 100%;
-    align-items: center;
-}
 
 
-#logo-icon {
-    padding: 0%;
-    border: 0px solid red;
-    margin: 0px;
-    max-width: 100%;
-    max-height: 100%;
-    grid-column: 1;
-    justify-self: left;
+
+@media screen and (width <= 60em) and  (width > 35em) {
+    .header-wrapper {
+        padding: 0px;
+        padding-top: 2em;
+        padding-bottom: 1.2em;
+        border: 0px solid red;
+        max-width: 50em;
+        margin-top: 0px;
+        margin-bottom: 0px;
+        margin-left: auto;
+        margin-right: auto;
+
+    
+        display: grid;
+        grid-template-columns: 60% 40%;
+        align-items:center;
+        justify-items: center;
+
+    }
+        
+    #logo {
+        padding: 0px;
+        padding-left: 1em;
+        padding-right: 1em;
+        border: 0px solid red;
+        margin: 0px;
+        grid-column: 1;
+
+    }
+
+    #logo-icon {
+        padding: 0%;
+        border: 0px solid red;
+        margin: 0px;
+        max-width: 50%;
+        max-height: 50%;
+
+    }
+
+    #head-email {
+        grid-column: 2;
+        align-self: end;
+
+    }
+    #head-email p {
+        padding: 0px;
+        border: 0px solid red;
+        margin: 0px;
+        margin-bottom: 0.1em;
+        color: #fafafa;
+    }
+    #head-email a {
+        color: #fafafa;
+    }
+
 }
 
-#myname {
-    padding-left: 0.5em;
-    border: 0px solid red;
-    margin: 0px;
-    grid-column: 2;
-    justify-self: left;
-    font-size: 1.5em;
-    font-weight: bold;
-    color: #e4d7d7;
+@media screen  and (width <= 35em) {
+    .header-wrapper {
+        padding: 0px;
+        padding-top: 2em;
+        padding-bottom: 1.2em;
+        border: 0px solid red;
+        max-width: 30em;
+        margin-top: 0px;
+        margin-bottom: 0px;
+        margin-left: auto;
+        margin-right: auto;
+
+    
+        display: grid;
+        grid-template-rows: 60% 40%;
+        align-items:center;
+        justify-items: center;
+
+    }
+        
+    #logo {
+        padding: 0px;
+        padding-left: 1em;
+        padding-right: 1em;
+        border: 0px solid red;
+        margin: 0px;
+        grid-row: 1;
+
+    }
+
+    #logo-icon {
+        padding: 0%;
+        border: 0px solid red;
+        margin: 0px;
+        max-width: 55%;
+        max-height: 55%;
+
+    }
+
+    #head-email {
+        grid-row: 2;
+        margin-left: 1em;
+        justify-self: left;
+        align-self: end;
+
+    }
+    #head-email p {
+        padding: 0px;
+        border: 0px solid red;
+        margin: 0px;
+        margin-bottom: 0.1em;
+        color: #fafafa;
+    }
+    #head-email a {
+        color: #fafafa;
+    }
+
 }
 
-#head-email {
-    grid-column: 2;
-    align-self: flex-end;
-    justify-self: end;
-}
-#head-email p {
-    padding: 0px;
-    border: 0px solid red;
-    margin: 0px;
-    margin-bottom: 0.1em;
-    color: #fafafa;
-}
-#head-email a {
-    color: #fafafa;
-}
+/*<header*/
 
-/*header css end*/
-
-/*main css start*/
+/*>main*/
 main {
     padding: 0px;
     border: 0px solid red;
     margin: 0px;
 }
 
-.main-wrapper {
-    padding: 0px;
-    border: 0px solid red;
-    display: grid;
-    max-width: 75em;
-    grid-template-rows: 20% 80%;
-    grid-template-columns: 100%;
-}
-
-@media (width > 60em) {
+@media screen and (width > 60em) {
     .main-wrapper {
+        padding: 0px;
+        border: 0px solid red;
+        display: grid;
+        max-width: 75em;
+        grid-template-rows: 20% 80%;
+        grid-template-columns: 100%;
         margin-left: auto;
         margin-right: auto;
     }
 
+    .brief-introduction {
+        grid-row: 1;
+        padding: 0px;
+        border: 0px solid blue;
+        margin: 0px;
+    }
+
+    .brief-introduction p {
+        padding: 0em;
+        padding-left: 2em;
+        padding-right: 2em;
+        border: 0px solid red;
+        margin: 0px;
+        margin-top: 3em;
+        margin-bottom: 1.5em;
+        font-size: 1.1em;
+        line-height: 1.5em;
+    }
+
+    .brief-introduction #first-p::first-letter {
+        font-size: 200%;
+        color: rgb(18, 60, 196);
+    }
+
+    #stickers {
+        grid-row: 2;
+        padding: 0px;
+        border: 0px solid blue;
+        margin: 0px;
+        margin-bottom: 4em;
+        margin-top: 2em;
+        display: grid;
+        grid-template-columns: 50% 50%;
+        grid-template-rows: 50% 50%;
+        justify-items: stretch;
+        align-items: stretch;
+
+    }
+
+    .sticker {
+        padding: 1em;
+        padding-top: 0.1em;
+        border: 0px solid red;
+        margin: 7%;
+        margin-left: 13%;
+        margin-right: 13%;
+        background-color: rgb(235, 235, 235);
+        border-radius: 0.7em;
+    }
+
+    .sticker a {
+        color: black;
+        text-decoration: underline;
+    }
+
+    .sticker .sti-h {
+        font-size: 1.8em;
+    }
+    #stk1 {
+        grid-row: 1;
+        grid-column: 1;
+    }
+
+    #stk2 {
+        grid-row: 1;
+        grid-column: 2;
+    }
+
+    #stk3 {
+        grid-row: 2;
+        grid-column: 1;
+    }
+
+    #stk4 {
+        grid-row: 2;
+        grid-column: 2;
+    }
+
+
 }
 
-@media (width <= 60em) {
+
+@media screen and (width <= 60em) and (width > 35em) {
     .main-wrapper {
-        margin-left: 1em;
-        margin-right: 1em;
+        padding: 0px;
+        border: 0px solid red;
+        display: grid;
+        max-width: 50em;
+        grid-template-rows: 20% 80%;
+        grid-template-columns: 100%;
+        margin-left: auto;
+        margin-right: auto;
+    }
+
+    .brief-introduction {
+        grid-row: 1;
+        padding: 0px;
+        border: 0px solid blue;
+        margin: 0px;
+    }
+
+    .brief-introduction p {
+        padding: 0em;
+        padding-left: 2em;
+        padding-right: 2em;
+        border: 0px solid red;
+        margin: 0px;
+        margin-top: 3em;
+        margin-bottom: 1.5em;
+        font-size: 1.1em;
+        line-height: 1.5em;
+    }
+
+    .brief-introduction #first-p::first-letter {
+        font-size: 200%;
+        color: rgb(18, 60, 196);
+    }
+
+    #stickers {
+        grid-row: 2;
+        padding: 0px;
+        border: 0px solid blue;
+        margin: 0px;
+        margin-bottom: 4em;
+        margin-top: 2em;
+        display: grid;
+        grid-template-columns: 50% 50%;
+        grid-template-rows: 50% 50%;
+        justify-items: stretch;
+        align-items: stretch;
+
+    }
+
+    .sticker {
+        padding: 1em;
+        padding-top: 0.1em;
+        border: 0px solid red;
+        margin: 7%;
+        margin-left: 13%;
+        margin-right: 13%;
+        background-color: rgb(235, 235, 235);
+        border-radius: 0.7em;
+    }
+
+    .sticker a {
+        color: black;
+        text-decoration: underline;
+    }
+
+    .sticker .sti-h {
+        font-size: 1.8em;
+    }
+    #stk1 {
+        grid-row: 1;
+        grid-column: 1;
+    }
+
+    #stk2 {
+        grid-row: 1;
+        grid-column: 2;
+    }
+
+    #stk3 {
+        grid-row: 2;
+        grid-column: 1;
+    }
+
+    #stk4 {
+        grid-row: 2;
+        grid-column: 2;
     }
 
 }
 
-.brief-introduction {
-    grid-row: 1;
-    padding: 0px;
-    border: 0px solid blue;
-    margin: 0px;
-}
+@media screen and (width <= 35em) {
+    .main-wrapper {
+        padding: 0px;
+        border: 0px solid red;
+        display: grid;
+        max-width: 75em;
+        grid-template-rows: 20% 80%;
+        grid-template-columns: 100%;
+        margin-left: auto;
+        margin-right: auto;
+    }
 
-.brief-introduction p {
-    padding: 0em;
-    padding-left: 2em;
-    padding-right: 2em;
-    border: 0px solid red;
-    margin: 0px;
-    margin-top: 3em;
-    margin-bottom: 1.5em;
-    font-size: 1.1em;
-    line-height: 1.5em;
-}
+    .brief-introduction {
+        grid-row: 1;
+        padding: 0px;
+        border: 0px solid blue;
+        margin: 0px;
+    }
 
-.brief-introduction #first-p::first-letter {
-    font-size: 200%;
-    color: rgb(18, 60, 196);
-}
+    .brief-introduction p {
+        padding: 0em;
+        padding-left: 2em;
+        padding-right: 2em;
+        border: 0px solid red;
+        margin: 0px;
+        margin-top: 3em;
+        margin-bottom: 1.5em;
+        font-size: 1.1em;
+        line-height: 1.5em;
+    }
 
-#stickers {
-    grid-row: 2;
-    padding: 0px;
-    border: 0px solid blue;
-    margin: 0px;
-    margin-bottom: 4em;
-    margin-top: 2em;
-    display: grid;
-    grid-template-columns: 50% 50%;
-    grid-template-rows: 50% 50%;
-    justify-items: stretch;
-    align-items: center;
+    .brief-introduction #first-p::first-letter {
+        font-size: 200%;
+        color: rgb(18, 60, 196);
+    }
+
+    #stickers {
+        grid-row: 2;
+        padding: 0px;
+        border: 0px solid blue;
+        margin: 0px;
+        margin-bottom: 4em;
+        margin-top: 2em;
+        display: grid;
+        grid-template-rows: auto;
+        justify-items: stretch;
+        align-items: stretch;
+
+    }
+
+    .sticker {
+        padding: 1em;
+        padding-top: 0.1em;
+        border: 0px solid red;
+        margin: 7%;
+        margin-left: 13%;
+        margin-right: 13%;
+        background-color: rgb(235, 235, 235);
+        border-radius: 0.7em;
+    }
+
+    .sticker a {
+        color: black;
+        text-decoration: underline;
+    }
+
+    .sticker .sti-h {
+        font-size: 1.8em;
+    }
+    #stk1 {
+        grid-row: 1;
+
+    }
+
+    #stk2 {
+        grid-row: 2;
+
+    }
+
+    #stk3 {
+        grid-row: 3;
+
+    }
+
+    #stk4 {
+        grid-row: 4;
+  
+    }
+
 
 }
-
-.sticker {
-    padding: 1em;
-    padding-top: 0.1em;
-    border: 0px solid red;
-    margin: 7%;
-    margin-left: 13%;
-    margin-right: 13%;
-    background-color: rgb(235, 235, 235);
-    border-radius: 0.7em;
-}
-
-.sticker a {
-    color: black;
-    text-decoration: underline;
-}
-
-.sticker .sti-h {
-    font-size: 1.8em;
-}
-#stk1 {
-    grid-row: 1;
-    grid-column: 1;
-}
-
-#stk2 {
-    grid-row: 1;
-    grid-column: 2;
-}
-
-#stk3 {
-    grid-row: 2;
-    grid-column: 1;
-}
-
-#stk4 {
-    grid-row: 2;
-    grid-column: 2;
-}
-/*main css end*/
+/*<main*/
 
 /*footer css start*/
 footer {
