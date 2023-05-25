@@ -90,7 +90,7 @@ header {
     .header-wrapper {
         padding: 0px;
         border: 0px solid red;
-        max-width: 52em;
+        max-width: 60em;
         margin-top: 1em;
         margin-bottom: 1em;
         margin-left: auto;
@@ -142,7 +142,7 @@ header {
     .header-wrapper {
         padding: 0px;
         border: 0px solid red;
-        max-width: 41em;
+        max-width: 50em;
         margin-top: 2em;
         margin-bottom: 3em;
         margin-left: auto;
@@ -276,7 +276,7 @@ main {
         padding: 0px;
         border: 0px solid red;
         display: grid;
-        max-width: 50em;
+        max-width: 55em;
         grid-template-rows: 20% 80%;
         margin-left: auto;
         margin-right: auto;
@@ -345,7 +345,7 @@ main {
         padding: 0px;
         border: 0px solid red;
         display: grid;
-        max-width: 40em;
+        max-width: 50em;
         grid-template-rows: 20% 80%;
         margin-left: auto;
         margin-right: auto;
@@ -493,7 +493,7 @@ footer {
     .footer-wrapper {
         padding: 0px;
         border: 0px solid red;
-        max-width: 45em;
+        max-width: 60em;
         margin-top: 1em;
         margin-bottom: 1em;
         margin-left: auto;
@@ -558,7 +558,7 @@ footer {
     .footer-wrapper {
         padding: 0px;
         border: 0px solid red;
-        max-width: 41em;
+        max-width: 55em;
         margin-top: 1em;
         margin-bottom: 1em;
         margin-left: auto;
