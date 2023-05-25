@@ -1,4 +1,4 @@
-@charset "utf-8";
+    @charset "utf-8";
 
 html {
     height: 100%;
@@ -33,7 +33,7 @@ header {
 }
 
 
-@media (width >= 1024px) {
+@media (width >= 1024px) and (aspect-ratio >= 1/1.5) {
 
     .header-wrapper {
         padding: 0px;
@@ -87,7 +87,7 @@ header {
 }
 
 
-@media (width < 1024px) and (width >= 768px) {
+@media (width < 1024px) and (width >= 768px) and (aspect-ratio >= 1/1.5) {
     .header-wrapper {
         padding: 0px;
         border: 0px solid red;
@@ -203,7 +203,7 @@ main {
 }
 
 
-@media (width >= 1024px){
+@media (width >= 1024px) and (aspect-ratio >= 1/1.5) {
     .main-wrapper {
         padding: 0px;
         border: 0px solid red;
@@ -272,7 +272,7 @@ main {
 }
 
 
-@media (width <= 1024px) and (width >= 768px){
+@media (width < 1024px) and (width >= 768px) and (aspect-ratio >= 1/1.5) {
     .main-wrapper {
         padding: 0px;
         border: 0px solid red;
@@ -412,9 +412,10 @@ main {
 
 }
 
+
 /*<main*/
 
-/*footer css start*/
+/*>footer*/
 footer {
     padding: 0px;
     border: 0px solid red;
@@ -422,7 +423,7 @@ footer {
 }
 
 
-@media (width >= 1024px) {
+@media (width >= 1024px) and (aspect-ratio >= 1/1.5){
 
     .footer-wrapper {
         padding: 0px;
@@ -488,7 +489,7 @@ footer {
 
 }
 
-@media (width < 1024px) and (width >= 768px) {
+@media (width < 1024px) and (width >= 768px) and (aspect-ratio >= 1/1.5) {
 
     .footer-wrapper {
         padding: 0px;
@@ -553,8 +554,7 @@ footer {
 
 }
 
-@media (width < 768px) (aspect-ratio < 1/1.5){
-
+@media (width < 768px) or (aspect-ratio < 1/1.5) {
 
     .footer-wrapper {
         padding: 0px;
@@ -566,9 +566,24 @@ footer {
         margin-right: auto;
         
         display: grid;
-        grid-template-columns: 50% 50%;
-        grid-template-rows: auto;
+        grid-template-columns: 100%;
+        grid-template-rows: auto auto auto;
         align-items: center;
+        color: #fafafa;
+    }
+    .footer-wrapper ul {
+        padding: 0px;
+        border: 0px solid red;
+        margin: 0px;
+    }
+    .footer-wrapper ul li {
+        color: #fafafa;
+        list-style-type: none;
+        padding-top: 0.2em;
+        padding-bottom: 0.3em;
+    }
+
+    .footer-wrapper a {
         color: #fafafa;
     }
 
@@ -576,32 +591,18 @@ footer {
         padding: 0px;
         border: 0px solid red;
         margin: 0px;
-        grid-row: 1;
-        grid-column: 1/3;
+        margin-left: 2em;
+        margin-bottom: 1em;
     }
 
     .mylink {
-        grid-row: 2;
-        grid-column: 1;
+        margin-left: 2em;
+        margin-bottom: 1em;
     }
 
     .other-link {
-        grid-row: 2;
-        grid-column: 2;
-    }
-
-    .footer-wrapper ul {
-        padding: 0px;
-        list-style-type: none;
-    }
-
-    .footer-wrapper a {
-        color: #fafafa;
-    }
-
-    .footer-wrapper ul li {
-        padding-top: 0.5em;
-        padding-bottom: 0.5em;
+        margin-left: 2em;
+        margin-bottom: 1em;
     }
 
     progress {
@@ -619,7 +620,5 @@ footer {
 
 }
 
-
-
-/*footer css end*/
+/*<footer*/
 
