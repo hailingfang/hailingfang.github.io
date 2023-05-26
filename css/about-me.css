@@ -18,6 +18,58 @@
 
     }
 
+
+/*>myinfo*/
+    #myinfo {
+        padding: 0px;
+        border: 0px solid red;
+        display: grid;
+        grid-template-columns: 7.5fr 2.5fr;
+        align-items: stretch;
+        justify-items: center;
+        margin: 0px;
+        margin-bottom: 1em;
+    }
+
+    #keyinfo {
+        padding: 0px;
+        border: 0px solid red;
+        margin: 0px;
+        grid-column: 1;
+
+        display: grid;
+        grid-template-columns: 1fr 1fr;
+        grid-template-rows: 1fr 1fr;
+        
+        font-size: 1.1em;
+        align-items: center;
+        justify-items: stretch;
+    }
+
+    .infoline {
+        margin-top: 0.5em;
+        margin-bottom: 0.5em;
+        display: grid;
+        justify-items: left;
+        grid-template-columns: 7fr 1fr 30fr;
+    }
+
+    #email-address {
+        word-break: break-all;
+    }
+
+    #myphoto {
+        grid-column: 2;
+    }
+
+    #myphoto img {
+        max-width: 10em;
+        border-radius: 5px;
+    }
+
+/*<myinfo*/
+
+
 }
 
 @media (width < 1024px) and (width >= 768px) and (aspect-ratio >= 1/1.5) {
@@ -37,6 +89,57 @@
         justify-items: stretch;
 
     }
+
+
+    /*>myinfo*/
+    #myinfo {
+        padding: 0px;
+        border: 0px solid red;
+        display: grid;
+        grid-template-columns: 7.5fr 2.5fr;
+        align-items: stretch;
+        justify-items: stretch;
+        margin: 0px;
+        margin-bottom: 1em;
+    }
+
+    #keyinfo {
+        padding: 0px;
+        border: 0px solid red;
+        margin: 0px;
+        grid-column: 1;
+
+        display: grid;
+        grid-template-rows: 1fr 1fr 1fr 1fr;
+        
+        justify-items: stretch;
+        font-size: 1.1em;
+        align-items: center;
+    }
+
+    .infoline {
+        margin-top: 0.5em;
+        margin-bottom: 0.5em;
+        display: grid;
+        justify-items: left;
+        grid-template-columns: 7fr 1fr 30fr;
+    }
+
+    #email-address {
+        word-break: break-all;
+    }
+
+    #myphoto {
+        grid-column: 2;
+    }
+
+    #myphoto img {
+        max-width: 10em;
+        border-radius: 5px;
+    }
+
+/*<myinfo*/
+
 }
 
 @media (width < 768px) or (aspect-ratio < 1/1.5) {
@@ -55,59 +158,61 @@
         justify-items: stretch;
 
     }
-}
 
-/*>myinfo*/
-#myinfo {
-    padding: 0px;
-    border: 0px solid red;
-    display: grid;
-    grid-template-columns: 8fr 2fr;
-    align-items: stretch;
-    justify-items: stretch;
-    margin: 0px;
-    margin-bottom: 1em;
-}
 
-#keyinfo {
-    padding: 0px;
-    border: 0px solid red;
-    margin: 0px;
-    margin-left: 2em;
-    grid-column: 1;
+    /*>myinfo*/
+    #myinfo {
+        padding: 0px;
+        border: 0px solid red;
+        display: grid;
+        grid-template-rows: atuo auto;
+        align-items: stretch;
+        justify-items: center;
+        margin: 0px;
+        margin-bottom: 1em;
+    }
 
-    display: grid;
-    grid-template-columns: 50% 50%;
-    grid-template-rows: 50% 50%;
-    
-    font-size: 1.1em;
-    align-items: center;
-    justify-items: stretch;
-}
 
-.infoline {
-    margin-top: 0.5em;
-    margin-bottom: 0.5em;
-    display: grid;
-    justify-items: left;
-    grid-template-columns: 7fr 1fr 30fr;
-}
+    #myphoto {
+        grid-row: 1;
+    }
 
-#email-address {
-    word-break: break-all;
-}
+    #myphoto img {
+        max-width: 10em;
+        border-radius: 5px;
+    }
 
-#myphoto {
-    grid-column: 2;
-    margin-right: 2em;
-}
+    #keyinfo {
+        padding: 0px;
+        border: 0px solid red;
+        margin: 0px;
+        grid-row: 2;
 
-#myphoto img {
-    width: 100%;
-    border-radius: 5px;
-}
+        display: grid;
+        grid-template-rows: 1fr 1fr 1fr 1fr;
+        
+        justify-items: stretch;
+        font-size: 1.1em;
+        align-items: center;
+    }
+
+    .infoline {
+        margin-top: 0.5em;
+        margin-bottom: 0.5em;
+        display: grid;
+        justify-items: left;
+        grid-template-columns: 7fr 1fr 30fr;
+    }
+
+    #email-address {
+        word-break: break-all;
+    }
+
 
 /*<myinfo*/
+
+
+}
 
 
 
