@@ -1,4 +1,61 @@
-/*>main css*/
+
+
+@media (width >= 1024px) and (aspect-ratio >= 1/1.5) {
+    .main-wrapper {
+        max-width: 60em;
+        padding: 0px;
+        border: 0px solid red;
+        border-left: 1em solid rgba(255, 255, 255, 0);
+        border-left: 1em solid rgba(255, 255, 255, 0);
+        margin-left: auto;
+        margin-right: auto;
+        
+        display: grid;
+        row-gap: 1em;
+        grid-template-rows: auto auto auto auto;
+        align-items: stretch;
+        justify-items: stretch;
+
+    }
+
+}
+
+@media (width < 1024px) and (width >= 768px) and (aspect-ratio >= 1/1.5) {
+
+    .main-wrapper {
+        max-width: 50em;
+        padding: 0px;
+        border: 0px solid red;
+        border-left: 1em solid rgba(255, 255, 255, 0);
+        border-right: 1em solid rgba(255, 255, 255, 0);
+        margin-left: auto;
+        margin-right: auto;
+        display: grid;
+        row-gap: 1em;
+        grid-template-rows: auto auto auto auto;
+        align-items: stretch;
+        justify-items: stretch;
+
+    }
+}
+
+@media (width < 768px) or (aspect-ratio < 1/1.5) {
+    .main-wrapper {
+        max-width: 40em;
+        padding: 0px;
+        border: 0px solid red;
+        border-left: 1em solid rgba(255, 255, 255, 0);
+        border-right: 1em solid rgba(255, 255, 255, 0);
+        margin-left: auto;
+        margin-right: auto;
+        display: grid;
+        row-gap: 1em;
+        grid-template-rows: auto auto auto auto;
+        align-items: stretch;
+        justify-items: stretch;
+
+    }
+}
 
 /*>myinfo*/
 #myinfo {
@@ -53,38 +110,46 @@
 /*<myinfo*/
 
 
-/*>cv block*/
-.cv-block-wrapper {
-    border-top: 0.3em solid rgba(64, 76, 82, 0.8);
-    margin: 0px;
-    margin-bottom: 3em;
 
-}
+
+/*>myprofile*/
 
 #myprofile {
     padding: 0em;
-    padding-top: 1em;
     border: 0px solid red;
     margin: 0px;
-    margin-top: 0em;
+    margin-bottom: 1em;
 }
 
 #myprofile > p {
     padding: 0px;
-    padding-top: 0.8em;
     border: 0px solid red;
     margin: 0px;
     text-align: justify;
-    margin-left: 2em;
-    margin-right: 2em;
+    margin-left: 1em;
+    margin-right: 1em;
+    margin-bottom: 0.5em;
     line-height: 1.3em;
+    font-size: 1.1em;
 }
+
+/*<myprofile*/
+
+
+
+
+/*>cv block*/
+.cv-block-wrapper {
+    margin: 0px;
+    margin-bottom: 2em;
+
+}
+
 
 .cv-block {
     padding: 0px;
     border: 0px solid red;
     margin: 0px;
-    margin-top: 2em;
     margin-bottom: 3em;
 }
 
@@ -96,7 +161,7 @@
     padding-top: 0.4em;
     padding-bottom: 0.1em;
     border: 0px solid red;
-    border-left: 0.2em solid rgba(52, 65, 68, 0.5);
+    border-left: 0.2em solid rgba(28, 34, 36, 0.5);
     border-bottom: 0.1em solid rgba(71, 82, 85, 0.5);
     margin: 0px;
     border-top-left-radius: 0.8em;
@@ -106,26 +171,24 @@
 .cv-block-body {
     padding: 0px;
     border: 0px solid red;
-    margin-left: 2em;
-    margin-right: 2em;
+    margin-left: 1em;
+    margin-right: 1.2em;
 }
 
-.edu-degree {
+.cv-entry {
     margin-bottom: 2em;
 }
 
-.edu-degree-name {
+.cv-entry-head {
     padding: 0px;
     border: 0px solid red;
     margin: 0px;
     margin-bottom: 1.2em;
     font-weight: bold;
     font-size: 1.1em;
-    
-
 }
 
-.edu-degree-info {
+.cv-entry-expand {
     display: grid;
     grid-template-columns: 40% 30% 30%;
     padding: 0em;
@@ -137,96 +200,27 @@
     
 }
 
-.edu-degree-dissertation {
+.cv-entry-supplementary {
     padding: 0em;
     border: 0px solid red;
     margin: 0px;
 }
 
-.edu-dissertation {
-    font-weight: bold;
+.cv-entry-sup-head {
+    font-style: italic;
+    font-size: 1.1em;
     color: rgb(27, 28, 29);
 }
 
-.dissertation-summary {
+.cv-entry-sup-info {
+    padding: 0px;
     border: 0px solid red;
     margin: 0px;
-    padding-left: 1.5em;
-    padding-top: 0.3em;
+    margin-left: 1em;
+    margin-bottom: 0.5em;
     line-height: 1.3em;
     text-align: justify;
     
-}
-
-
-.work-experience {
-    margin-bottom: 2em;
-
-}
-
-.experience-name {
-    padding: 0px;
-    border: 0px solid red;
-    margin-bottom: 1em;
-    font-weight: bold;
-
-}
-
-.experience-info {
-    display: grid;
-    grid-template-columns: 40% 30% 30%;
-    padding: 0px;
-    border: 0px solid red;
-    margin: 0px;
-    font-weight: bold;
-    margin-bottom: 1em;
-}
-
-.experience-info > p {
-    padding: 0px;
-    border: 0px solid red;
-    margin: 0px;
-
-}
-
-.experience-highlight-block {
-    padding: 0px;
-    border: 0px solid red;
-    margin: 0px;
-}
-
-.experience-highlight {
-    padding: 0px;
-    border: 0px solid red;
-    margin: 0px;
-    font-weight: bold;
-}
-
-.experience-highlight > p {
-    padding: 0px;
-    padding-top: 0.3em;
-    border: 0px solid red;
-    margin: 0px;
-}
-
-.skills-block {
-    margin-top: 2em;
-}
-
-.skills-class {
-    font-weight: bold;
-    line-height: 1.3em;
-    padding-top: 0.3em;
-}
-
-
-.course-block {
-    margin-top: 2em;
-    line-height: 1.3em;
-}
-
-.course-degree {
-    font-weight: bold;
 }
 
 
@@ -249,19 +243,22 @@
 /*<cv block*/
 
 
+
+
 /*>life record*/
 
 .life-record {
-    border: 0.1em solid rgb(235, 241, 241);
-    border-top: 0.3em solid rgb(128, 128, 128);
-    border-bottom: 0.2em dashed gray;
+    border: 0.1em solid rgba(235, 241, 241, 0.85);
+    border-top: 0.3em solid rgba(128, 128, 128, 0.5);
+    border-bottom: 0.2em dashed rgba(128, 128, 128, 0.8);
     margin: 0px;
 
 }
 
 .life-record-wrapper {
-    margin-left: 2em;
-    margin-right: 2em;
+    padding: 0px;
+    border: 0px solid red;
+    margin: 0px;
 }
 
 .life-title {
@@ -269,10 +266,11 @@
     border: 0px solid gray;
     border-top: 0px solid gray;
     margin: 0px;
-    margin-top: 2em;
+    margin-top: 1.5em;
+    margin-bottom: 1em;
 }
 
-.life-title>p {
+.life-title > p {
     text-align: center;
     font-size: 1.3em;
     font-weight: bold;
@@ -281,47 +279,28 @@
 .life-head {
     padding: 0px;
     border: 0px solid red;
-    margin-top: 0.1em;
     margin-bottom: 1em;
-}
-
-.head-rowf {
-    display: inline-block;
-}
-
-.hrf1 {
-    text-align: left;
-    width: 7%;
-    background: rgb(227, 239, 230);
-}
-
-.hrf2 {
-    text-align: center;
-    width: 46%;
-    background: rgb(224, 231, 238);
-}
-
-.hrf3 {
-    text-align: center;
-    width: 47%;
-    background-color: rgb(236, 239, 219);
+    display: grid;
+    align-items: stretch;
+    justify-items: stretch;
+    grid-template-columns: 80px 1fr 1fr;
 }
 
 #hrf1c {
-    display: inline-block;
     color: rgb(22, 94, 22);
+    background-color: rgba(191, 204, 188, 0.507);
     font-weight: bold;
 }
 
 #hrf2c {
-    display: inline-block;
     color: rgb(39, 132, 172);
+    background-color: rgba(166, 187, 204, 0.473);
     font-weight: bold;
 }
 
 #hrf3c {
-    display: inline-block;
     color: rgb(89, 89, 17);
+    background-color: rgba(154, 170, 132, 0.521);
     font-weight: bold;
 }
 
@@ -333,65 +312,62 @@
 
 .body-row {
     display: grid;
-    grid-template-columns: 7% 46% 47%;
-    grid-template-rows: auto;
+    grid-template-columns: 80px 1fr 1fr;
     padding: 0px;
     border-left: 0.2em solid rgb(17, 125, 66);
     margin: 0px;
     align-items: center;
-}
-.body-rowf {
-    display: inline-block;
+    justify-items: stretch;
 }
 
 .brf1 {
-    text-align: left;
     grid-column: 1;
+    margin-top: 0.5em;
+    margin-bottom: 0.5em;
+}
+
+.brf1c {
+    text-align: left;
     color: rgb(31, 134, 31);
 }
 
-.brf1 span {
-    display: inline-block;
-    padding: 0.2em;
-    padding-left: 0.3em;
-    margin: 1.1em;
-    margin-left: 0em;
-}
-
 .brf2 {
-    text-align: left;
     grid-column: 2;
-    color: rgb(58, 108, 148);
+    margin-top: 0.5em;
+    margin-bottom: 0.5em;
 }
 
-.brf2 span {
-    display: inline-block;
-    padding: 0.4em;
+.brf2c {
+    padding: 0.8em;
     padding-left: 0.6em;
     border: 0.1em solid rgb(123, 132, 56);
     border-left: 0.2em solid rgb(134, 152, 40);
     border-radius: 0.3em;
-    margin: 1em;
-    text-align: justify;
+    margin: 0px;
+    margin-right: 1em;
+    
+    color: rgb(58, 108, 148);
+    text-align: left;
 }
 
 .brf3 {
-    text-align: left;
     grid-column: 3;
-    color: rgb(88, 88, 24);
+    margin-top: 0.5em;
+    margin-bottom: 0.5em;
 }
 
-.brf3 span {
-    display: inline-block;
-    padding: 0.4em;
+.brf3c {
+    padding: 0.8em;
     padding-left: 0.6em;
-    border: 0.1em solid rgb(12, 72, 156);
-    border-left: 0.2em solid rgb(25, 108, 177);
+    border: 0.1em solid rgb(75, 106, 192);
+    border-left: 0.2em solid rgb(43, 122, 187);
     border-radius: 0.3em;
-    margin: 1em;
-    text-align: justify;
+    margin: 0px;
+    margin-right: 1em;
+    
+    color: rgb(21, 70, 33);
+    text-align: left;
 }
 
 /*<<<life record*/
 
-/*<main css*/
