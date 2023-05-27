@@ -50,6 +50,7 @@ header {
         padding-bottom: 0;
         border: 0px solid red;
         margin: 0 auto;
+        box-sizing: content-box;
 
         display: grid;
         grid-template-columns: 50% 50%;
@@ -112,6 +113,7 @@ header {
         padding-bottom: 0;
         border: 0px solid red;
         margin: 0 auto;
+        box-sizing: content-box;
 
         display: grid;
         grid-template-columns: 50% 50%;
@@ -173,6 +175,7 @@ header {
         padding: 1em;
         border: 0px solid red;
         margin: 0 auto;
+        box-sizing: content-box;
 
         display: grid;
         grid-template-rows: auto auto auto;
