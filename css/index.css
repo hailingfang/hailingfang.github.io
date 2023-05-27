@@ -131,7 +131,7 @@ header {
     .header-wrapper {
         padding: 1em;
         max-width: 50em;
-        margin: 0 atuo;
+        margin: 0 auto;
 
         display: grid;
         grid-template-rows: 60% 40%;
