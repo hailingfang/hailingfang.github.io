@@ -193,6 +193,7 @@ main {
         border: 0px solid red;
         max-width: 60em;
         margin: 0 auto;
+        box-sizing: content-box;
 
         display: grid;
         grid-template-rows: auto auto;
@@ -264,6 +265,7 @@ main {
         border: 0px solid red;
         max-width: 50em;
         margin: 0 auto;
+        box-sizing: content-box;
 
         display: grid;
         grid-template-rows: auto auto;
@@ -382,8 +384,8 @@ main {
         padding-left: 1.6em;
         border: 0px solid red;
         margin: 1em;
-        margin-left: 3em;
-        margin-right: 3em;
+        margin-left: 2em;
+        margin-right: 2em;
         background-color: rgb(220, 220, 220);
         border-radius: 0.5em;
     }
