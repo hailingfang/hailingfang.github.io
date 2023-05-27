@@ -81,7 +81,7 @@ header {
     .header-wrapper {
         padding: 1em;
         border: 0 solid red;
-        max-width: 60em;
+        max-width: 55em;
         margin: 0 auto;
 
         display: grid;
@@ -130,8 +130,9 @@ header {
 @media (width < 768px) or (aspect-ratio < 1/1.5) {
     .header-wrapper {
         padding: 1em;
-        max-width: 50em;
+        max-width: 45em;
         margin: 0 auto;
+        box-sizing: content-box;
 
         display: grid;
         grid-template-rows: 60% 40%;
@@ -261,7 +262,7 @@ main {
         padding-left: 1.5em;
         padding-right: 1.5em;
         border: 0px solid red;
-        max-width: 60em;
+        max-width: 50em;
         margin: 0 auto;
 
         display: grid;
@@ -332,8 +333,9 @@ main {
         padding-left: 1.5em;
         padding-right: 1.5em;
         border: 0px solid red;
-        max-width: 50em;
+        max-width: 40em;
         margin: 0 auto;
+        box-sizing: content-box;
 
         display: grid;
         grid-template-rows: auto auto;
@@ -453,6 +455,7 @@ progress::-moz-progress-bar {
         border: 0px solid red;
         max-width: 65em;
         margin: 0 auto;
+        box-sizing: content-box;
 
         display: grid;
         grid-template-columns: 50% 50%;
@@ -484,8 +487,9 @@ progress::-moz-progress-bar {
     .footer-wrapper {
         padding: 1em;
         border: 0px solid red;
-        max-width: 60em;
+        max-width: 55em;
         margin: 0 auto;
+        box-sizing: content-box;
 
         display: grid;
         grid-template-columns: 50% 50%;
@@ -517,8 +521,9 @@ progress::-moz-progress-bar {
     .footer-wrapper {
         padding: 1em;
         border: 0px solid red;
-        max-width: 55em;
+        max-width: 45em;
         margin: 0 auto;
+        box-sizing: content-box;
         
         display: grid;
         grid-template-columns: 100%;
