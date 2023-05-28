@@ -1,0 +1,29 @@
+.main-wrapper {
+    padding: 0 1em;
+    border: 0;
+    margin: 0px auto;
+
+    max-width: 60em;
+
+    display: flex;
+    flex-direction: column;
+
+    justify-items: stretch;
+    gap: 1em;
+}
+
+
+.sects figure {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+}
+
+#scheimg {
+    max-width: 80%;
+}
+
+#weblogimg {
+    max-width: 65%;
+}
