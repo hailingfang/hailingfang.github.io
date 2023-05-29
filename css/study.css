@@ -6,35 +6,25 @@
     max-width: 60em;
 
     display: grid;
-    grid-template-columns: auto 1fr;
+    grid-template-rows: auto auto;
     gap: 1em;
 
 }
 
 .main-nav {
 
-    grid-column: 1;
-    align-self: start;
-
-    max-width: 13em;
+    grid-row: 1;
 
     padding: 0;
     border: 0;
     margin: 0;
-    margin-top: 3em;
 
 
-    display: flex;
-    flex-direction: column;
-    align-items: stretch;
 
-    position: sticky;
-    top: 0;
 
 }
 
 .short-intro {
-    flex: 5em;
 
     padding: 0;
     border: 1px solid rgba(64, 75, 88, 0.555);
@@ -66,7 +56,7 @@
 
 .nav-lb {
 
-    padding: 1em 0;
+    padding: 0.5em 0;
     border: 3px solid rgb(18, 53, 82);
     margin: 3px 0;
     border-radius: 3px;
@@ -87,7 +77,7 @@
 }
 
 .view-window {
-    grid-column: 2;
+    grid-row: 2;
     justify-self: stretch;
 
     background-color: rgb(111, 139, 163);
