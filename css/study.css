@@ -7,7 +7,7 @@
 
     display: grid;
     grid-template-rows: auto auto;
-    gap: 1em;
+    gap: 0.2em;
 
 }
 
@@ -18,47 +18,22 @@
     padding: 0;
     border: 0;
     margin: 0;
-
-
-
-
-}
-
-.short-intro {
-
-    padding: 0;
-    border: 1px solid rgba(64, 75, 88, 0.555);
-    margin: 0;
-    border-radius: 3px;
+    position: relative;
+    top: -2em;
 
 }
 
-.intro {
-    padding: 1.5em;
-    border: 0;
-    margin: 0;
-    text-align: justify;
-    line-height: 1.2em;
-}
+.nav-labels {
+    display: flex;
 
-#doc-intro {
-    display: block;
 }
-
-#learn-intro {
-    display: none;
-}
-
-#research-intro {
-    display: none;
-}
- 
 
 .nav-lb {
-
-    padding: 0.5em 0;
-    border: 3px solid rgb(18, 53, 82);
-    margin: 3px 0;
+    flex: 1;
+    
+    padding: 0.4em 0;
+    border: 1px solid rgb(50, 87, 117);
+    margin: 2px 0;
     border-radius: 3px;
 
     text-align: center;
@@ -76,40 +51,16 @@
 
 }
 
+
 .view-window {
     grid-row: 2;
     justify-self: stretch;
 
-    background-color: rgb(111, 139, 163);
     padding: 0;
     border: 0;
     margin: 0;
-
-
 }
 
-.articles {
-    display: flex;
-    flex-direction: column;
-
-}
-
-#darts {
-    display: flex;
-}
-
-#larts {
-    display: none;
-}
-
-#rarts {
-    display: none;
-}
-
-
-.arts-class {
-    margin-bottom: 3em;
-}
 
 @media (width >= 1024px) and (aspect-ratio >= 1/1.5) {}
 @media (width < 1024px) and (width >= 768px) and (aspect-ratio >= 1/1.5) {}
