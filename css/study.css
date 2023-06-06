@@ -63,10 +63,16 @@
 
 .section-block {
     padding: 0;
-    border: 1px solid black;
+    border: 0px solid black;
     margin: 0;
 
     border-radius: 3px;
+
+}
+
+.section-block a {
+    color: blue;
+    text-decoration: underline;
 
 }
 
@@ -74,6 +80,8 @@
     font-size: 1.8em;
     
 }
+
+
 
 @media (width >= 1024px) and (aspect-ratio >= 1/1.5) {}
 @media (width < 1024px) and (width >= 768px) and (aspect-ratio >= 1/1.5) {}
