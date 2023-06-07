@@ -238,7 +238,7 @@
     margin-left: 1em;
     margin-right: 1em;
     margin-bottom: 0.5em;
-    line-height: 1.3em;
+    line-height: 1.5em;
     font-size: 1.1em;
 }
 
@@ -260,6 +260,7 @@
     border: 0px solid red;
     margin: 0px;
     margin-bottom: 3em;
+    line-height: 1.3em;
 }
 
 .cv-block-head {
@@ -281,11 +282,11 @@
     padding: 0px;
     border: 0px solid red;
     margin-left: 1em;
-    margin-right: 1.2em;
+    margin-right: 1.25em;
 }
 
 .cv-entry {
-    margin-bottom: 2em;
+    margin-bottom: 2.5em;
 }
 
 .cv-entry-head {
@@ -294,7 +295,12 @@
     margin: 0px;
     margin-bottom: 1.2em;
     font-weight: bold;
-    font-size: 1.1em;
+    font-size: 1.12em;
+    color: rgb(30, 76, 145);
+}
+
+.cv-entry-head a {
+    color: rgb(31, 89, 128);
 }
 
 .cv-entry-expand {
@@ -304,8 +310,8 @@
     border: 0px solid red;
     margin: 0px;
     font-weight: bold;
+    font-size: 1.1em;
     margin-bottom: 1em;
-    color: rgb(16, 52, 99);
     
 }
 
@@ -315,10 +321,13 @@
     margin: 0px;
 }
 
+
+
 .cv-entry-sup-head {
     font-style: italic;
     font-size: 1.1em;
-    color: rgb(27, 28, 29);
+    font-weight: bold;
+    color: rgb(25, 47, 70);
 }
 
 .cv-entry-sup-info {
@@ -332,6 +341,12 @@
     
 }
 
+.cv-entry-sup-info a {
+
+    color: rgb(54, 54, 163);
+    text-decoration: underline;
+
+}
 
 .publication-info {
     margin-top: 2em;
