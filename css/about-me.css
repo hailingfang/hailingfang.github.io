@@ -295,7 +295,7 @@
     margin: 0px;
     margin-bottom: 1.2em;
     font-weight: bold;
-    font-size: 1.12em;
+    font-size: 1.2em;
     color: rgb(30, 76, 145);
 }
 
@@ -364,6 +364,11 @@
     font-style: italic;
     text-decoration: underline;
 }
+
+.pub-contribution p:first-child {
+    font-weight: bold;
+}
+
 
 /*<cv block*/
 
