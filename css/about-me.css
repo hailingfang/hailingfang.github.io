@@ -235,8 +235,8 @@
     border: 0px solid red;
     margin: 0px;
     text-align: justify;
-    margin-left: 1em;
-    margin-right: 1em;
+    margin-left: 0em;
+    margin-right: 0em;
     margin-bottom: 0.5em;
     line-height: 1.5em;
     font-size: 1.1em;
@@ -281,8 +281,8 @@
 .cv-block-body {
     padding: 0px;
     border: 0px solid red;
-    margin-left: 1em;
-    margin-right: 1.25em;
+    margin-left: 0.5em;
+    margin-right: 0.3em;
 }
 
 .cv-entry {
@@ -335,7 +335,7 @@
     padding: 0px;
     border: 0px solid red;
     margin: 0px;
-    margin-left: 1em;
+    margin-left: 0.15em;
     margin-bottom: 0.5em;
     line-height: 1.3em;
     text-align: justify;
