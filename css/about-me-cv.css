@@ -36,7 +36,7 @@ footer {
     grid-template-rows: auto auto auto auto;
     align-items: stretch;
     justify-items: stretch;
-    gap: 2em;
+    gap: 1.6em;
 }
 
 
@@ -110,14 +110,13 @@ footer {
 /*>*/
 .cv-block-wrapper {
     grid-row: 3;
-
 }
 
 .cv-block {
     padding: 0px;
     border: 0px solid red;
     margin: 0px;
-    margin-bottom: 3em;
+    margin-bottom: 2.4em;
     line-height: 1.3em;
 }
 
@@ -133,7 +132,7 @@ footer {
     border-bottom: 0.1em solid rgba(71, 82, 85, 0.5);
     margin: 0px;
     border-top-left-radius: 0.8em;
-    margin-bottom: 1.2em;
+    margin-bottom: 1em;
 }
 
 .cv-block-body {
@@ -144,14 +143,14 @@ footer {
 }
 
 .cv-entry {
-    margin-bottom: 2em;
+    margin-bottom: 1.6em;
 }
 
 .cv-entry-head {
     padding: 0px;
     border: 0px solid red;
     margin: 0px;
-    margin-bottom: 1.2em;
+    margin-bottom: 1em;
     font-weight: bold;
     font-size: 1.2em;
     color: rgb(30, 76, 145);
@@ -163,7 +162,7 @@ footer {
 
 .cv-entry-expand {
     display: grid;
-    grid-template-columns: 40% 30% 30%;
+    grid-template-columns: 53% 25% 22%;
     padding: 0em;
     border: 0px solid red;
     margin: 0px;
