@@ -70,7 +70,6 @@
 
 /*<myinfo*/
 
-
 }
 
 @media (width < 1024px) and (width >= 768px) and (aspect-ratio >= 1/1.5) {
@@ -219,6 +218,9 @@
 }
 
 
+#websiteurl {
+    display: none;
+}
 
 
 /*>myprofile*/
