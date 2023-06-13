@@ -357,8 +357,13 @@
     text-align: justify;
 }
 
+.pub-name {
+    font-size: 1.05em;
+
+}
+
 .pub-contribution {
-    margin-top: 1em;
+    margin-top: 0.8em;
 }
 
 .publication-info a {
