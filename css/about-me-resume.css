@@ -245,3 +245,7 @@ footer {
 #education .cv-entry-supplementary {
     display: none;
 }
+
+.cv-entry-sup-info.second-para {
+    display: none;
+}
