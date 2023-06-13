@@ -3,6 +3,8 @@ function change_css_to_cv() {
     my_css_link.setAttribute("href", "css/about-me-cv.css");
     const my_photo = document.querySelector("#myphoto img");
     my_photo.setAttribute("src", "imgs/fanghl_1inch.jpg");
+    const tilte = document.querySelector("head title");
+    tilte.textContent = "CV-Benjami-Fang";
 }
 
 
@@ -11,6 +13,8 @@ function change_css_to_resume() {
     my_css_link.setAttribute("href", "css/about-me-resume.css");
     const my_photo = document.querySelector("#myphoto img");
     my_photo.setAttribute("src", "imgs/fanghl_1inch.jpg");
+    const tilte = document.querySelector("head title");
+    tilte.textContent = "resume-Benjami-Fang";
 }
 
 
