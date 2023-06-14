@@ -65,6 +65,7 @@
     padding: 0;
     border: 0px solid black;
     margin: 0;
+    margin-bottom: 2em;
 
     border-radius: 3px;
 
@@ -81,7 +82,14 @@
     
 }
 
+.document-list li {
 
+    font-size: 1.1em;
+    padding: 0;
+    border: 0;
+    margin-bottom: 0.5em;
+
+}
 
 @media (width >= 1024px) and (aspect-ratio >= 1/1.5) {}
 @media (width < 1024px) and (width >= 768px) and (aspect-ratio >= 1/1.5) {}
