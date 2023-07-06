@@ -259,6 +259,18 @@ header {
     
 }
 
+
+#page-lang {
+    position: absolute;
+    right: 0.5em;
+    top: 0.4em;
+    border: 0;
+    border-radius: 3px;
+    color: rgb(228, 233, 235);
+    background-color: #394c75;
+}
+
+
 /*<header*/
 
 
