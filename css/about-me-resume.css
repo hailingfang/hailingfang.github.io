@@ -246,3 +246,7 @@ footer {
 .cv-entry-sup-info.second-para {
     display: none;
 }
+
+#personal-summary .cv-block-body {
+    text-align: justify;
+}
