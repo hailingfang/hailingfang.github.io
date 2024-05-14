@@ -8,33 +8,253 @@ body {
     height: 100%;
     display: grid;
     grid-template-rows: auto 1fr auto;
+
     font-size: 100%;
     font-family: MessinaSans, Lato, Helvetica, Arial, sans-serif;
-    background-color: #fafafa;
+    background-color: #edeef0;
     padding: 0px;
     border: 0px solid red;
     margin: 0px;
    
 }
 
+p {
+    padding: 0;
+    border: 0;
+    margin: 0;
+}
+
+h1 {
+    padding: 0;
+    border: 0;
+    margin: 0;
+    font-size: 1em;
+    font-weight: normal;
+    font-style: normal;
+}
+
+h2 {
+    padding: 0;
+    border: 0;
+    margin: 0;
+    font-size: 1em;
+    font-weight: normal;
+    font-style: normal;
+}
+
+/*header>*/
 header {
-    width: 100;
+    background-color: rgb(33, 33, 34);
+    padding: 0;
+    border: 0px solid red;
+    margin: 0;
+    min-height: 10em;
+    display: grid;
+    grid-template-columns: 2fr 5fr;
+
+}
+
+header p {
+    color: #fefefe;
+}
+
+.header-left {
     padding: 0;
     border: 0;
     margin: 0;
     display: grid;
-    grid-template-columns: 1 1 4;
+    grid-template-columns: 1fr 2fr;
 }
 
+#logo {
+    display: grid;
+    align-items: center;
+    justify-items: center;
+}
+#logo img {
+    max-width: 50%;
+}
+
+#my-name {
+    display: grid;
+    align-items: center;
+    justify-items: left;
+}
+
+#my-name p {
+    font-size: 2.3em;
+}
+
+.header-right {
+    display: grid;
+    align-items: center;
+    justify-items: stretch;
+}
+
+#nav-main {
+    display: grid;
+    align-items: center;
+    justify-items: stretch;
+    margin-right: 3em;
+}
+
+.nav-list {
+    display: grid;
+    grid-template-columns: 1fr 1fr 1fr 1fr 1fr;
+    align-items: center;
+    justify-items: left;
+}
+
+.nav-list p {
+    font-size: 1.3em;
+    background-color: rgb(13, 13, 13);
+    padding: .7em 0;
+    border: 0;
+    margin-right: 0;
+    min-width: 92%;
+    text-align: center;
+
+}
+
+.nav-list p:hover {
+    background-color: rgb(63, 63, 63);
+}
+/*<header*/
 
 
-
+/*main>*/
 main {
+    background-color: rgb(242, 242, 242);
+    padding: 1em;
+    border: 0px solid red;
+    margin: 0;
+    min-height: 40em;
+    display: grid;
+    grid-template-columns: 2fr 5fr;
+    align-items: stretch;
+    justify-items: stretch;
+}
 
+#main-left {
+    padding: 1em;
+    border-right: 1px solid rgb(44, 44, 44);
+    margin: 0;
+}
+
+#main-right {
+    border: 0px solid red;
+    padding: 1em;
+    border: 0;
+    margin-right: 3em;
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    grid-template-rows: auto;
+}
+
+.main-left-title {
+    font-size: 1.7em;
+    padding: 1em;
+    border: 0;
+    margin-left: 1em;
+}
+
+.main-left-content {
+    font-size: 1.2em;
+    padding: 1em;
+    border: 0;
+    margin-left: .5em;
+    text-align: justify;
+}
+
+.main-left-footer {
+    font-size: 1.2em;
+    padding: 1em;
+    border: 0;
+    margin-left: .5em;
 
 }
 
+.sticker {
+    background-color: rgb(222, 222, 222);
+    padding: 2em;
+    border: 1px solid rgb(178, 200, 209);
+    border-radius: 10px;
+    /*box-shadow: 1px 1px 5px 3px rgb(190, 193, 194);*/
+    margin: 2.5em;
+}
+
+.sticker-title {
+    font-size: 1.5em;
+    font-weight: bold;
+}
+
+.sticker-content {
+    font-size: 1.3em;
+    padding: 1em;
+    border: 0;
+    margin-left: .3em;
+}
+/*<main*/
+
+
+/*footer>*/
 footer {
-
+    background-color: rgb(36, 38, 39);
+    padding: 1em;
+    border: 0px solid red;
+    margin: 0;
+    min-height: 10em;
+    display: grid;
+    grid-template-columns: 2fr 5fr;
 
 }
+
+footer p {
+    color: #ffffff;
+}
+
+.footer-left {
+    padding: 0;
+    padding-left: 2em;
+    border-right: 0px solid rgb(211, 202, 202);
+    margin: 0;
+    display: grid;
+    grid-template-rows: 1fr 3fr;
+    align-items: center;
+}
+
+.footer-right {
+    padding-left: 1em;
+    border: 0;
+    margin: 0;
+    margin-right: 3em;
+    display: grid;
+    grid-template-rows: 4fr 1fr;
+    align-items: center;
+}
+
+footer ul {
+    padding: 0px;
+    list-style-type: none;
+    margin: 0px;
+
+}
+
+footer ul li {
+    padding-top: 0.5em;
+    padding-bottom: 0.5em;
+}
+
+footer a { 
+    text-decoration:  none;
+    color: #fafafa;
+}
+
+.copyrights {
+    justify-self: baseline;
+} 
+
+#timelabel {
+    color: white;
+}
+/*<footer*/

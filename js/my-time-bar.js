@@ -10,4 +10,4 @@ let left = (preend - now_dt)/(1000 * 3600 * 24);
 mytime.max = passed + left;
 mytime.value = left;
 
-mylabel.textContent = "My Time " + "(" + left.toFixed(0) + "|" + passed.toFixed(0) + ")";
+mylabel.textContent = "[" + left.toFixed(0) + "|" + passed.toFixed(0) + "] ";
