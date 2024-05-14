@@ -1,3 +1,9 @@
+body {
+    height: 100%;
+    display: grid;
+    grid-template-rows: auto 1fr auto;
+}
+
 .main-left-title {
     font-size: 1.7em;
     padding: 1em;

@@ -5,17 +5,12 @@ html {
 }
 
 body {
-    height: 100%;
-    display: grid;
-    grid-template-rows: auto 1fr auto;
-
     font-size: 100%;
     font-family: MessinaSans, Lato, Helvetica, Arial, sans-serif;
     background-color: #edeef0;
     padding: 0px;
     border: 0px solid red;
     margin: 0px;
-   
 }
 
 p {
@@ -48,7 +43,7 @@ header {
     padding: 0;
     border: 0px solid red;
     margin: 0;
-    min-height: 8em;
+    min-height: 7em;
     display: grid;
     grid-template-columns: 2fr 5fr;
 
@@ -141,9 +136,13 @@ main {
     padding: 1em;
     border-right: 1px solid rgb(44, 44, 44);
     margin: 0;
+
 }
 
-
+.fixed-nav {
+    position: sticky;
+    top: 20px;
+}
 
 #main-right {
     border: 0px solid red;
