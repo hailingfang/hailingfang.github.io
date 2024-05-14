@@ -143,28 +143,7 @@ main {
     margin: 0;
 }
 
-.main-left-title {
-    font-size: 1.7em;
-    padding: 1em;
-    border: 0;
-    margin-left: 1em;
-}
 
-.main-left-content {
-    font-size: 1.2em;
-    padding: 1em;
-    border: 0;
-    margin-left: .5em;
-    text-align: justify;
-}
-
-.main-left-footer {
-    font-size: 1.2em;
-    padding: 1em;
-    border: 0;
-    margin-left: .5em;
-
-}
 
 #main-right {
     border: 0px solid red;
@@ -178,26 +157,7 @@ main {
     padding-right: 4em;
 }
 
-.sticker {
-    background-color: rgb(222, 222, 222);
-    padding: 2em;
-    border: 1px solid rgb(178, 200, 209);
-    border-radius: 10px;
-    /*box-shadow: 1px 1px 5px 3px rgb(190, 193, 194);*/
-    margin: 2em;
-}
 
-.sticker-title {
-    font-size: 1.5em;
-    font-weight: bold;
-}
-
-.sticker-content {
-    font-size: 1.3em;
-    padding: 1em;
-    border: 0;
-    margin-left: .3em;
-}
 /*<main*/
 
 
