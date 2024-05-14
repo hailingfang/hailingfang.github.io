@@ -224,7 +224,7 @@ footer ul {
 
 footer ul li {
     padding-top: 0.5em;
-    padding-bottom: 0.3em;
+    padding-bottom: 0.25em;
 }
 
 footer a { 
@@ -256,13 +256,17 @@ footer a {
 }
 
 .mylink {
-    padding: 0;
+    padding: .5em;
     border: 0;
     margin: 0;
 }
 
 #timelabel {
     color: white;
+}
+
+.copyrights {
+    align-self: baseline;
 }
 
 /*<footer*/
