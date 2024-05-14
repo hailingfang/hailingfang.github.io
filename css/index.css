@@ -1,4 +1,4 @@
-    @charset "utf-8";
+@charset "utf-8";
 
 html {
     height: 100%;
@@ -23,7 +23,8 @@ header {
     border: 0px solid red;
     margin: 0px;
     margin-bottom: 2em;
-    background-color: rgb(8, 27, 59);
+    background-color: rgb(33, 33, 33);
+    min-height: 10em;
 }
 
 
