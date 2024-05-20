@@ -1,11 +1,9 @@
-
-
 @media (width >= 1024px) and (aspect-ratio >= 1/1.5) {
     .main-wrapper {
-        max-width: 60em;
+        max-width: 75em;
         padding: 0px;
-        padding-left: 1em;
-        padding-right: 1em;
+        padding-left: 2em;
+        padding-right: 2em;
         border: 0px solid red;
         margin: 0 auto;
         box-sizing: content-box;
