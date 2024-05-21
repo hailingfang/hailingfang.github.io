@@ -145,7 +145,7 @@ main {
     justify-items: stretch;
 }
 
-#main-left {
+.main-left {
     padding: 1em;
     border-right: 1px solid rgb(99, 99, 99);
     margin: 0;
