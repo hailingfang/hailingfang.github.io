@@ -4,33 +4,27 @@ html {
     height: 100%;
 }
 
-p {
+p,
+a,
+h1,
+h2 {
     padding: 0;
     border: 0;
     margin: 0;
 }
 
 a {
-    padding: 0;
-    border: 0;
-    margin: 0;
     text-decoration:  none;
 }
 
 h1 {
-    padding: 0;
-    border: 0;
-    margin: 0;
-    font-size: 1em;
+    font-size: 1rem;
     font-weight: normal;
     font-style: normal;
 }
 
 h2 {
-    padding: 0;
-    border: 0;
-    margin: 0;
-    font-size: 1em;
+    font-size: 1rem;
     font-weight: normal;
     font-style: normal;
 }
