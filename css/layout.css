@@ -103,13 +103,13 @@ header p {
     display: grid;
     align-items: center;
     justify-items: stretch;
-    margin-right: 3em;
+    margin-right: 5em;
 
 }
 
 .nav-list {
     display: grid;
-    grid-template-columns: 1fr 1fr 1fr 1fr 1fr;
+    grid-template-columns: 1fr 1fr 1fr 1fr;
     align-items: center;
     justify-items: stretch;
 }
@@ -119,10 +119,10 @@ header p {
     background-color: rgb(13, 13, 13);
     padding: .7em 0;
     border: 0;
-    margin-right: 3px;
+    margin-right: 9px;
     min-width: 92%;
     text-align: center;
-    border-radius: 1px;
+    border-radius: 3px;
 
 }
 
@@ -146,7 +146,7 @@ main {
 }
 
 .main-left {
-    padding: 1em;
+    padding: 0;
     border-right: 1px solid rgb(99, 99, 99);
     margin: 0;
 
@@ -157,7 +157,7 @@ main {
     border: 0px solid red;
     padding: 1em;
     border: 0;
-    margin-right: 3em;
+    margin-right: 5em;
     display: grid;
     grid-template-columns: 1fr 1fr;
     grid-template-rows: auto;
