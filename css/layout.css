@@ -43,16 +43,10 @@ header {
     border: 0;
     margin: 0;
     min-height: 7em;
-
-
-}
-
-header > div {
-    padding: 0;
-    border: 0;
-    margin: 0;
     display: grid;
     grid-template-columns: 2fr 5fr;
+    align-items: center;
+    justify-items: stretch;
 }
 
 header p {
@@ -63,6 +57,12 @@ header p {
     padding: 0;
     border: 0;
     margin: 0;
+    display: grid;
+    align-items: stretch;
+    justify-items: stretch;
+}
+
+.logo {
     display: grid;
     grid-template-columns: 1fr 2fr;
 }
@@ -136,7 +136,7 @@ header p {
 main {
     background-color: rgb(242, 242, 242);
     padding: 1em 0;
-    border: 0px solid red;
+    border: 0;
     margin: 0;
     min-height: 40em;
     display: grid;
@@ -147,22 +147,19 @@ main {
 
 .main-left {
     padding: 0;
-    border-right: 1px solid rgb(99, 99, 99);
     margin: 0;
-
+    display: grid;
+    align-items: stretch;
+    justify-items: stretch;
 }
 
-
-#main-right {
-    border: 0px solid red;
-    padding: 1em;
+.main-right {
+    padding: 0;
     border: 0;
-    margin-right: 5em;
+    margin: 0;
     display: grid;
-    grid-template-columns: 1fr 1fr;
-    grid-template-rows: auto;
-    padding-left: 4em;
-    padding-right: 4em;
+    align-items: stretch;
+    justify-items: stretch;
 }
 /*<main*/
 
@@ -200,25 +197,40 @@ footer a {
 
 .footer-left {
     padding: 0;
+    border: 0;
+    margin: 0;
+    display: grid;
+    align-items: stretch;
+    justify-items: stretch;
+}
+
+.footer-b1 {
+    padding: 1em 0;
     padding-left: 2em;
-    padding-top: 1em;
-    border-right: 0px solid rgb(211, 202, 202);
+    padding-bottom: .1em;
+    border: 0;
     margin: 0;
     display: grid;
     grid-template-rows: 3fr 1fr;
-
 }
 
 .footer-right {
     padding: 0;
-    padding-left: 2em;
-    padding-top: 1em;
     border: 0;
     margin: 0;
-    margin-right: 3em;
+    display: grid;
+    align-items: stretch;
+    justify-items: stretch;
+}
+
+.footer-b2 {
+    padding: 1em 0;
+    padding-left: 2em;
+    padding-bottom: .1em;
+    border: 0;
+    margin: 0;
     display: grid;
     grid-template-columns: 1fr 1fr;
-
 }
 
 .mylink {
