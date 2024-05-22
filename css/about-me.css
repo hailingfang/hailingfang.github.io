@@ -2,8 +2,7 @@
     .side-nav {
         position: sticky;
         top: 20px;
-        padding-left: 1em;
-        border: 0;
+        padding: 1em;
         margin-left: 2em;
     }
 
@@ -35,7 +34,7 @@
         margin-bottom: .3em;
     }
 
-    .main-wrapper {
+    .main-content {
         max-width: 75em;
         padding: 0px;
         padding-left: 2em;
