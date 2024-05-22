@@ -4,8 +4,19 @@ body {
     grid-template-rows: auto 1fr auto;
 }
 
+.main-left {
+    display: grid;
+    align-items: stretch;
+    justify-items: stretch;
+}
+
+.main-right {
+    display: grid;
+    align-items: stretch;
+    justify-items: stretch;
+}
+
 .side-nav {
-    border-right: 1px solid rgb(99, 99, 99);
     padding: 1em;
 }
 
