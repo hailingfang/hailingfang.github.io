@@ -80,3 +80,14 @@
 @media (width < 1024px) and (width >= 768px) and (aspect-ratio >= 1/1.5) {
 
 }
+
+@media (width < 768px) or (aspect-ratio < 1/1.5) {
+    .main-content {
+        display: grid;
+        grid-template-columns: auto;
+        grid-template-rows: auto    ;
+        padding: 1em;
+        align-items: stretch;
+        justify-items: stretch;
+    }
+}

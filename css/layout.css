@@ -109,6 +109,7 @@ header p {
 .nav-list {
     display: grid;
     grid-template-columns: 1fr 1fr 1fr 1fr;
+    grid-template-rows: auto;
     align-items: center;
     justify-items: stretch;
 }
@@ -131,12 +132,15 @@ header p {
 
 @media (width >= 1024px) and (aspect-ratio >= 1/1.5) {
     header {
-        display: grid;
-        grid-template-columns: 2fr 5fr;
+        display: grid;  
+        grid-template-columns: 2fr 7fr;
         align-items: center;
         justify-items: stretch;
     }
 
+    #logo-img img {
+        max-width: 60%;
+    }
 }
 
 @media (width < 1024px) and (width >= 768px) and (aspect-ratio >= 1/1.5) {
@@ -163,9 +167,49 @@ header p {
     #logo-img img {
         max-width: 100%;
     }
+
+    #nav-main {
+        margin-right: 3em;
+    }
+
+
 }
 
 @media (width < 768px) or (aspect-ratio < 1/1.5) {
+    header {
+        display: grid;
+        grid-template-rows: 1fr 1fr;
+        align-items: center;
+        justify-items: stretch;
+    }
+
+    .logo {
+        padding-top: 1em;
+        display: grid;
+        grid-template-columns: 1fr 10fr;
+    }
+    
+    #logo-img a {
+        display: grid;
+        align-items: center;
+        justify-items: left;
+    }
+
+    #logo-img img {
+        max-width: 100%;
+    }
+
+    .nav-list {
+        display: grid;
+        grid-template-rows: 1fr 1fr 1fr 1fr;
+        grid-template-columns: auto;
+        align-items: center;
+        justify-items: stretch;
+    }
+
+    #nav-main {
+        margin-right: 0em;
+    }
 
 }
 
@@ -197,7 +241,7 @@ main {
 @media (width >= 1024px) and (aspect-ratio >= 1/1.5) {
     main {
         display: grid;
-        grid-template-columns: 2fr 5fr;
+        grid-template-columns: 2fr 7fr;
         align-items: stretch;
         justify-items: stretch;
     }
@@ -208,7 +252,6 @@ main {
 
     main {
         display: grid;
-        grid-template-rows: 1fr auto;
         align-items: center;
         justify-items: stretch;
     }
@@ -322,7 +365,7 @@ progress {
 @media (width >= 1024px) and (aspect-ratio >= 1/1.5) {
     footer {
         display: grid;
-        grid-template-columns: 2fr 5fr;
+        grid-template-columns: 2fr 7fr;
     }
 
 }
