@@ -1,74 +1,82 @@
-body {
-    height: 100%;
-    display: grid;
-    grid-template-rows: auto 1fr auto;
+    
+    .main-left {
+        display: grid;
+        align-items: stretch;
+        justify-items: stretch;
+    }
+    
+    .main-right {
+        display: grid;
+        align-items: stretch;
+        justify-items: stretch;
+    }
+    
+    .side-nav {
+        padding: 1em;
+    }
+    
+    .main-left-title {
+        font-size: 1.7em;
+        font-weight: bold;
+        padding: 1em;
+        border: 0;
+        margin-left: 1em;
+    }
+    
+    .main-left-content {
+        font-size: 1.2em;
+        padding: 1em;
+        border: 0;
+        margin-left: .5em;
+        text-align: justify;
+    }
+    
+    .main-left-footer {
+        font-size: 1.2em;
+        padding: 1em;
+        border: 0;
+        margin-left: .5em;
+    
+    }
+    
+    .main-content {
+        display: grid;
+        grid-template-columns: 1fr 1fr;
+        padding: 1em;
+        align-items: stretch;
+        justify-items: stretch;
+    }
+    
+    .sticker {
+        background-color: rgb(222, 222, 222);
+        padding: 2em;
+        border: 1px solid rgb(178, 200, 209);
+        border-radius: 10px;
+        /*box-shadow: 1px 1px 5px 3px rgb(190, 193, 194);*/
+        margin: 3em;
+    }
+    
+    .sticker-title {
+        font-size: 1.5em;
+        font-weight: bold;
+    }
+    
+    .sticker-content {
+        font-size: 1.3em;
+        padding: 1em;
+        border: 0;
+        margin-left: .3em;
+    }
+
+@media (width >= 1024px) and (aspect-ratio >= 1/1.5) {
+    body {
+        height: 100%;
+        display: grid;
+        grid-template-rows: auto 1fr auto;
+    }
+
 }
 
-.main-left {
-    display: grid;
-    align-items: stretch;
-    justify-items: stretch;
-}
+@media (width < 1024px) and (width >= 768px) and (aspect-ratio >= 1/1.5) {
 
-.main-right {
-    display: grid;
-    align-items: stretch;
-    justify-items: stretch;
-}
-
-.side-nav {
-    padding: 1em;
-}
-
-.main-left-title {
-    font-size: 1.7em;
-    font-weight: bold;
-    padding: 1em;
-    border: 0;
-    margin-left: 1em;
-}
-
-.main-left-content {
-    font-size: 1.2em;
-    padding: 1em;
-    border: 0;
-    margin-left: .5em;
-    text-align: justify;
-}
-
-.main-left-footer {
-    font-size: 1.2em;
-    padding: 1em;
-    border: 0;
-    margin-left: .5em;
-
-}
-
-.main-content {
-    display: grid;
-    grid-template-columns: 1fr 1fr;
-    padding: 1em;
-    align-items: stretch;
-    justify-items: stretch;
-}
-
-.sticker {
-    background-color: rgb(222, 222, 222);
-    padding: 2em;
-    border: 1px solid rgb(178, 200, 209);
-    border-radius: 10px;
-    /*box-shadow: 1px 1px 5px 3px rgb(190, 193, 194);*/
-    margin: 3em;
-}
-
-.sticker-title {
-    font-size: 1.5em;
-    font-weight: bold;
-}
-
-.sticker-content {
-    font-size: 1.3em;
-    padding: 1em;
-    border: 0;
-    margin-left: .3em;
 }
