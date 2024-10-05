@@ -1,4 +1,4 @@
-# Personal website of Benjamin Fang
+# Personal website
 
 This is my personal static website which is hosted on Github.
 
