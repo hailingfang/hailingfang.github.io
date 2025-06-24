@@ -18,7 +18,7 @@
         <link rel="icon" href="/imgs/favicon.png">
         <link href="/css/vendor/bootstrap.min.css" rel="stylesheet">
         <link rel="stylesheet" href="/css/layout.css">
-        <!--link rel="stylesheet" href="/css/index.css"-->
+        <link rel="stylesheet" href="css/about-me.css">
         <!--script src="/js/my-time-bar.js" defer></script-->
         <!--script src="/js/highlight-nav.js" defer></script-->
     </head>
@@ -43,26 +43,19 @@
         <main>
             <div class="main-left">
                 <div class="side-nav">
-                    <div class="main-left-title">
+                    <div class="nav-title">
                         <p id="page-title">About Me</p>
                         <p id="page-slogan">Know and Solve</p>
                     </div>
-                    <div class="main-left-content">
+                    <div class="nav-contents">
                         <ul class="side-nav-l1">
-                            <li><a href="#myinfo">My Profile</a></li>
-                                <ul class="side-nav-l2">
-                                    <li>Education</li>
-                                    <li>Experience</li>
-                                    <li>Projects</li>
-                                    <li>Skills</li>
-                                    <li>Courses</li>
-                                    <li>Rewards</li>
-                                    <li>Publications</li>
-                                </ul>
-                            <li><a href="#my-timeline">My Timeline</a></li>
+                            <li><a href="#contact">Contact</a></li>
+                            <li><a href="#profile">Profile</a></li>
+                            <li><a href="#cv">CV</a></li>
+                            <li><a href="#timeline">Timeline</a></li>
                         </ul>
                     </div>
-                    <div class="main-left-footer">
+                    <div class="nav-footer">
                         <button id="print-cv-button">Print CV</button>
                         <button id="print-resume-button">Print resume</button>
                     </div>
@@ -71,36 +64,28 @@
 
             <div class="main-right">
                 <div class="main-content">
-                    <div id="myinfo">
-                        <div id="keyinfo">
-                            <div>
-                                <p class="infoline">
-                                    <span>Name</span><span>: </span><span>方海岭 | Fang Hailing</span>
-                                </p>
+                    <div id="contact">
+                        <div id="contact-info">
+                            <div class="infoline">
+                                <span>Name</span><span>: </span><span>方海岭 | Fang Hailing</span>
                             </div>
-                            <div>
-                                <p class="infoline">
-                                    <span>Birthday</span><span>: </span><span>3rd Oct. 1992</span>
-                                </p>
+                            <div class="infoline">
+                                <span>Birthday</span><span>: </span><span>3rd Oct. 1992</span>
                             </div>
-                            <div>
-                                <p class="infoline">
-                                    <span>Email</span><span>: </span><span id="email-address">benjaminfang.ol@outlook.com</span>
-                                </p>
+                            <div class="infoline">
+                                <span>Email</span><span>: </span><span id="email-address">benjaminfang.ol@outlook.com</span>
                             </div>
-                            <div>
-                                <p class="infoline">
-                                    <span>Phone</span><span>: </span><span>18811321192</span>
-                                </p>
+                            <div class="infoline">
+                                <span>Phone</span><span>: </span><span>18811321192</span>
                             </div>
                         </div>
-                        <div id="myphoto">
-                            <img src="imgs/Lewis.png" alt="my photo">
+                        <div id="photo">
+                            <img src="./imgs/Lewis.png" alt="my photo" width="460" height="460">
                         </div>
                     </div>
         
         
-                    <div id="myprofile">
+                    <div id="profile">
                         <p>My name is Fang Hailing, and I was born in 1992 in Shandong
                             province of China.
                         </p>
@@ -133,26 +118,23 @@
                     </div>
         
         
-                    <div class="cv-block-wrapper">
+                    <div id="cv">
                         <div class="cv-block" id="education">
                             <p class="cv-block-head">Education</p>
                             <div class="cv-block-body">
-        
                                 <div class="cv-entry" id="DOC">
                                     <div class="cv-entry-head">
                                         <p>Doctor of Science in Biology</p>
                                     </div>
                                     <div class="cv-entry-expand">
                                         <p class="edu-univ">Shandong University</p>
-                                        <p class="edu-date">09/2024 - present</p>
+                                        <p class="edu-date">09/2024 - 07/2025</p>
                                         <p class="edu-city">Qindao, CN</p>
                                     </div>
                                     <div class="cv-entry-supplementary">
                                         <p class="cv-entry-sup-head"></p>
-                                        <p class="cv-entry-sup-info thesis-title">
-                                        </p>
-                                        <p class="cv-entry-sup-info thesis-summary">
-                                        </p>
+                                        <p class="cv-entry-sup-info thesis-title">Quite the doctorate project on July 1, 2025.</p>
+                                        <p class="cv-entry-sup-info thesis-summary"></p>
                                     </div>
                                 </div>
 
@@ -241,8 +223,7 @@
                                     </div>
                                     <div class="cv-entry-supplementary">
                                         <p class="cv-entry-sup-head">Works:</p>
-                                        <p class="cv-entry-sup-info">I primarily serve as a supporter in bioinformatics for other members of the lab.
-                                            </p>
+                                        <p class="cv-entry-sup-info">I primarily serve as a supporter in bioinformatics for other members of the lab.</p>
                                     </div>
                                 </div>
         
@@ -526,8 +507,6 @@
                         <div class="cv-block" id="rewards">
                             <p class="cv-block-head">Rewards</p>
                             <div class="cv-block-body">
-        
-        
                                 <div class="cv-entry">
                                     <div class="cv-entry-supplementary">
                                         <p class="cv-entry-sup-head">Graduate:</p>
@@ -548,7 +527,6 @@
         
                             </div>
                         </div>
-        
         
                         <div class="cv-block" id="publications">
                             <p class="cv-block-head">Publications</p>
@@ -635,8 +613,6 @@
                             </div>
                         </div>
         
-        
-        
                         <div class="cv-block" id="personal-summary">
                             <p class="cv-block-head">Personal Summary</p>
                             <div class="cv-block-body">
@@ -650,47 +626,53 @@
                                 </p>
                             </div>
                         </div>
-        
                     </div>
         
-                    <div class="life-record" id="my-timeline">
+                    <div class="life-record" id="timeline">
                         <div class="life-record-wrapper">
                             <div class="life-title">
-                                <p>My Timeline</p>
+                                <p>Timeline</p>
                             </div>
-        
                             <div class="life-head">
                                 <div id="hrf1c" class="head-field">Timeline</div>
                                 <div id="hrf2c" class="head-field">Milestone</div>
                                 <div id="hrf3c" class="head-field">Highlight</div>
                             </div>
-        
                             <div class="life-body">
+                                <div class="body-row">
+                                    <div class="brf1"><p class="brf1c">&#151;2028</p></div>
+                                    <div class="brf2"></div>
+                                    <div class="brf3"></div>
+                                </div>
+                                <div class="body-row">
+                                    <div class="brf1"></div>
+                                    <div class="brf2"><p class="brf2c">On 1st July, 2025, I quite the doctorate project.</p></div>
+                                    <div class="brf3"></div>
+                                </div>
+
+
                                 <div class="body-row">
                                     <div class="brf1"><p class="brf1c">&#151;2025</p></div>
                                     <div class="brf2"></div>
                                     <div class="brf3"></div>
                                 </div>
-        
-        
                                 <div class="body-row">
                                     <div class="brf1"></div>
                                     <div class="brf2"><p class="brf2c">On 3nd October, 2024, I turned 32 years old. Version 33, Littlewonder.</p></div>
                                     <div class="brf3"></div>
                                 </div>
-
                                 <div class="body-row">
                                     <div class="brf1"></div>
                                     <div class="brf2"><p class="brf2c">On 3nd October, 2023, I turned 31 years old. Version 32, Softwind.</p></div>
                                     <div class="brf3"></div>
                                 </div>
-        
                                 <div class="body-row">
                                     <div class="brf1"></div>
                                     <div class="brf2"><p class="brf2c">On 3nd October, 2022, I turned 30 years old. Version 31, Circleend.</p></div>
                                     <div class="brf3"></div>
                                 </div>
-        
+
+                                
                                 <div class="body-row">
                                     <div class="brf1"><p class="brf1c">&#151;2022</p></div>
                                     <div class="brf2"></div>
@@ -721,6 +703,8 @@
                                     <div class="brf2"><p class="brf2c">On October 3rd, 2019, I turned 28 years old. Version 29.</p></div>
                                     <div class="brf3"></div>
                                 </div>
+
+
                                 <div class="body-row">
                                     <div class="brf1"><p class="brf1c">&#151;2019</p></div>
                                     <div class="brf2"></div>
@@ -747,6 +731,13 @@
                                     <div class="brf2"><p class="brf2c">On October 3rd, 2016, I was 27 years old. Version 28.</p></div>
                                     <div class="brf3"></div>
                                 </div>
+
+
+                                <div class="body-row">
+                                    <div class="brf1"><p class="brf1c">&#151;2016</p></div>
+                                    <div class="brf2"></div>
+                                    <div class="brf3"></div>
+                                </div>
                                 <div class="body-row">
                                     <div class="brf1"></div>
                                     <div class="brf2"></div>
@@ -757,6 +748,8 @@
                                     <div class="brf2"><p class="brf2c">In July 2015, I graduated from IMU and went to Beijing Normal University in the same year.</p></div>
                                     <div class="brf3"><p class="brf3c">Got my bachelor degree.</p></div>
                                 </div>
+
+
                                 <div class="body-row">
                                     <div class="brf1"><p class="brf1c">&#151;2013</p></div>
                                     <div class="brf2"></div>
@@ -782,6 +775,8 @@
                                     <div class="brf2"><p class="brf2c">In Oct 2010, I was 18 years old.</p></div>
                                     <div class="brf3"></div>
                                 </div>
+
+
                                 <div class="body-row">
                                     <div class="brf1"><p class="brf1c">&#151;2010</p></div>
                                     <div class="brf2"></div>
@@ -797,6 +792,8 @@
                                     <div class="brf2"><p class="brf2c">In 2008, I went to high school.</p></div>
                                     <div class="brf3"></div>
                                 </div>
+
+
                                 <div class="body-row">
                                     <div class="brf1"><p class="brf1c">&#151;2007</p></div>
                                     <div class="brf2"></div>
@@ -817,6 +814,8 @@
                                     <div class="brf2"></div>
                                     <div class="brf3"><p class="brf3c">In 6th grade, I received my first academic award for achieving a good grade in math.</p></div>
                                 </div>
+
+
                                 <div class="body-row">
                                     <div class="brf1"><p class="brf1c">&#151;2004</p></div>
                                     <div class="brf2"></div>
@@ -832,6 +831,8 @@
                                     <div class="brf2"></div>
                                     <div class="brf3"><p class="brf3c">In 3rd grade, I rolled down a hill and injured my right wrist. I was very ill, but I survived.</p></div>
                                 </div>
+
+
                                 <div class="body-row">
                                     <div class="brf1"><p class="brf1c">&#151;2001</p></div>
                                     <div class="brf2"></div>
@@ -842,16 +843,22 @@
                                     <div class="brf2"><p class="brf2c">In September 1999, I went to primary school.</p></div>
                                     <div class="brf3"></div>
                                 </div>
+
+
                                 <div class="body-row">
                                     <div class="brf1"><p class="brf1c">&#151;1998</p></div>
                                     <div class="brf2"></div>
                                     <div class="brf3"></div>
                                 </div>
+
+
                                 <div class="body-row">
                                     <div class="brf1"><p class="brf1c">&#151;1995</p></div>
                                     <div class="brf2"></div>
                                     <div class="brf3"></div>
                                 </div>
+
+                                
                                 <div class="body-row">
                                     <div class="brf1"><p class="brf1c">&#151;1992</p></div>
                                     <div class="brf2"><p class="brf2c">I was born on October 3rd, 1992.</p></div>
