@@ -1,3 +1,7 @@
+#about-me {
+    background-color: rgb(63, 65, 68);
+}
+
 .side-nav {
     position: sticky;
     top: 3em;
@@ -80,8 +84,9 @@
 }
 
 #contact {
-    padding: 0px;
+    padding: 1em 0em;
     border: 0px;
+    border-bottom: 2px solid rgba(49, 46, 46, 0.466);
     display: grid;
     grid-template-columns: 7.5fr 2.5fr;
     align-items: stretch;
@@ -147,7 +152,7 @@
     margin-right: 0em;
     margin-bottom: 0.5em;
     line-height: 1.5em;
-    font-size: 1.1em;
+    font-size: 1.2em;
 }
 
 
