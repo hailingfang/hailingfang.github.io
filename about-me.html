@@ -12,894 +12,863 @@
 
         <meta charset="utf-8">
         <meta name="viewport" content="width=device-width, initial-scale=1">
-        <meta name="description" content="My Profile, CV and Life Milestones.">
+        <meta name="author" content="Hailing Fang">
+        <meta name="description" content="My website is designed to showcase and document various aspects of my life, including my profile, studies, and documentation.">
         <title>Hailing Fang</title>
-        <link rel="icon" href="imgs/favicon.png">
-        <link href="css/vendor/bootstrap.min.css" rel="stylesheet">
-        <link rel="stylesheet" href="css/layout.css">
-        <link rel="stylesheet" href="css/about-me.css">
+        <link rel="icon" href="/imgs/favicon.png">
+        <link href="/css/vendor/bootstrap.min.css" rel="stylesheet">
+        <link rel="stylesheet" href="/css/layout.css">
+        <!--link rel="stylesheet" href="/css/index.css"-->
+        <!--script src="/js/my-time-bar.js" defer></script-->
+        <!--script src="/js/highlight-nav.js" defer></script-->
     </head>
-<body>
-    <header>
-        <div class="header-left">
-            <div class="logo">
+    <body>
+        <header>
+            <div class="header-left">
                 <div id="logo-img">
-                    <a href="index.html"><img src="imgs/logo-fanghl.png" alt="web-logo"></a>
+                    <a href="/index.html"><img src="/imgs/logo-fanghl.png" alt="web-logo" width="100" height="100"></a>
                 </div>
                 <div id="logo-name">
-                    <a href="index.html"><p>Hailing Fang</p></a>
+                    <a href="/index.html">Hailing Fang</a>
                 </div>
             </div>
-        </div>
-        <div class="header-right">
-            <nav id="nav-main">
-                <div class="nav-list">
-                    <a href="about-me.html"><p id="about-me">About Me</p></a>
-                    <a href="study.html"><p id="study">Study</p></a>
-                    <a href="life.html"><p id="life">Life</p></a>
-                    <a href="https://docs-benjaminfang.readthedocs.io"><p id="documentation">Documentation</p></a>
-                </div>
+            <nav class="header-right">
+                <a href="/about-me/index.html">About Me</a>
+                <a href="/life/index.html">Life</a>
+                <a href="/study/index.html">Study</a>
+                <a href="documentation.html">Documentation</a>
             </nav>
-        </div>
-    </header>
+        </header>
 
-    <main>
-        <div class="main-left">
-            <div class="side-nav">
-                <div class="main-left-title">
-                    <p id="page-title">About Me</p>
-                    <p id="page-slogan">Know and Solve</p>
-                </div>
-                <div class="main-left-content">
-                    <ul class="side-nav-l1">
-                        <li><a href="#myinfo">My Profile</a></li>
-                            <ul class="side-nav-l2">
-                                <li>Education</li>
-                                <li>Experience</li>
-                                <li>Projects</li>
-                                <li>Skills</li>
-                                <li>Courses</li>
-                                <li>Rewards</li>
-                                <li>Publications</li>
-                            </ul>
-                        <li><a href="#my-timeline">My Timeline</a></li>
-                    </ul>
-                </div>
-                <div class="main-left-footer">
-                    <button id="print-cv-button">Print CV</button>
-                    <button id="print-resume-button">Print resume</button>
+        <main>
+            <div class="main-left">
+                <div class="side-nav">
+                    <div class="main-left-title">
+                        <p id="page-title">About Me</p>
+                        <p id="page-slogan">Know and Solve</p>
+                    </div>
+                    <div class="main-left-content">
+                        <ul class="side-nav-l1">
+                            <li><a href="#myinfo">My Profile</a></li>
+                                <ul class="side-nav-l2">
+                                    <li>Education</li>
+                                    <li>Experience</li>
+                                    <li>Projects</li>
+                                    <li>Skills</li>
+                                    <li>Courses</li>
+                                    <li>Rewards</li>
+                                    <li>Publications</li>
+                                </ul>
+                            <li><a href="#my-timeline">My Timeline</a></li>
+                        </ul>
+                    </div>
+                    <div class="main-left-footer">
+                        <button id="print-cv-button">Print CV</button>
+                        <button id="print-resume-button">Print resume</button>
+                    </div>
                 </div>
             </div>
-        </div>
 
-        <div class="main-right">
-            <div class="main-content">
-                <div id="myinfo">
-                    <div id="keyinfo">
-                        <div>
-                            <p class="infoline">
-                                <span>Name</span><span>: </span><span>方海岭 | Fang Hailing</span>
-                            </p>
-                        </div>
-                        <div>
-                            <p class="infoline">
-                                <span>Birthday</span><span>: </span><span>3rd Oct. 1992</span>
-                            </p>
-                        </div>
-                        <div>
-                            <p class="infoline">
-                                <span>Email</span><span>: </span><span id="email-address">benjaminfang.ol@outlook.com</span>
-                            </p>
-                        </div>
-                        <div>
-                            <p class="infoline">
-                                <span>Phone</span><span>: </span><span>18811321192</span>
-                            </p>
-                        </div>
-                    </div>
-                    <div id="myphoto">
-                        <img src="imgs/Lewis.png" alt="my photo">
-                    </div>
-                </div>
-    
-    
-                <div id="myprofile">
-                    <p>My name is Fang Hailing, and I was born in 1992 in Shandong
-                        province of China.
-                    </p>
-                    <p>I study biology and  earned a Master of Science degree in
-                        Biology in 2018. My recent work focuses on computational
-                        biology, including biological data analysis and software development.
-                        I believe that computers are important tools for solving problems in biology.
-                        My interests include the origins of life, cellular mechanisms,
-                        the development of multicellular systems, and the nervous system.
-                        I have many other interests, however, I have chosen to focus on
-                        biology for now because life is short.
-                    </p>
-                    <p>I'm always curious about the world, and learning new things excites me.
-                        Applying what I've learned to solve real-world problems gives me 
-                        a sense of control over my life and the ability to make a positive 
-                        difference in the world. While having many interests may be a good 
-                        thing about me, it also poses a problem. It means that my time is split,
-                         and I need to balance it with my career. it challenging for me to sustain 
-                         my interest in things after gaining a general understanding of them, which 
-                         makes it difficult for me to persist and become deeply familiar with my 
-                         interests. I struggle with serious procrastination, and if I aim for perfection, 
-                         I may never even get started.
-                    </p>
-                    <p>I may be a good person and be just.  I prefer to work alone first 
-                        and then communicate my ideas with others. Although 
-                        I am introverted and hesitant to meet new people,
-                        I am talkative around my friends. Nonetheless, 
-                        I recognize that I still have a long way to go in getting 
-                        to know myself better.</p>
-                </div>
-    
-    
-                <div class="cv-block-wrapper">
-                    <div class="cv-block" id="education">
-                        <p class="cv-block-head">Education</p>
-                        <div class="cv-block-body">
-    
-                            <div class="cv-entry" id="DOC">
-                                <div class="cv-entry-head">
-                                    <p>Doctor of Science in Biology</p>
-                                </div>
-                                <div class="cv-entry-expand">
-                                    <p class="edu-univ">Shandong University</p>
-                                    <p class="edu-date">09/2024 - present</p>
-                                    <p class="edu-city">Qindao, CN</p>
-                                </div>
-                                <div class="cv-entry-supplementary">
-                                    <p class="cv-entry-sup-head"></p>
-                                    <p class="cv-entry-sup-info thesis-title">
-                                    </p>
-                                    <p class="cv-entry-sup-info thesis-summary">
-                                    </p>
-                                </div>
+            <div class="main-right">
+                <div class="main-content">
+                    <div id="myinfo">
+                        <div id="keyinfo">
+                            <div>
+                                <p class="infoline">
+                                    <span>Name</span><span>: </span><span>方海岭 | Fang Hailing</span>
+                                </p>
                             </div>
-
-                            <div class="cv-entry" id="MA">
-                                <div class="cv-entry-head">
-                                    <p>Master of Science in Biology</p>
-                                </div>
-                                <div class="cv-entry-expand">
-                                    <p class="edu-univ">Beijing Normal University</p>
-                                    <p class="edu-date">09/2015 - 07/2018</p>
-                                    <p class="edu-city">Beijing, CN</p>
-                                </div>
-                                <div class="cv-entry-supplementary">
-                                    <p class="cv-entry-sup-head">Thesis:</p>
-                                    <p class="cv-entry-sup-info thesis-title"><span>Title: </span> An analysis of codon bias between
-                                        intrinsically disordered regions and structural domains of 
-                                        orthologous single-copy genes
-                                        from human, chimpanzee and mouse genomes.
-                                    </p>
-                                    <p class="cv-entry-sup-info thesis-summary"><span>Summary: </span>
-                                        Codon bias, the unequal usage of synonymous codons, can significantly 
-                                        influence biological processes and organism fitness.
-                                        The project compared the codon bias of orthologous single-copy
-                                        genes in IDRs and SDs across the human, chimpanzee, and mouse genomes.
-                                        It also analyzed the characteristics of genes that showed different
-                                        codon bias between IDRs and SDs.
-                                        Our results indicated that about 3% of orthologous single-copy genes in human and
-                                        chimpanzee are significantly different in codon bias between IDRs and SDs, and about 1% in
-                                        mouse genome. There are 7 gene families in which each gene is an IDRs strong codon bias gene,
-                                        and 13 gene families in which each gene is an IDRs weak codon bias gene.
-                                        GO (Gene Ontology) and protein domains enrichment analysis show that there are no significantly GO terms and
-                                        structure domains was enriched within IDRs strong codon bias genes and genes that from gene
-                                        families in which each gene is an IDRs strong codon bias gene.
-                                        The protein domains enrichment results
-                                        show that the C2H2 zinc figure is significantly increased of IDRs weak codon genes of every
-                                        species. There is only C2H2 zinc figures were enriched within genes that from gene families in
-                                        which each gene is an IDRs weak codon bias gene, and more than 30% of those genes of every
-                                        species contain this structure.
-                                    </p>
-    
-                                </div>
+                            <div>
+                                <p class="infoline">
+                                    <span>Birthday</span><span>: </span><span>3rd Oct. 1992</span>
+                                </p>
                             </div>
-    
-                            <div class="cv-entry" id="BA">
-                                <div class="cv-entry-head">
-                                    <p>Bachelor of Science in Biotechnology</p>
-                                </div>
-                                <div class="cv-entry-expand">
-                                    <p class="edu-univ">Inner Mongolia University</p>
-                                    <p class="edu-date">09/2011 - 07/2015</p>
-                                    <p class="edu-city">Huhhot, CN</p>
-                                </div>
-                                <div class="cv-entry-supplementary">
-                                    <p class="cv-entry-sup-head">Paper:</p>
-                                    <p class="cv-entry-sup-info thesis-title"><span>Title: </span> Structure-function relationship analysis of 20
-                                        kinds of flavonoids of inhibiting HepG2 cell
-                                        proliferation.</p>
-                                    <p class="cv-entry-sup-info thesis-summary"><span>Summary: </span> Flavonoids is a kind of polyphenolic substances and distribute in vegetables and fruits
-                                        broadly. Flavonoids has wide biological activities, such as Antioxidant activity, antibacterial,
-                                        anti-inflammatory and anticancer. Flavonoids have different anticancer activity due to different
-                                        structure, The project compare the anti-proliferation activity of 20 kinds of flavonoids using CCK-8
-                                        method, and analyze structure-function by flavonoids’ anti-proliferation activity to find out the
-                                        important efficient structure. The research find that: flavones is more efficient than flavanones
-                                        flavanonols and flavonols indicating flavones’ basic structure is important to its anticancer
-                                        function, flavanones have weak anticancer function may be cause by losing of 23 doubly bond,
-                                        5’ have a group is important to its function, Phenyl B connect to 3 point is important. By the
-                                        way, two compound from Coralhead Plant Seed have not efficient function.
-                                    </p>
-     
-                                </div>
+                            <div>
+                                <p class="infoline">
+                                    <span>Email</span><span>: </span><span id="email-address">benjaminfang.ol@outlook.com</span>
+                                </p>
+                            </div>
+                            <div>
+                                <p class="infoline">
+                                    <span>Phone</span><span>: </span><span>18811321192</span>
+                                </p>
                             </div>
                         </div>
+                        <div id="myphoto">
+                            <img src="imgs/Lewis.png" alt="my photo">
+                        </div>
                     </div>
-    
-                    <div class="cv-block" id="experience">
-                        <p class="cv-block-head">Experience</p>
-                        <div class="cv-block-body">
-                            <div class="cv-entry" id="westlake">
-                                <div class="cv-entry-head">
-                                    <p>Research Assistant</p>
-                                </div>
-                                <div class="cv-entry-expand">
-                                    <p>Shao Lab, Shandong University</p>
-                                    <p>09/2023 - 08/2024</p>
-                                    <p>Qingdao, CN</p>
-                                </div>
-                                <div class="cv-entry-supplementary">
-                                    <p class="cv-entry-sup-head">Works:</p>
-                                    <p class="cv-entry-sup-info">I primarily serve as a supporter in bioinformatics for other members of the lab.
+        
+        
+                    <div id="myprofile">
+                        <p>My name is Fang Hailing, and I was born in 1992 in Shandong
+                            province of China.
+                        </p>
+                        <p>I study biology and  earned a Master of Science degree in
+                            Biology in 2018. My recent work focuses on computational
+                            biology, including biological data analysis and software development.
+                            I believe that computers are important tools for solving problems in biology.
+                            My interests include the origins of life, cellular mechanisms,
+                            the development of multicellular systems, and the nervous system.
+                            I have many other interests, however, I have chosen to focus on
+                            biology for now because life is short.
+                        </p>
+                        <p>I'm always curious about the world, and learning new things excites me.
+                            Applying what I've learned to solve real-world problems gives me 
+                            a sense of control over my life and the ability to make a positive 
+                            difference in the world. While having many interests may be a good 
+                            thing about me, it also poses a problem. It means that my time is split,
+                            and I need to balance it with my career. it challenging for me to sustain 
+                            my interest in things after gaining a general understanding of them, which 
+                            makes it difficult for me to persist and become deeply familiar with my 
+                            interests. I struggle with serious procrastination, and if I aim for perfection, 
+                            I may never even get started.
+                        </p>
+                        <p>I may be a good person and be just.  I prefer to work alone first 
+                            and then communicate my ideas with others. Although 
+                            I am introverted and hesitant to meet new people,
+                            I am talkative around my friends. Nonetheless, 
+                            I recognize that I still have a long way to go in getting 
+                            to know myself better.</p>
+                    </div>
+        
+        
+                    <div class="cv-block-wrapper">
+                        <div class="cv-block" id="education">
+                            <p class="cv-block-head">Education</p>
+                            <div class="cv-block-body">
+        
+                                <div class="cv-entry" id="DOC">
+                                    <div class="cv-entry-head">
+                                        <p>Doctor of Science in Biology</p>
+                                    </div>
+                                    <div class="cv-entry-expand">
+                                        <p class="edu-univ">Shandong University</p>
+                                        <p class="edu-date">09/2024 - present</p>
+                                        <p class="edu-city">Qindao, CN</p>
+                                    </div>
+                                    <div class="cv-entry-supplementary">
+                                        <p class="cv-entry-sup-head"></p>
+                                        <p class="cv-entry-sup-info thesis-title">
                                         </p>
+                                        <p class="cv-entry-sup-info thesis-summary">
+                                        </p>
+                                    </div>
                                 </div>
-                            </div>
-     
-                            <div class="cv-entry" id="westlake">
-                                <div class="cv-entry-head">
-                                    <p>Research Assistant</p>
+
+                                <div class="cv-entry" id="MA">
+                                    <div class="cv-entry-head">
+                                        <p>Master of Science in Biology</p>
+                                    </div>
+                                    <div class="cv-entry-expand">
+                                        <p class="edu-univ">Beijing Normal University</p>
+                                        <p class="edu-date">09/2015 - 07/2018</p>
+                                        <p class="edu-city">Beijing, CN</p>
+                                    </div>
+                                    <div class="cv-entry-supplementary">
+                                        <p class="cv-entry-sup-head">Thesis:</p>
+                                        <p class="cv-entry-sup-info thesis-title"><span>Title: </span> An analysis of codon bias between
+                                            intrinsically disordered regions and structural domains of 
+                                            orthologous single-copy genes
+                                            from human, chimpanzee and mouse genomes.
+                                        </p>
+                                        <p class="cv-entry-sup-info thesis-summary"><span>Summary: </span>
+                                            Codon bias, the unequal usage of synonymous codons, can significantly 
+                                            influence biological processes and organism fitness.
+                                            The project compared the codon bias of orthologous single-copy
+                                            genes in IDRs and SDs across the human, chimpanzee, and mouse genomes.
+                                            It also analyzed the characteristics of genes that showed different
+                                            codon bias between IDRs and SDs.
+                                            Our results indicated that about 3% of orthologous single-copy genes in human and
+                                            chimpanzee are significantly different in codon bias between IDRs and SDs, and about 1% in
+                                            mouse genome. There are 7 gene families in which each gene is an IDRs strong codon bias gene,
+                                            and 13 gene families in which each gene is an IDRs weak codon bias gene.
+                                            GO (Gene Ontology) and protein domains enrichment analysis show that there are no significantly GO terms and
+                                            structure domains was enriched within IDRs strong codon bias genes and genes that from gene
+                                            families in which each gene is an IDRs strong codon bias gene.
+                                            The protein domains enrichment results
+                                            show that the C2H2 zinc figure is significantly increased of IDRs weak codon genes of every
+                                            species. There is only C2H2 zinc figures were enriched within genes that from gene families in
+                                            which each gene is an IDRs weak codon bias gene, and more than 30% of those genes of every
+                                            species contain this structure.
+                                        </p>
+        
+                                    </div>
                                 </div>
-                                <div class="cv-entry-expand">
-                                    <p>Yang Lab, Westlake University</p>
-                                    <p>03/2021 - 03/2023</p>
-                                    <p>Hangzhou, CN</p>
-                                </div>
-                                <div class="cv-entry-supplementary">
-                                    <p class="cv-entry-sup-head">Works:</p>
-                                    <p class="cv-entry-sup-info">My main responsibility
-                                        in the lab is to manage data. The volume of
-                                        data is at the petabyte level,
-                                        so I am responsible for ensuring
-                                        the integration of the data and backing it up.
-                                        I also download data for members of the lab.
-                                        Additionally, I assist group members with
-                                        software installation and provide technical
-                                        support for issues such as Linux usage,
-                                        software bugs, and network problems.
-                                        I am also one of the maintainers of the
-                                        lab's software and website. In addition,
-                                        I participate in some of the lab's projects
-                                        and assist with software development.</p>
-                                </div>
-                            </div>
-                        
-                            <div class="cv-entry" id="freework">
-                                <div class="cv-entry-head">
-                                    <p>Freelance</p>
-                                </div>
-                                <div class="cv-entry-expand">
-                                    <p>Home</p>
-                                    <p>10/2019 - 02/2021</p>                            
-                                    <p>Yantai, CN</p>
-                                </div>
-                                <div class="cv-entry-supplementary">
-                                    <p class="cv-entry-sup-head">Things:</p>
-                                    <p class="cv-entry-sup-info">I visited Yantai,
-                                        a beautiful coastal city,
-                                        where I took some time to relax
-                                        and also carried out my learning plan.
-                                        This plan included studying computer systems,
-                                        networks, and mathematics.
-                                        Additionally,
-                                        I even had the chance to learn the basics of
-                                         skateboarding while I was there.</p>
-                                </div>
-                            </div>
-                        
-                            <div class="cv-entry" id="imcas">
-                                <div class="cv-entry-head">
-                                    <p>Research Assistant</p>
-                                </div>
-                                <div class="cv-entry-expand">
-                                    <p>Feng Lab, Institute of Microbiology, CAS</p>
-                                    <p>07/2018 - 10/2019</p>
-                                    <p>Beijing, CN</p>
-                                </div>
-                                <div class="cv-entry-supplementary">
-                                    <p class="cv-entry-sup-head">Works:</p>
-                                    <p class="cv-entry-sup-info">This is my first job,
-                                        and my main responsibility here is to offer technical
-                                        support and software development.
-                                        I also have the opportunity to participate in some projects.
-                                        This job allows me to apply what I learned in college and gain
-                                        new knowledge, such as the phylogenetics of microbiology.
-                                        Additionally, I also went to the Shenzhen CDC to participate
-                                        in a project aimed at improving the quality of hospital services.</p>
-                                </div>
-                            </div>     
-                        </div>
-                    </div>
-    
-    
-                    <div class="cv-block" id="projects">
-                        <p class="cv-block-head">Projects</p>
-                        <div class="cv-block-body">
-    
-                            <div class="cv-entry" id="flml">
-                                <div class="cv-entry-head">
-                                    <p><a href="https://github.com/benjaminfang/documentation">FLML (File Layout Markup Language)</a></p>
-                                </div>
-                                <div class="cv-entry-supplementary">
-                                    <p class="cv-entry-sup-head">Status:</p>
-                                    <p class="cv-entry-sup-info">Ongoing, active.</p>
-                                </div>
-    
-                                <div class="cv-entry-supplementary">
-                                    <p class="cv-entry-sup-head">Background and Targets:</p>
-                                    <p class="cv-entry-sup-info">In my work in software
-                                        development, I often need to parse files,
-                                        which can be either binary or plaintext.
-                                        To understand the structure and content of
-                                        these files, I typically refer to documentation
-                                        in the form of descriptive text or tables that
-                                        outline the meaning of each field and its
-                                        associated data type.
-                                        My goal is to create an easy-to-use and
-                                        accurate markup language that can be
-                                        used to describe the layout of both binary
-                                        and plaintext files.
-                                        Once I have designed this language,
-                                        I plan to use it to document commonly
-                                        used file formats in the biological field
-                                        and other areas. The docs of this project is 
-                                        located at
-                                        <a href="https://github.com/benjaminfang/documentation">file-format</a>.
-                                    </p>
-                                </div>
-    
-                                <div class="cv-entry-supplementary">
-                                    <p class="cv-entry-sup-head">Progress:</p>
-                                    <p class="cv-entry-sup-info"> A draft version of
-                                        the language has been written, and three file
-                                        formats have been documented using this language.
-                                        However, the language still needs a lot of
-                                        revision and improvement. Please see
-                                        <a href="https://docs-benjaminfang.readthedocs.io/en/latest/file-format/index.html">My Documentation</a> for details.
-                                    </p>
-                                </div>
-                            </div>
-                        
-                            <div class="cv-entry" id="gwastools">
-                                <div class="cv-entry-head">
-                                    <p><a href="https://github.com/benjaminfang/gwastools">Gwastools</a></p>
-                                </div>
-    
-                                <div class="cv-entry-supplementary">
-                                    <p class="cv-entry-sup-head">Status:</p>
-                                    <p class="cv-entry-sup-info">Ongoing, active.</p>
-                                </div>
-    
-                                <div class="cv-entry-supplementary">
-                                    <p class="cv-entry-sup-head">Background and Targets:</p>
-                                    <p class="cv-entry-sup-info">Several file formats are commonly used to store GWAS related data,
-                                        including PLINK files, BGEN files, BAM files, and BESD files.
-                                        However, different software is required to perform operations
-                                        such as printing basic file information, extracting partial
-                                        data from files, and transforming binary data into plain text.
-                                        In addition, some of these software packages lack help messages
-                                        in the command line. Furthermore, some of the file formats lack
-                                        APIs for programming languages.
-                                        My project has two main objectives.
-                                        First, I aim to develop C libraries that
-                                        will contain the core functions necessary for
-                                        working with these file formats, as well as
-                                        Python APIs that can be used to interface with the
-                                        C libraries from Python. Second,
-                                        I plan to use these libraries to create a
-                                        software utility that can perform operations
-                                        on these files more easily. The repository is located
-                                        at <a href="https://github.com/benjaminfang/gwastools">gwastools</a>.</p>
-                                </div>
-    
-                                <div class="cv-entry-supplementary">
-                                    <p class="cv-entry-sup-head">Progress:</p>
-                                    <p class="cv-entry-sup-info">The C libraries for the
-                                        PLINK file and BOD have been completed.
-                                        However, more coding work and iterations
-                                        are needed to finalize this project.</p>
-                                </div>
-                            </div>
-                        
-                            <div class="cv-entry" id="biotools">
-                                <div class="cv-entry-head">
-                                    <p><a href="https://github.com/benjaminfang/biotools">Biotools</a></p>
-                                </div>
-    
-                                <div class="cv-entry-supplementary">
-                                    <p class="cv-entry-sup-head">Status:</p>
-                                    <p class="cv-entry-sup-info">Occasional.</p>
-                                </div>
-                                
-                                <div class="cv-entry-supplementary">
-                                    <p class="cv-entry-sup-head">Background and Targets:</p>
-                                    <p class="cv-entry-sup-info">I planned and carried out this
-                                        project during I worked at IMCAS. As my work continued,
-                                        I wrote numerous scripts and tools to fulfill my daily
-                                        work requirements, and some of the code I created is reusable.
-                                        In this project, I developed several Python classes to process
-                                        commonly used bioinformatics data.
-                                        Additionally, I collected several useful tools that I developed,
-                                        including those for phylogenetic tree building,
-                                        collapsing and clustering, and long repeated sequence calling,
-                                        and added them to this project. The code of for this project is on
-                                    <a href="https://github.com/benjaminfang/biotools">biotools</a>.</p>
-                                </div>
-    
-                                <div class="cv-entry-supplementary">
-                                    <p class="cv-entry-sup-head">Progress:</p>
-                                    <p class="cv-entry-sup-info">Classes for handling FASTA and GFF
-                                        data has been completed. And I have distributed them via PyPI
-                                        as a Python library named '<a href="https://pypi.org/project/biobrary/">biobrary</a>'.
-                                        I have integrated phylogenetic tree clustering and collapsing tools.
-                                        However, I still need to integrate the code for calling long
-                                        repeating sequences in genomes.</p>
-                                </div>
-                            </div>
-    
-                        </div>
-                    </div>
-    
-                    <div class="cv-block" id="skills">
-                        <p  class="cv-block-head">Skills</p>
-                        <div class="cv-block-body">
-                            <div class="cv-entry">
-                                <div class="cv-entry-supplementary">
-                                    <p class="cv-entry-sup-head">Biology:</p>
-                                    <p class="cv-entry-sup-info">Cell culture, Animal dissection, Bacterial culture, PCR analysis, Color spectrum.</p>
-                                    <p class="cv-entry-sup-info second-para">I acquired the skills during my undergraduate studies through theoretical and experimental classes, and I need to review and refresh my knowledge before using them.</p>
-                                </div>
-                            </div>
-    
-                            <div class="cv-entry">
-                                <div class="cv-entry-supplementary">
-                                    <p class="cv-entry-sup-head">Bioinformatics:</p>
-                                    <p class="cv-entry-sup-info">Genome assembly of microbio, Phylogenetic tree analysis.</p>
-                                    <p class="cv-entry-sup-info second-para">I acquired that knowledge during my graduate studies and subsequently through my work.</p>
-                                </div>
-                            </div>
-    
-                            <div class="cv-entry">
-                                <div class="cv-entry-supplementary">
-                                    <p class="cv-entry-sup-head">Computer:</p>
-                                    <p class="cv-entry-sup-info">Python and C Programming, Good user of linux systerm, Computer network, front-end web developing, Vector graph and raster graph mapulation.</p>
-                                    <p class="cv-entry-sup-info second-para">I have chosen Python and C as my programming languages
-                                        for my productive activities.
-                                        I use Python for daily system management tasks,
-                                        writing short scripts,
-                                        programming tools that don't require high efficiency,
-                                        and prototyping software.
-                                        I use C for programming when software requires high speed.
-                                        Mixing these two languages would be good practice for my future work.
-                                        Additionally, I am proficient in Linux and have used
-                                        it as my primary operating system for about five years.
-                                        I develop software and perform my daily tasks using this system.</p>
-                                </div>
-                            </div>
-                            <div class="cv-entry">
-                                <div class="cv-entry-supplementary">
-                                    <p class="cv-entry-sup-head">Language:</p>
-                                    <p class="cv-entry-sup-info">IELTS: 6</p>
+        
+                                <div class="cv-entry" id="BA">
+                                    <div class="cv-entry-head">
+                                        <p>Bachelor of Science in Biotechnology</p>
+                                    </div>
+                                    <div class="cv-entry-expand">
+                                        <p class="edu-univ">Inner Mongolia University</p>
+                                        <p class="edu-date">09/2011 - 07/2015</p>
+                                        <p class="edu-city">Huhhot, CN</p>
+                                    </div>
+                                    <div class="cv-entry-supplementary">
+                                        <p class="cv-entry-sup-head">Paper:</p>
+                                        <p class="cv-entry-sup-info thesis-title"><span>Title: </span> Structure-function relationship analysis of 20
+                                            kinds of flavonoids of inhibiting HepG2 cell
+                                            proliferation.</p>
+                                        <p class="cv-entry-sup-info thesis-summary"><span>Summary: </span> Flavonoids is a kind of polyphenolic substances and distribute in vegetables and fruits
+                                            broadly. Flavonoids has wide biological activities, such as Antioxidant activity, antibacterial,
+                                            anti-inflammatory and anticancer. Flavonoids have different anticancer activity due to different
+                                            structure, The project compare the anti-proliferation activity of 20 kinds of flavonoids using CCK-8
+                                            method, and analyze structure-function by flavonoids’ anti-proliferation activity to find out the
+                                            important efficient structure. The research find that: flavones is more efficient than flavanones
+                                            flavanonols and flavonols indicating flavones’ basic structure is important to its anticancer
+                                            function, flavanones have weak anticancer function may be cause by losing of 23 doubly bond,
+                                            5’ have a group is important to its function, Phenyl B connect to 3 point is important. By the
+                                            way, two compound from Coralhead Plant Seed have not efficient function.
+                                        </p>
+        
+                                    </div>
                                 </div>
                             </div>
                         </div>
-                    </div>
-                    
-                    <div class="cv-block" id="course">
-                        <p class="cv-block-head">Courses</p>
-                        <div class="cv-block-body">
+        
+                        <div class="cv-block" id="experience">
+                            <p class="cv-block-head">Experience</p>
+                            <div class="cv-block-body">
+                                <div class="cv-entry" id="westlake">
+                                    <div class="cv-entry-head">
+                                        <p>Research Assistant</p>
+                                    </div>
+                                    <div class="cv-entry-expand">
+                                        <p>Shao Lab, Shandong University</p>
+                                        <p>09/2023 - 08/2024</p>
+                                        <p>Qingdao, CN</p>
+                                    </div>
+                                    <div class="cv-entry-supplementary">
+                                        <p class="cv-entry-sup-head">Works:</p>
+                                        <p class="cv-entry-sup-info">I primarily serve as a supporter in bioinformatics for other members of the lab.
+                                            </p>
+                                    </div>
+                                </div>
+        
+                                <div class="cv-entry" id="westlake">
+                                    <div class="cv-entry-head">
+                                        <p>Research Assistant</p>
+                                    </div>
+                                    <div class="cv-entry-expand">
+                                        <p>Yang Lab, Westlake University</p>
+                                        <p>03/2021 - 03/2023</p>
+                                        <p>Hangzhou, CN</p>
+                                    </div>
+                                    <div class="cv-entry-supplementary">
+                                        <p class="cv-entry-sup-head">Works:</p>
+                                        <p class="cv-entry-sup-info">My main responsibility
+                                            in the lab is to manage data. The volume of
+                                            data is at the petabyte level,
+                                            so I am responsible for ensuring
+                                            the integration of the data and backing it up.
+                                            I also download data for members of the lab.
+                                            Additionally, I assist group members with
+                                            software installation and provide technical
+                                            support for issues such as Linux usage,
+                                            software bugs, and network problems.
+                                            I am also one of the maintainers of the
+                                            lab's software and website. In addition,
+                                            I participate in some of the lab's projects
+                                            and assist with software development.</p>
+                                    </div>
+                                </div>
                             
-                            <div class="cv-entry">
-                                <div class="cv-entry-supplementary">
-                                    <p class="cv-entry-sup-head">Graduate:</p>
-                                    <div class="cv-entry-sup-info">
-                                        <p>Protein Structure and Functions, Biochemistry and Moleculer Biology, Cell Skeleton, Advanced Cell Biology, Advanced Developmental Biology,</p>
-                                        <p>Bioinfomatics, Linux Operation System, Computational Biology(Perl and R Programming)</p>
+                                <div class="cv-entry" id="freework">
+                                    <div class="cv-entry-head">
+                                        <p>Freelance</p>
+                                    </div>
+                                    <div class="cv-entry-expand">
+                                        <p>Home</p>
+                                        <p>10/2019 - 02/2021</p>                            
+                                        <p>Yantai, CN</p>
+                                    </div>
+                                    <div class="cv-entry-supplementary">
+                                        <p class="cv-entry-sup-head">Things:</p>
+                                        <p class="cv-entry-sup-info">I visited Yantai,
+                                            a beautiful coastal city,
+                                            where I took some time to relax
+                                            and also carried out my learning plan.
+                                            This plan included studying computer systems,
+                                            networks, and mathematics.
+                                            Additionally,
+                                            I even had the chance to learn the basics of
+                                            skateboarding while I was there.</p>
+                                    </div>
+                                </div>
+                            
+                                <div class="cv-entry" id="imcas">
+                                    <div class="cv-entry-head">
+                                        <p>Research Assistant</p>
+                                    </div>
+                                    <div class="cv-entry-expand">
+                                        <p>Feng Lab, Institute of Microbiology, CAS</p>
+                                        <p>07/2018 - 10/2019</p>
+                                        <p>Beijing, CN</p>
+                                    </div>
+                                    <div class="cv-entry-supplementary">
+                                        <p class="cv-entry-sup-head">Works:</p>
+                                        <p class="cv-entry-sup-info">This is my first job,
+                                            and my main responsibility here is to offer technical
+                                            support and software development.
+                                            I also have the opportunity to participate in some projects.
+                                            This job allows me to apply what I learned in college and gain
+                                            new knowledge, such as the phylogenetics of microbiology.
+                                            Additionally, I also went to the Shenzhen CDC to participate
+                                            in a project aimed at improving the quality of hospital services.</p>
+                                    </div>
+                                </div>     
+                            </div>
+                        </div>
+        
+        
+                        <div class="cv-block" id="projects">
+                            <p class="cv-block-head">Projects</p>
+                            <div class="cv-block-body">
+        
+                                <div class="cv-entry" id="flml">
+                                    <div class="cv-entry-head">
+                                        <p><a href="https://github.com/benjaminfang/documentation">FLML (File Layout Markup Language)</a></p>
+                                    </div>
+                                    <div class="cv-entry-supplementary">
+                                        <p class="cv-entry-sup-head">Status:</p>
+                                        <p class="cv-entry-sup-info">Ongoing, active.</p>
+                                    </div>
+        
+                                    <div class="cv-entry-supplementary">
+                                        <p class="cv-entry-sup-head">Background and Targets:</p>
+                                        <p class="cv-entry-sup-info">In my work in software
+                                            development, I often need to parse files,
+                                            which can be either binary or plaintext.
+                                            To understand the structure and content of
+                                            these files, I typically refer to documentation
+                                            in the form of descriptive text or tables that
+                                            outline the meaning of each field and its
+                                            associated data type.
+                                            My goal is to create an easy-to-use and
+                                            accurate markup language that can be
+                                            used to describe the layout of both binary
+                                            and plaintext files.
+                                            Once I have designed this language,
+                                            I plan to use it to document commonly
+                                            used file formats in the biological field
+                                            and other areas. The docs of this project is 
+                                            located at
+                                            <a href="https://github.com/benjaminfang/documentation">file-format</a>.
+                                        </p>
+                                    </div>
+        
+                                    <div class="cv-entry-supplementary">
+                                        <p class="cv-entry-sup-head">Progress:</p>
+                                        <p class="cv-entry-sup-info"> A draft version of
+                                            the language has been written, and three file
+                                            formats have been documented using this language.
+                                            However, the language still needs a lot of
+                                            revision and improvement. Please see
+                                            <a href="https://docs-benjaminfang.readthedocs.io/en/latest/file-format/index.html">My Documentation</a> for details.
+                                        </p>
+                                    </div>
+                                </div>
+                            
+                                <div class="cv-entry" id="gwastools">
+                                    <div class="cv-entry-head">
+                                        <p><a href="https://github.com/benjaminfang/gwastools">Gwastools</a></p>
+                                    </div>
+        
+                                    <div class="cv-entry-supplementary">
+                                        <p class="cv-entry-sup-head">Status:</p>
+                                        <p class="cv-entry-sup-info">Ongoing, active.</p>
+                                    </div>
+        
+                                    <div class="cv-entry-supplementary">
+                                        <p class="cv-entry-sup-head">Background and Targets:</p>
+                                        <p class="cv-entry-sup-info">Several file formats are commonly used to store GWAS related data,
+                                            including PLINK files, BGEN files, BAM files, and BESD files.
+                                            However, different software is required to perform operations
+                                            such as printing basic file information, extracting partial
+                                            data from files, and transforming binary data into plain text.
+                                            In addition, some of these software packages lack help messages
+                                            in the command line. Furthermore, some of the file formats lack
+                                            APIs for programming languages.
+                                            My project has two main objectives.
+                                            First, I aim to develop C libraries that
+                                            will contain the core functions necessary for
+                                            working with these file formats, as well as
+                                            Python APIs that can be used to interface with the
+                                            C libraries from Python. Second,
+                                            I plan to use these libraries to create a
+                                            software utility that can perform operations
+                                            on these files more easily. The repository is located
+                                            at <a href="https://github.com/benjaminfang/gwastools">gwastools</a>.</p>
+                                    </div>
+        
+                                    <div class="cv-entry-supplementary">
+                                        <p class="cv-entry-sup-head">Progress:</p>
+                                        <p class="cv-entry-sup-info">The C libraries for the
+                                            PLINK file and BOD have been completed.
+                                            However, more coding work and iterations
+                                            are needed to finalize this project.</p>
+                                    </div>
+                                </div>
+                            
+                                <div class="cv-entry" id="biotools">
+                                    <div class="cv-entry-head">
+                                        <p><a href="https://github.com/benjaminfang/biotools">Biotools</a></p>
+                                    </div>
+        
+                                    <div class="cv-entry-supplementary">
+                                        <p class="cv-entry-sup-head">Status:</p>
+                                        <p class="cv-entry-sup-info">Occasional.</p>
+                                    </div>
+                                    
+                                    <div class="cv-entry-supplementary">
+                                        <p class="cv-entry-sup-head">Background and Targets:</p>
+                                        <p class="cv-entry-sup-info">I planned and carried out this
+                                            project during I worked at IMCAS. As my work continued,
+                                            I wrote numerous scripts and tools to fulfill my daily
+                                            work requirements, and some of the code I created is reusable.
+                                            In this project, I developed several Python classes to process
+                                            commonly used bioinformatics data.
+                                            Additionally, I collected several useful tools that I developed,
+                                            including those for phylogenetic tree building,
+                                            collapsing and clustering, and long repeated sequence calling,
+                                            and added them to this project. The code of for this project is on
+                                        <a href="https://github.com/benjaminfang/biotools">biotools</a>.</p>
+                                    </div>
+        
+                                    <div class="cv-entry-supplementary">
+                                        <p class="cv-entry-sup-head">Progress:</p>
+                                        <p class="cv-entry-sup-info">Classes for handling FASTA and GFF
+                                            data has been completed. And I have distributed them via PyPI
+                                            as a Python library named '<a href="https://pypi.org/project/biobrary/">biobrary</a>'.
+                                            I have integrated phylogenetic tree clustering and collapsing tools.
+                                            However, I still need to integrate the code for calling long
+                                            repeating sequences in genomes.</p>
+                                    </div>
+                                </div>
+        
+                            </div>
+                        </div>
+        
+                        <div class="cv-block" id="skills">
+                            <p  class="cv-block-head">Skills</p>
+                            <div class="cv-block-body">
+                                <div class="cv-entry">
+                                    <div class="cv-entry-supplementary">
+                                        <p class="cv-entry-sup-head">Biology:</p>
+                                        <p class="cv-entry-sup-info">Cell culture, Animal dissection, Bacterial culture, PCR analysis, Color spectrum.</p>
+                                        <p class="cv-entry-sup-info second-para">I acquired the skills during my undergraduate studies through theoretical and experimental classes, and I need to review and refresh my knowledge before using them.</p>
+                                    </div>
+                                </div>
+        
+                                <div class="cv-entry">
+                                    <div class="cv-entry-supplementary">
+                                        <p class="cv-entry-sup-head">Bioinformatics:</p>
+                                        <p class="cv-entry-sup-info">Genome assembly of microbio, Phylogenetic tree analysis.</p>
+                                        <p class="cv-entry-sup-info second-para">I acquired that knowledge during my graduate studies and subsequently through my work.</p>
+                                    </div>
+                                </div>
+        
+                                <div class="cv-entry">
+                                    <div class="cv-entry-supplementary">
+                                        <p class="cv-entry-sup-head">Computer:</p>
+                                        <p class="cv-entry-sup-info">Python and C Programming, Good user of linux systerm, Computer network, front-end web developing, Vector graph and raster graph mapulation.</p>
+                                        <p class="cv-entry-sup-info second-para">I have chosen Python and C as my programming languages
+                                            for my productive activities.
+                                            I use Python for daily system management tasks,
+                                            writing short scripts,
+                                            programming tools that don't require high efficiency,
+                                            and prototyping software.
+                                            I use C for programming when software requires high speed.
+                                            Mixing these two languages would be good practice for my future work.
+                                            Additionally, I am proficient in Linux and have used
+                                            it as my primary operating system for about five years.
+                                            I develop software and perform my daily tasks using this system.</p>
+                                    </div>
+                                </div>
+                                <div class="cv-entry">
+                                    <div class="cv-entry-supplementary">
+                                        <p class="cv-entry-sup-head">Language:</p>
+                                        <p class="cv-entry-sup-info">IELTS: 6</p>
                                     </div>
                                 </div>
                             </div>
-    
-                            <div class="cv-entry">
-                                <div class="cv-entry-supplementary">
-                                    <p class="cv-entry-sup-head">Undergraduate:</p>
-                                    <div class="cv-entry-sup-info">
-                                        <p>Advanced Mathmatics B, Collage  Physics B, Collage Chemistry 1 to 3(Inorganic Chemistry, Organic Chemistry, Physical Chemistry),</p>
-                                        <p>Cell Biology, Biochemistry, Genetics, Moleculer Biology, Genetic Engineering, Cell Engineering,</p>
-                                        <p>Plant Biology, Animal Biology, Microbiology, Animal Histology, Animal Physiology.</p>
+                        </div>
+                        
+                        <div class="cv-block" id="course">
+                            <p class="cv-block-head">Courses</p>
+                            <div class="cv-block-body">
+                                
+                                <div class="cv-entry">
+                                    <div class="cv-entry-supplementary">
+                                        <p class="cv-entry-sup-head">Graduate:</p>
+                                        <div class="cv-entry-sup-info">
+                                            <p>Protein Structure and Functions, Biochemistry and Moleculer Biology, Cell Skeleton, Advanced Cell Biology, Advanced Developmental Biology,</p>
+                                            <p>Bioinfomatics, Linux Operation System, Computational Biology(Perl and R Programming)</p>
+                                        </div>
                                     </div>
                                 </div>
-                            </div>
-    
-                        </div>
-                    </div>
-    
-                    <div class="cv-block" id="rewards">
-                        <p class="cv-block-head">Rewards</p>
-                        <div class="cv-block-body">
-    
-    
-                            <div class="cv-entry">
-                                <div class="cv-entry-supplementary">
-                                    <p class="cv-entry-sup-head">Graduate:</p>
-                                    <div class="cv-entry-sup-info">
-                                        <p>Graduate Second-class Scholarship(twich), Graduate New Student Scholarship</p>
+        
+                                <div class="cv-entry">
+                                    <div class="cv-entry-supplementary">
+                                        <p class="cv-entry-sup-head">Undergraduate:</p>
+                                        <div class="cv-entry-sup-info">
+                                            <p>Advanced Mathmatics B, Collage  Physics B, Collage Chemistry 1 to 3(Inorganic Chemistry, Organic Chemistry, Physical Chemistry),</p>
+                                            <p>Cell Biology, Biochemistry, Genetics, Moleculer Biology, Genetic Engineering, Cell Engineering,</p>
+                                            <p>Plant Biology, Animal Biology, Microbiology, Animal Histology, Animal Physiology.</p>
+                                        </div>
                                     </div>
                                 </div>
+        
                             </div>
-    
-                            <div class="cv-entry">
-                                <div class="cv-entry-supplementary">
-                                    <p class="cv-entry-sup-head">Undergraduate:</p>
-                                    <div class="cv-entry-sup-info">
-                                        <p>Excellent Student Scholarship, Outstanding Graduate of the School, Triple-A Student </p>
+                        </div>
+        
+                        <div class="cv-block" id="rewards">
+                            <p class="cv-block-head">Rewards</p>
+                            <div class="cv-block-body">
+        
+        
+                                <div class="cv-entry">
+                                    <div class="cv-entry-supplementary">
+                                        <p class="cv-entry-sup-head">Graduate:</p>
+                                        <div class="cv-entry-sup-info">
+                                            <p>Graduate Second-class Scholarship(twich), Graduate New Student Scholarship</p>
+                                        </div>
                                     </div>
                                 </div>
+        
+                                <div class="cv-entry">
+                                    <div class="cv-entry-supplementary">
+                                        <p class="cv-entry-sup-head">Undergraduate:</p>
+                                        <div class="cv-entry-sup-info">
+                                            <p>Excellent Student Scholarship, Outstanding Graduate of the School, Triple-A Student </p>
+                                        </div>
+                                    </div>
+                                </div>
+        
                             </div>
-    
                         </div>
+        
+        
+                        <div class="cv-block" id="publications">
+                            <p class="cv-block-head">Publications</p>
+                            <div class="cv-block-body">
+                                <div class="publication-info">
+                                    <div class="pub-name">
+                                        <p>Zhang, G., Yao, S., Liu, Y., Fang, H., Song, Y., Wang, C., Wei, D., Feng, J., 2023. <a href="https://doi.org/10.1128/aem.01738-22">Systematic discovery of
+                                            a new catalogue of tyrosine-type integrases in bacterial genomic islands</a>. Applied and Environmental Microbiology 89, e01738-22</p>
+                                    </div>
+                                    <div class="pub-contribution">
+                                        <p>Contribution:</p>
+                                        <p>Assist in identifying long repeats within bacterial genomes.
+                                            Long repetitive sequences are frequently found in bacterial genomes,
+                                            and they often consist of short repeated segments arranged in a particular pattern.
+                                            For example, long repetitive sequences may be constructed by
+                                            four short repeated segments,
+                                            labeled A, B, C, and D. In some cases, the C and D segments may be inverted.
+                                            These sequences should be classified into the same type of long repetitive sequences.
+                                            I developed a program that can identify long repetitive sequences, even when their short
+                                            segments contain variations. This program can now identify long repetitive
+                                            sequences that follow a particular sample segment pattern.</p>
+                                    </div>
+                                </div>
+        
+                                <div class="publication-info">
+                                    <div class="pub-name">
+                                    <p>Qi, T., Wu, Y., Fang, H., Zhang, F., Liu, S., Zeng, J., Yang, J., 2022. <a href="https://doi.org/10.1038/s41588-022-01154-4">Genetic control of RNA splicing and its distinct
+                                    role in complex trait variation</a>. Nature Genetics 54, 1355–1363.</p>
+                                    </div>
+                                    <div class="pub-contribution">
+                                        <p>Contribution:</p>
+                                        <p>In this project, my main contribution is programming. Specifically, I am responsible for programming tasks.
+                                            Under Ting's supervision, I built the data portal called <a href="https://yanglab.westlake.edu.cn/data/brainmeta/cis_sqtl/">BrainMeta</a>.
+                                            The website is based on the open project <a href="https://github.com/statgen/pheweb">Pheweb</a>,
+                                            and I ran the data parse process of it and modified the webpage to adapt to our demands.
+                                            And also, I implemented the permutation module of <a href="https://yanglab.westlake.edu.cn/software/osca/#THISTLE">THISTLE</a>.</p>
+                                    </div>
+                                </div>
+        
+                                <div class="publication-info">
+                                    <div class="pub-name">
+                                    <p>Tang, N., Hu, J., Zhao, Y., Song, Y., Wang, C., Zhang, G., Wei, D., Fang, H., Li, C., Jia, R., Feng, J., 2022. <a href="https://doi.org/10.1093/jac/dkab380">In vivo
+                                    evolution of carbapenem resistance in hypervirulent Klebsiella pneumoniae in a patient undergoing long-term treatment</a>.
+                                    Journal of Antimicrobial Chemotherapy 77, 531–533.</p>
+                                    </div>
+                                    <div class="pub-contribution">
+                                        <p>Contribution:</p>
+                                        <p>I primarily assisted with phylogenetic tree clustering in this project.
+                                            When a phylogenetic tree contains thousands of nodes,
+                                            manual analysis such as clustering nodes can become difficult.
+                                            To address this, I developed a tool that automatically clusters the tree.
+                                            My tool divides the nodes into groups based on a threshold and collapses the nodes in the same group.
+                                            This produces a simplified tree that can be easily plotted. The code
+                                            is stored in repository <a href="https://github.com/benjaminfang/biotools">biotools</a>.</p>
+                                    </div>
+                                </div>
+        
+                                <div class="publication-info">
+                                    <div class="pub-name">
+                                        <p>Jiang, L., Zheng, Z., Fang, H., Yang, J., 2021. <a href="https://doi.org/10.1038/s41588-021-00954-4">A generalized linear mixed model association tool for biobank-scale
+                                        data</a>. Nature Genetics 53, 1616–1621.</p>
+                                    </div>
+                                    <div class="pub-contribution">
+                                        <p>Contribution:</p>
+                                        <p>I implemented the <a href="https://yanglab.westlake.edu.cn/software/gcta/#ACAT-V">ACAT</a> module based on R scripts provided by Longda.
+                                            I improved the efficiency of the module by optimizing the data structure and program design.
+                                            As a result, the running time for the module was reduced from about 2 hours to several tens of seconds for the same data,
+                                            compared to the original R script implementation.</p>
+                                    </div>
+                                </div>
+        
+                                <div class="publication-info">
+                                    <div>
+                                        <p>Zhang, C., Ju, Y., Tang, N., Li, Y., Zhang, G., Song, Y., Fang, H., Yang, L., Feng, J., 2020. <a href="https://doi.org/10.1093/bib/bbz056">Systematic analysis of
+                                        supervised machine learning as an effective approach to predicate β-lactam resistance phenotype in Streptococcus
+                                        pneumoniae</a>. Briefings in Bioinformatics 21, 1347–1355.</p>
+                                    </div>
+                                    <div class="pub-contribution">
+                                        <p>Contribution:</p>
+                                        <p> I helped with rechecking the correctness of previously used protein data.</p>
+                                    </div>
+                                </div>
+        
+                            </div>
+                        </div>
+        
+        
+        
+                        <div class="cv-block" id="personal-summary">
+                            <p class="cv-block-head">Personal Summary</p>
+                            <div class="cv-block-body">
+                                <p>I am passionate about learning and technology,
+                                    and have a curious mind about many subjects, including biology,
+                                    computers, and electronics. I hold strong moral values and strive
+                                    for self-improvement. I am easy to get along with and value
+                                    peaceful relationships.
+                                    Before undertaking any task, I prefer to acquire a
+                                    systematic understanding of the relevant background knowledge.
+                                </p>
+                            </div>
+                        </div>
+        
                     </div>
-    
-    
-                    <div class="cv-block" id="publications">
-                        <p class="cv-block-head">Publications</p>
-                        <div class="cv-block-body">
-                            <div class="publication-info">
-                                <div class="pub-name">
-                                    <p>Zhang, G., Yao, S., Liu, Y., Fang, H., Song, Y., Wang, C., Wei, D., Feng, J., 2023. <a href="https://doi.org/10.1128/aem.01738-22">Systematic discovery of
-                                        a new catalogue of tyrosine-type integrases in bacterial genomic islands</a>. Applied and Environmental Microbiology 89, e01738-22</p>
-                                </div>
-                                <div class="pub-contribution">
-                                    <p>Contribution:</p>
-                                    <p>Assist in identifying long repeats within bacterial genomes.
-                                        Long repetitive sequences are frequently found in bacterial genomes,
-                                        and they often consist of short repeated segments arranged in a particular pattern.
-                                        For example, long repetitive sequences may be constructed by
-                                        four short repeated segments,
-                                        labeled A, B, C, and D. In some cases, the C and D segments may be inverted.
-                                        These sequences should be classified into the same type of long repetitive sequences.
-                                        I developed a program that can identify long repetitive sequences, even when their short
-                                        segments contain variations. This program can now identify long repetitive
-                                        sequences that follow a particular sample segment pattern.</p>
-                                </div>
+        
+                    <div class="life-record" id="my-timeline">
+                        <div class="life-record-wrapper">
+                            <div class="life-title">
+                                <p>My Timeline</p>
                             </div>
-    
-                            <div class="publication-info">
-                                <div class="pub-name">
-                                <p>Qi, T., Wu, Y., Fang, H., Zhang, F., Liu, S., Zeng, J., Yang, J., 2022. <a href="https://doi.org/10.1038/s41588-022-01154-4">Genetic control of RNA splicing and its distinct
-                                role in complex trait variation</a>. Nature Genetics 54, 1355–1363.</p>
-                                </div>
-                                <div class="pub-contribution">
-                                    <p>Contribution:</p>
-                                    <p>In this project, my main contribution is programming. Specifically, I am responsible for programming tasks.
-                                        Under Ting's supervision, I built the data portal called <a href="https://yanglab.westlake.edu.cn/data/brainmeta/cis_sqtl/">BrainMeta</a>.
-                                        The website is based on the open project <a href="https://github.com/statgen/pheweb">Pheweb</a>,
-                                        and I ran the data parse process of it and modified the webpage to adapt to our demands.
-                                        And also, I implemented the permutation module of <a href="https://yanglab.westlake.edu.cn/software/osca/#THISTLE">THISTLE</a>.</p>
-                                </div>
+        
+                            <div class="life-head">
+                                <div id="hrf1c" class="head-field">Timeline</div>
+                                <div id="hrf2c" class="head-field">Milestone</div>
+                                <div id="hrf3c" class="head-field">Highlight</div>
                             </div>
-    
-                            <div class="publication-info">
-                                <div class="pub-name">
-                                <p>Tang, N., Hu, J., Zhao, Y., Song, Y., Wang, C., Zhang, G., Wei, D., Fang, H., Li, C., Jia, R., Feng, J., 2022. <a href="https://doi.org/10.1093/jac/dkab380">In vivo
-                                evolution of carbapenem resistance in hypervirulent Klebsiella pneumoniae in a patient undergoing long-term treatment</a>.
-                                Journal of Antimicrobial Chemotherapy 77, 531–533.</p>
+        
+                            <div class="life-body">
+                                <div class="body-row">
+                                    <div class="brf1"><p class="brf1c">&#151;2025</p></div>
+                                    <div class="brf2"></div>
+                                    <div class="brf3"></div>
                                 </div>
-                                <div class="pub-contribution">
-                                    <p>Contribution:</p>
-                                    <p>I primarily assisted with phylogenetic tree clustering in this project.
-                                        When a phylogenetic tree contains thousands of nodes,
-                                        manual analysis such as clustering nodes can become difficult.
-                                        To address this, I developed a tool that automatically clusters the tree.
-                                        My tool divides the nodes into groups based on a threshold and collapses the nodes in the same group.
-                                        This produces a simplified tree that can be easily plotted. The code
-                                        is stored in repository <a href="https://github.com/benjaminfang/biotools">biotools</a>.</p>
+        
+        
+                                <div class="body-row">
+                                    <div class="brf1"></div>
+                                    <div class="brf2"><p class="brf2c">On 3nd October, 2024, I turned 32 years old. Version 33, Littlewonder.</p></div>
+                                    <div class="brf3"></div>
                                 </div>
-                            </div>
-    
-                            <div class="publication-info">
-                                <div class="pub-name">
-                                    <p>Jiang, L., Zheng, Z., Fang, H., Yang, J., 2021. <a href="https://doi.org/10.1038/s41588-021-00954-4">A generalized linear mixed model association tool for biobank-scale
-                                    data</a>. Nature Genetics 53, 1616–1621.</p>
-                                </div>
-                                <div class="pub-contribution">
-                                    <p>Contribution:</p>
-                                    <p>I implemented the <a href="https://yanglab.westlake.edu.cn/software/gcta/#ACAT-V">ACAT</a> module based on R scripts provided by Longda.
-                                        I improved the efficiency of the module by optimizing the data structure and program design.
-                                        As a result, the running time for the module was reduced from about 2 hours to several tens of seconds for the same data,
-                                        compared to the original R script implementation.</p>
-                                </div>
-                            </div>
-    
-                            <div class="publication-info">
-                                <div>
-                                    <p>Zhang, C., Ju, Y., Tang, N., Li, Y., Zhang, G., Song, Y., Fang, H., Yang, L., Feng, J., 2020. <a href="https://doi.org/10.1093/bib/bbz056">Systematic analysis of
-                                    supervised machine learning as an effective approach to predicate β-lactam resistance phenotype in Streptococcus
-                                    pneumoniae</a>. Briefings in Bioinformatics 21, 1347–1355.</p>
-                                </div>
-                                <div class="pub-contribution">
-                                    <p>Contribution:</p>
-                                    <p> I helped with rechecking the correctness of previously used protein data.</p>
-                                </div>
-                            </div>
-    
-                        </div>
-                    </div>
-    
-    
-    
-                    <div class="cv-block" id="personal-summary">
-                        <p class="cv-block-head">Personal Summary</p>
-                        <div class="cv-block-body">
-                            <p>I am passionate about learning and technology,
-                                and have a curious mind about many subjects, including biology,
-                                computers, and electronics. I hold strong moral values and strive
-                                for self-improvement. I am easy to get along with and value
-                                peaceful relationships.
-                                Before undertaking any task, I prefer to acquire a
-                                systematic understanding of the relevant background knowledge.
-                            </p>
-                        </div>
-                    </div>
-    
-                </div>
-     
-                <div class="life-record" id="my-timeline">
-                    <div class="life-record-wrapper">
-                        <div class="life-title">
-                            <p>My Timeline</p>
-                        </div>
-    
-                        <div class="life-head">
-                            <div id="hrf1c" class="head-field">Timeline</div>
-                            <div id="hrf2c" class="head-field">Milestone</div>
-                            <div id="hrf3c" class="head-field">Highlight</div>
-                        </div>
-    
-                        <div class="life-body">
-                            <div class="body-row">
-                                <div class="brf1"><p class="brf1c">&#151;2025</p></div>
-                                <div class="brf2"></div>
-                                <div class="brf3"></div>
-                            </div>
-    
-    
-                            <div class="body-row">
-                                <div class="brf1"></div>
-                                <div class="brf2"><p class="brf2c">On 3nd October, 2024, I turned 32 years old. Version 33, Littlewonder.</p></div>
-                                <div class="brf3"></div>
-                            </div>
 
-                            <div class="body-row">
-                                <div class="brf1"></div>
-                                <div class="brf2"><p class="brf2c">On 3nd October, 2023, I turned 31 years old. Version 32, Softwind.</p></div>
-                                <div class="brf3"></div>
-                            </div>
-    
-                            <div class="body-row">
-                                <div class="brf1"></div>
-                                <div class="brf2"><p class="brf2c">On 3nd October, 2022, I turned 30 years old. Version 31, Circleend.</p></div>
-                                <div class="brf3"></div>
-                            </div>
-    
-                            <div class="body-row">
-                                <div class="brf1"><p class="brf1c">&#151;2022</p></div>
-                                <div class="brf2"></div>
-                                <div class="brf3"></div>
-                            </div>
-                            <div class="body-row">
-                                <div class="brf1"></div>
-                                <div class="brf2"></div>
-                                <div class="brf3"><p class="brf3c">Began learning violin.</p></div>
-                            </div>
-                            <div class="body-row">
-                                <div class="brf1"></div>
-                                <div class="brf2"><p class="brf2c">On May 1st, 2021, I started my second job as a research assistant at Westlake University.</p></div>
-                                <div class="brf3"></div>
-                            </div>
-                            <div class="body-row">
-                                <div class="brf1"></div>
-                                <div class="brf2"></div>
-                                <div class="brf3"><p class="brf3c">Learned basic of skateboard.</p></div>
-                            </div>
-                            <div class="body-row">
-                                <div class="brf1"></div>
-                                <div class="brf2"><p class="brf2c">In October 2019, I quit my job and moved to Yantai to live a jobless life for 9 months, during which time I focused on learning math and computer-related topics.</p></div>
-                                <div class="brf3"></div>
-                            </div>
-                            <div class="body-row">
-                                <div class="brf1"></div>
-                                <div class="brf2"><p class="brf2c">On October 3rd, 2019, I turned 28 years old. Version 29.</p></div>
-                                <div class="brf3"></div>
-                            </div>
-                            <div class="body-row">
-                                <div class="brf1"><p class="brf1c">&#151;2019</p></div>
-                                <div class="brf2"></div>
-                                <div class="brf3"></div>
-                            </div>
-                            <div class="body-row">
-                                <div class="brf1"></div>
-                                <div class="brf2"><p class="brf2c">Had my first job as a research assitant in Institute of
-                                        Microbiology.</p></div>
-                                <div class="brf3"></div>
-                            </div>
-                            <div class="body-row">
-                                <div class="brf1"></div>
-                                <div class="brf2"><p class="brf2c">I graduated from BNU</p></div>
-                                <div class="brf3"><p class="brf3c">I got my master degree.</p></div>
-                            </div>
-                            <div class="body-row">
-                                <div class="brf1"></div>
-                                <div class="brf2"><p class="brf2c">In October 2016, I decided to change my major and began studying bioinformatics.</p></div>
-                                <div class="brf3"></div>
-                            </div>
-                            <div class="body-row">
-                                <div class="brf1"></div>
-                                <div class="brf2"><p class="brf2c">On October 3rd, 2016, I was 27 years old. Version 28.</p></div>
-                                <div class="brf3"></div>
-                            </div>
-                            <div class="body-row">
-                                <div class="brf1"></div>
-                                <div class="brf2"></div>
-                                <div class="brf3"></div>
-                            </div>
-                            <div class="body-row">
-                                <div class="brf1"></div>
-                                <div class="brf2"><p class="brf2c">In July 2015, I graduated from IMU and went to Beijing Normal University in the same year.</p></div>
-                                <div class="brf3"><p class="brf3c">Got my bachelor degree.</p></div>
-                            </div>
-                            <div class="body-row">
-                                <div class="brf1"><p class="brf1c">&#151;2013</p></div>
-                                <div class="brf2"></div>
-                                <div class="brf3"></div>
-                            </div>
-                            <div class="body-row">
-                                <div class="brf1"></div>
-                                <div class="brf2"><p class="brf2c">Proved L'Hopital's Rule independently.</p></div>
-                                <div class="brf3"></div>
-                            </div>
-                            <div class="body-row">
-                                <div class="brf1"></div>
-                                <div class="brf2"></div>
-                                <div class="brf3"><p class="brf3c">Near the end of my 1st year in university, I recovered from a severe illness, and I still don't know the cause of it.</p></div>
-                            </div>
-                            <div class="body-row">
-                                <div class="brf1"></div>
-                                <div class="brf2"><p class="brf2c">In September 2011, I started attending Inner Mongolia University.</p></div>
-                                <div class="brf3"></div>
-                            </div>
-                            <div class="body-row">
-                                <div class="brf1"></div>
-                                <div class="brf2"><p class="brf2c">In Oct 2010, I was 18 years old.</p></div>
-                                <div class="brf3"></div>
-                            </div>
-                            <div class="body-row">
-                                <div class="brf1"><p class="brf1c">&#151;2010</p></div>
-                                <div class="brf2"></div>
-                                <div class="brf3"></div>
-                            </div>
-                            <div class="body-row">
-                                <div class="brf1"></div>
-                                <div class="brf2"></div>
-                                <div class="brf3"><p class="brf3c">In 2nd grade, we organized a student campaign to reject summer and winter holiday homework.</p></div>
-                            </div>
-                            <div class="body-row">
-                                <div class="brf1"></div>
-                                <div class="brf2"><p class="brf2c">In 2008, I went to high school.</p></div>
-                                <div class="brf3"></div>
-                            </div>
-                            <div class="body-row">
-                                <div class="brf1"><p class="brf1c">&#151;2007</p></div>
-                                <div class="brf2"></div>
-                                <div class="brf3"></div>
-                            </div>
-                            <div class="body-row">
-                                <div class="brf1"><p class="brf1c"></p></div>
-                                <div class="brf2"></div>
-                                <div class="brf3"><p class="brf3c">In 2nd grade, I won an award for painting.</p></div>
-                            </div>
-                            <div class="body-row">
-                                <div class="brf1"></div>
-                                <div class="brf2"><p class="brf2c">In July 2005, I graduated from primary school and went to middle school in the same year.</p></div>
-                                <div class="brf3"></div>
-                            </div>
-                            <div class="body-row">
-                                <div class="brf1"></div>
-                                <div class="brf2"></div>
-                                <div class="brf3"><p class="brf3c">In 6th grade, I received my first academic award for achieving a good grade in math.</p></div>
-                            </div>
-                            <div class="body-row">
-                                <div class="brf1"><p class="brf1c">&#151;2004</p></div>
-                                <div class="brf2"></div>
-                                <div class="brf3"></div>
-                            </div>
-                            <div class="body-row">
-                                <div class="brf1"></div>
-                                <div class="brf2"><p class="brf2c">In 3rd grade, our school shut down, and we moved to a new school where I met my old friends. They are important to me.</p></div>
-                                <div class="brf3"></div>
-                            </div>
-                            <div class="body-row">
-                                <div class="brf1"></div>
-                                <div class="brf2"></div>
-                                <div class="brf3"><p class="brf3c">In 3rd grade, I rolled down a hill and injured my right wrist. I was very ill, but I survived.</p></div>
-                            </div>
-                            <div class="body-row">
-                                <div class="brf1"><p class="brf1c">&#151;2001</p></div>
-                                <div class="brf2"></div>
-                                <div class="brf3"></div>
-                            </div>
-                            <div class="body-row">
-                                <div class="brf1"></div>
-                                <div class="brf2"><p class="brf2c">In September 1999, I went to primary school.</p></div>
-                                <div class="brf3"></div>
-                            </div>
-                            <div class="body-row">
-                                <div class="brf1"><p class="brf1c">&#151;1998</p></div>
-                                <div class="brf2"></div>
-                                <div class="brf3"></div>
-                            </div>
-                            <div class="body-row">
-                                <div class="brf1"><p class="brf1c">&#151;1995</p></div>
-                                <div class="brf2"></div>
-                                <div class="brf3"></div>
-                            </div>
-                            <div class="body-row">
-                                <div class="brf1"><p class="brf1c">&#151;1992</p></div>
-                                <div class="brf2"><p class="brf2c">I was born on October 3rd, 1992.</p></div>
-                                <div class="brf3"><p class="brf3c">It is most important day to me.</p></div>
+                                <div class="body-row">
+                                    <div class="brf1"></div>
+                                    <div class="brf2"><p class="brf2c">On 3nd October, 2023, I turned 31 years old. Version 32, Softwind.</p></div>
+                                    <div class="brf3"></div>
+                                </div>
+        
+                                <div class="body-row">
+                                    <div class="brf1"></div>
+                                    <div class="brf2"><p class="brf2c">On 3nd October, 2022, I turned 30 years old. Version 31, Circleend.</p></div>
+                                    <div class="brf3"></div>
+                                </div>
+        
+                                <div class="body-row">
+                                    <div class="brf1"><p class="brf1c">&#151;2022</p></div>
+                                    <div class="brf2"></div>
+                                    <div class="brf3"></div>
+                                </div>
+                                <div class="body-row">
+                                    <div class="brf1"></div>
+                                    <div class="brf2"></div>
+                                    <div class="brf3"><p class="brf3c">Began learning violin.</p></div>
+                                </div>
+                                <div class="body-row">
+                                    <div class="brf1"></div>
+                                    <div class="brf2"><p class="brf2c">On May 1st, 2021, I started my second job as a research assistant at Westlake University.</p></div>
+                                    <div class="brf3"></div>
+                                </div>
+                                <div class="body-row">
+                                    <div class="brf1"></div>
+                                    <div class="brf2"></div>
+                                    <div class="brf3"><p class="brf3c">Learned basic of skateboard.</p></div>
+                                </div>
+                                <div class="body-row">
+                                    <div class="brf1"></div>
+                                    <div class="brf2"><p class="brf2c">In October 2019, I quit my job and moved to Yantai to live a jobless life for 9 months, during which time I focused on learning math and computer-related topics.</p></div>
+                                    <div class="brf3"></div>
+                                </div>
+                                <div class="body-row">
+                                    <div class="brf1"></div>
+                                    <div class="brf2"><p class="brf2c">On October 3rd, 2019, I turned 28 years old. Version 29.</p></div>
+                                    <div class="brf3"></div>
+                                </div>
+                                <div class="body-row">
+                                    <div class="brf1"><p class="brf1c">&#151;2019</p></div>
+                                    <div class="brf2"></div>
+                                    <div class="brf3"></div>
+                                </div>
+                                <div class="body-row">
+                                    <div class="brf1"></div>
+                                    <div class="brf2"><p class="brf2c">Had my first job as a research assitant in Institute of
+                                            Microbiology.</p></div>
+                                    <div class="brf3"></div>
+                                </div>
+                                <div class="body-row">
+                                    <div class="brf1"></div>
+                                    <div class="brf2"><p class="brf2c">I graduated from BNU</p></div>
+                                    <div class="brf3"><p class="brf3c">I got my master degree.</p></div>
+                                </div>
+                                <div class="body-row">
+                                    <div class="brf1"></div>
+                                    <div class="brf2"><p class="brf2c">In October 2016, I decided to change my major and began studying bioinformatics.</p></div>
+                                    <div class="brf3"></div>
+                                </div>
+                                <div class="body-row">
+                                    <div class="brf1"></div>
+                                    <div class="brf2"><p class="brf2c">On October 3rd, 2016, I was 27 years old. Version 28.</p></div>
+                                    <div class="brf3"></div>
+                                </div>
+                                <div class="body-row">
+                                    <div class="brf1"></div>
+                                    <div class="brf2"></div>
+                                    <div class="brf3"></div>
+                                </div>
+                                <div class="body-row">
+                                    <div class="brf1"></div>
+                                    <div class="brf2"><p class="brf2c">In July 2015, I graduated from IMU and went to Beijing Normal University in the same year.</p></div>
+                                    <div class="brf3"><p class="brf3c">Got my bachelor degree.</p></div>
+                                </div>
+                                <div class="body-row">
+                                    <div class="brf1"><p class="brf1c">&#151;2013</p></div>
+                                    <div class="brf2"></div>
+                                    <div class="brf3"></div>
+                                </div>
+                                <div class="body-row">
+                                    <div class="brf1"></div>
+                                    <div class="brf2"><p class="brf2c">Proved L'Hopital's Rule independently.</p></div>
+                                    <div class="brf3"></div>
+                                </div>
+                                <div class="body-row">
+                                    <div class="brf1"></div>
+                                    <div class="brf2"></div>
+                                    <div class="brf3"><p class="brf3c">Near the end of my 1st year in university, I recovered from a severe illness, and I still don't know the cause of it.</p></div>
+                                </div>
+                                <div class="body-row">
+                                    <div class="brf1"></div>
+                                    <div class="brf2"><p class="brf2c">In September 2011, I started attending Inner Mongolia University.</p></div>
+                                    <div class="brf3"></div>
+                                </div>
+                                <div class="body-row">
+                                    <div class="brf1"></div>
+                                    <div class="brf2"><p class="brf2c">In Oct 2010, I was 18 years old.</p></div>
+                                    <div class="brf3"></div>
+                                </div>
+                                <div class="body-row">
+                                    <div class="brf1"><p class="brf1c">&#151;2010</p></div>
+                                    <div class="brf2"></div>
+                                    <div class="brf3"></div>
+                                </div>
+                                <div class="body-row">
+                                    <div class="brf1"></div>
+                                    <div class="brf2"></div>
+                                    <div class="brf3"><p class="brf3c">In 2nd grade, we organized a student campaign to reject summer and winter holiday homework.</p></div>
+                                </div>
+                                <div class="body-row">
+                                    <div class="brf1"></div>
+                                    <div class="brf2"><p class="brf2c">In 2008, I went to high school.</p></div>
+                                    <div class="brf3"></div>
+                                </div>
+                                <div class="body-row">
+                                    <div class="brf1"><p class="brf1c">&#151;2007</p></div>
+                                    <div class="brf2"></div>
+                                    <div class="brf3"></div>
+                                </div>
+                                <div class="body-row">
+                                    <div class="brf1"><p class="brf1c"></p></div>
+                                    <div class="brf2"></div>
+                                    <div class="brf3"><p class="brf3c">In 2nd grade, I won an award for painting.</p></div>
+                                </div>
+                                <div class="body-row">
+                                    <div class="brf1"></div>
+                                    <div class="brf2"><p class="brf2c">In July 2005, I graduated from primary school and went to middle school in the same year.</p></div>
+                                    <div class="brf3"></div>
+                                </div>
+                                <div class="body-row">
+                                    <div class="brf1"></div>
+                                    <div class="brf2"></div>
+                                    <div class="brf3"><p class="brf3c">In 6th grade, I received my first academic award for achieving a good grade in math.</p></div>
+                                </div>
+                                <div class="body-row">
+                                    <div class="brf1"><p class="brf1c">&#151;2004</p></div>
+                                    <div class="brf2"></div>
+                                    <div class="brf3"></div>
+                                </div>
+                                <div class="body-row">
+                                    <div class="brf1"></div>
+                                    <div class="brf2"><p class="brf2c">In 3rd grade, our school shut down, and we moved to a new school where I met my old friends. They are important to me.</p></div>
+                                    <div class="brf3"></div>
+                                </div>
+                                <div class="body-row">
+                                    <div class="brf1"></div>
+                                    <div class="brf2"></div>
+                                    <div class="brf3"><p class="brf3c">In 3rd grade, I rolled down a hill and injured my right wrist. I was very ill, but I survived.</p></div>
+                                </div>
+                                <div class="body-row">
+                                    <div class="brf1"><p class="brf1c">&#151;2001</p></div>
+                                    <div class="brf2"></div>
+                                    <div class="brf3"></div>
+                                </div>
+                                <div class="body-row">
+                                    <div class="brf1"></div>
+                                    <div class="brf2"><p class="brf2c">In September 1999, I went to primary school.</p></div>
+                                    <div class="brf3"></div>
+                                </div>
+                                <div class="body-row">
+                                    <div class="brf1"><p class="brf1c">&#151;1998</p></div>
+                                    <div class="brf2"></div>
+                                    <div class="brf3"></div>
+                                </div>
+                                <div class="body-row">
+                                    <div class="brf1"><p class="brf1c">&#151;1995</p></div>
+                                    <div class="brf2"></div>
+                                    <div class="brf3"></div>
+                                </div>
+                                <div class="body-row">
+                                    <div class="brf1"><p class="brf1c">&#151;1992</p></div>
+                                    <div class="brf2"><p class="brf2c">I was born on October 3rd, 1992.</p></div>
+                                    <div class="brf3"><p class="brf3c">It is most important day to me.</p></div>
+                                </div>
                             </div>
                         </div>
                     </div>
-                </div>
-            </div>    
-        </div>
-    </main>
-
-    <footer>
-        <div class="footer-left">
-            <div class="footer-b1">
-                <div class="mytimego">
-                    <p>My Time Bar:</p>
-                    <label id="timelabel">|</label>
-                    <progress id="mytime" max="1" value="1"></progress>
-                </div>
-                <div class="copyrights">
-                    <small><p>Copyright &copy;2023-2024 by Hailing Fang. <a href="legal-statements.html">Legal Statements</a>.</p></small>
-                </div>
+                </div>    
             </div>
-        </div>
+        </main>
 
-        <div class="footer-right">
-            <div class="footer-b2">
-                <div class="mylink">
-                    <ul>
-                        <li><a href="https://github.com/hailingfang">Github</a></li>
-                        <li><a href="https://leetcode.com/benjaminfang/">Leetcode</a></li>
-                        <li><a href="https://space.bilibili.com/513348269/">Bilibili</a></li>
-                    </ul>
-                </div>
-                <div class="school-links">
-                    <ul>
-                        <li><a href="https://smkxxy.imu.edu.cn/">School of Life Sciences IMU</a></li>
-                        <li><a href="https://english.bnu.edu.cn/schoolsdepartments/byx/113310.htm">Collage of Life Sciences BNU</a></li>
-                    </ul>
-                </div>
+        <footer>
+            <div class="footer-left">
             </div>
-        </div>
-    </footer>
-    <script src="js/my-time-bar.js" defer></script>
-    <script src="js/highlight-nav.js"></script>
-</body>
+            <div class="footer-right">
+            </div>
+        </footer>
+    </body>
 </html>
