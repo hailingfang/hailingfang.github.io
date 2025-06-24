@@ -114,6 +114,8 @@ footer {
     flex-direction: row;
     flex-wrap: wrap;
     background-color: rgb(33, 33, 33);
+    padding: 1em 0em;
+    padding-bottom: .5em;
 }
 
 .footer-left {
