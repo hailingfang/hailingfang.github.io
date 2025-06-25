@@ -53,7 +53,7 @@
 }
 
 
-.main-content {
+.main-container {
     max-width: 75em;
     padding: 0px;
     padding-left: 2em;
@@ -83,7 +83,7 @@
     margin-bottom: 3em;
 }
 
-#contact-info {
+.contact-left {
     padding: 0px;
     border: 0px solid red;
     margin: 0px;
@@ -110,14 +110,13 @@
     word-break: break-all;
 }
 
-#photo {
+.contact-right {
     grid-column: 2;
     max-width: 9em;
     max-height: 9em;
-
 }
 
-#photo img {
+#contact img {
     width: 100%;
     height: 100%;
     object-fit: contain;
@@ -131,7 +130,7 @@
     margin-bottom: 1em;
 }
 
-#profile > p {
+.profile > p {
     padding: 0px;
     border: 0px;
     margin: 0px;
@@ -150,7 +149,7 @@
 
 }
 
-.cv-block {
+.cv-section {
     padding: 0px;
     border: 0px solid red;
     margin: 0px;
@@ -158,7 +157,7 @@
     line-height: 1.3em;
 }
 
-.cv-block-head {
+.cv-section-head {
     font-weight: bold;
     font-size: 1.3em;
     padding: 0.2em;
@@ -173,7 +172,7 @@
     margin-bottom: 1.8em;
 }
 
-.cv-block-body {
+.cv-section-body {
     padding: 0px;
     border: 0px solid red;
     margin-left: 0.5em;
@@ -190,11 +189,11 @@
     margin: 0px;
     margin-bottom: 1em;
     font-weight: bold;
-    font-size: 1.2em;
+    font-size: 1.3em;
     color: rgb(30, 76, 145);
 }
 
-.cv-entry-expand {
+.cv-entry-subhead {
     display: grid;
     grid-template-columns: 50% 25% 25%;
     padding: 0em;
@@ -203,19 +202,27 @@
     font-weight: bold;
     font-size: 1.1em;
     margin-bottom: 1em;
-    margin-left: 1em;
     
 }
 
-.cv-entry-supplementary {
+.organization,
+.date,
+.location {
+    font-size: 1.1em;
+    font-weight: bold;
+    margin: 0;
+    padding: 0;
+    border: 0;
+}
+
+.cv-entry-detail {
     padding: 0em;
     border: 0px solid red;
     margin: 0px;
-    margin-left: 1em;
 }
 
 
-.cv-entry-sup-head {
+.cv-entry-detail-head {
     font-style: italic;
     font-size: 1.1em;
     font-weight: bold;
@@ -223,7 +230,7 @@
     margin-bottom: 0.3em;
 }
 
-.cv-entry-sup-info {
+.cv-entry-detail-info {
     padding: 0px;
     border: 0px solid red;
     margin: 0px;
@@ -234,51 +241,44 @@
     
 }
 
-.cv-entry-sup-info a {
-
+.cv-entry-detail-info a {
     color: rgb(54, 54, 163);
     text-decoration: underline;
-
 }
 
-.thesis-title span {
+
+.cv-entry-detail-info span {
     font-weight: bold;
 }
 
-.thesis-summary span {
-    font-weight: bold;
-}
 
-.publication-info {
+.publication-entry {
     margin-top: 2em;
     line-height: 1.3em;
     text-align: justify;
 }
 
-.pub-name {
-    font-size: 1.05em;
-
+.pub-title {
+    font-size: 1.1em;
+    margin-bottom: .5em;
 }
 
-.pub-contribution {
-    margin-top: 0.8em;
+.contribution-key {
+    font-weight: bold;
+    margin-bottom: .5em;
 }
 
-.publication-info a {
+.publication-title a {
     color: rgb(14, 85, 166);
     font-style: italic;
     text-decoration: underline;
-}
-
-.pub-contribution p:first-child {
-    font-weight: bold;
 }
 
 
 #personal-summary {
     display: none;
 }
-/*<cv block*/
+
 
 
 

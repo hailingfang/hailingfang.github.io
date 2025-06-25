@@ -55,9 +55,9 @@
             </div>
 
             <div class="main-right">
-                <div class="main-content">
+                <div class="main-container">
                     <div id="contact">
-                        <div id="contact-info">
+                        <div class="contact-left">
                             <div class="infoline">
                                 <span>Name</span><span>: </span><span>方海岭 | Fang Hailing</span>
                             </div>
@@ -71,17 +71,14 @@
                                 <span>Phone</span><span>: </span><span>18811321192</span>
                             </div>
                         </div>
-                        <div id="photo">
+                        <div class="contact-right">
                             <img src="./imgs/Lewis.png" alt="my photo" width="460" height="460">
                         </div>
                     </div>
         
         
                     <div id="profile">
-                        <p>My name is Fang Hailing, and I was born in 1992 in Shandong
-                            province of China.
-                        </p>
-                        <p>I study biology and  earned a Master of Science degree in
+                        <p>My name is Fang Hailing. I study biology and  earned a Master of Science degree in
                             Biology in 2018. My recent work focuses on computational
                             biology, including biological data analysis and software development.
                             I believe that computers are important tools for solving problems in biology.
@@ -111,22 +108,22 @@
         
         
                     <div id="cv">
-                        <div class="cv-block" id="education">
-                            <p class="cv-block-head">Education</p>
-                            <div class="cv-block-body">
+                        <div class="cv-section" id="education">
+                            <p class="cv-section-head">Education</p>
+                            <div class="cv-section-body">
                                 <div class="cv-entry" id="DOC">
                                     <div class="cv-entry-head">
-                                        <p>Doctor of Science in Biology</p>
+                                        <p>Ph.D. student of Science in Biology</p>
                                     </div>
-                                    <div class="cv-entry-expand">
-                                        <p class="edu-univ">Shandong University</p>
-                                        <p class="edu-date">09/2024 - 07/2025</p>
-                                        <p class="edu-city">Qindao, CN</p>
+                                    <div class="cv-entry-subhead">
+                                        <p class="organization">Shandong University</p>
+                                        <p class="date">09/2024 - 07/2025</p>
+                                        <p class="location">Qindao, CN</p>
                                     </div>
-                                    <div class="cv-entry-supplementary">
-                                        <p class="cv-entry-sup-head"></p>
-                                        <p class="cv-entry-sup-info thesis-title">Quite the doctorate project on July 1, 2025.</p>
-                                        <p class="cv-entry-sup-info thesis-summary"></p>
+                                    <div class="cv-entry-detail">
+                                        <p class="cv-entry-detail-head"></p>
+                                        <p class="cv-entry-detail-info">Quite the doctorate project on July 1, 2025.</p>
+                                        <p class="cv-entry-detail-info"></p>
                                     </div>
                                 </div>
 
@@ -134,19 +131,19 @@
                                     <div class="cv-entry-head">
                                         <p>Master of Science in Biology</p>
                                     </div>
-                                    <div class="cv-entry-expand">
-                                        <p class="edu-univ">Beijing Normal University</p>
-                                        <p class="edu-date">09/2015 - 07/2018</p>
-                                        <p class="edu-city">Beijing, CN</p>
+                                    <div class="cv-entry-subhead">
+                                        <p class="organization">Beijing Normal University</p>
+                                        <p class="date">09/2015 - 07/2018</p>
+                                        <p class="location">Beijing, CN</p>
                                     </div>
-                                    <div class="cv-entry-supplementary">
-                                        <p class="cv-entry-sup-head">Thesis:</p>
-                                        <p class="cv-entry-sup-info thesis-title"><span>Title: </span> An analysis of codon bias between
+                                    <div class="cv-entry-detail">
+                                        <p class="cv-entry-detail-head">Thesis:</p>
+                                        <p class="cv-entry-detail-info"><span>Title: </span> An analysis of codon bias between
                                             intrinsically disordered regions and structural domains of 
                                             orthologous single-copy genes
                                             from human, chimpanzee and mouse genomes.
                                         </p>
-                                        <p class="cv-entry-sup-info thesis-summary"><span>Summary: </span>
+                                        <p class="cv-entry-detail-info"><span>Summary: </span>
                                             Codon bias, the unequal usage of synonymous codons, can significantly 
                                             influence biological processes and organism fitness.
                                             The project compared the codon bias of orthologous single-copy
@@ -174,17 +171,17 @@
                                     <div class="cv-entry-head">
                                         <p>Bachelor of Science in Biotechnology</p>
                                     </div>
-                                    <div class="cv-entry-expand">
-                                        <p class="edu-univ">Inner Mongolia University</p>
-                                        <p class="edu-date">09/2011 - 07/2015</p>
-                                        <p class="edu-city">Huhhot, CN</p>
+                                    <div class="cv-entry-subhead">
+                                        <p class="organization">Inner Mongolia University</p>
+                                        <p class="date">09/2011 - 07/2015</p>
+                                        <p class="location">Huhhot, CN</p>
                                     </div>
-                                    <div class="cv-entry-supplementary">
-                                        <p class="cv-entry-sup-head">Paper:</p>
-                                        <p class="cv-entry-sup-info thesis-title"><span>Title: </span> Structure-function relationship analysis of 20
+                                    <div class="cv-entry-detail">
+                                        <p class="cv-entry-detail-head">Paper:</p>
+                                        <p class="cv-entry-detail-info"><span>Title: </span> Structure-function relationship analysis of 20
                                             kinds of flavonoids of inhibiting HepG2 cell
                                             proliferation.</p>
-                                        <p class="cv-entry-sup-info thesis-summary"><span>Summary: </span> Flavonoids is a kind of polyphenolic substances and distribute in vegetables and fruits
+                                        <p class="cv-entry-detail-info"><span>Summary: </span> Flavonoids is a kind of polyphenolic substances and distribute in vegetables and fruits
                                             broadly. Flavonoids has wide biological activities, such as Antioxidant activity, antibacterial,
                                             anti-inflammatory and anticancer. Flavonoids have different anticancer activity due to different
                                             structure, The project compare the anti-proliferation activity of 20 kinds of flavonoids using CCK-8
@@ -201,21 +198,21 @@
                             </div>
                         </div>
         
-                        <div class="cv-block" id="experience">
-                            <p class="cv-block-head">Experience</p>
-                            <div class="cv-block-body">
+                        <div class="cv-section" id="experience">
+                            <p class="cv-section-head">Experience</p>
+                            <div class="cv-section-body">
                                 <div class="cv-entry" id="westlake">
                                     <div class="cv-entry-head">
                                         <p>Research Assistant</p>
                                     </div>
-                                    <div class="cv-entry-expand">
-                                        <p>Shao Lab, Shandong University</p>
-                                        <p>09/2023 - 08/2024</p>
-                                        <p>Qingdao, CN</p>
+                                    <div class="cv-entry-subhead">
+                                        <p class="organization">Shao Lab, Shandong University</p>
+                                        <p class="date">09/2023 - 08/2024</p>
+                                        <p class="location">Qingdao, CN</p>
                                     </div>
-                                    <div class="cv-entry-supplementary">
-                                        <p class="cv-entry-sup-head">Works:</p>
-                                        <p class="cv-entry-sup-info">I primarily serve as a supporter in bioinformatics for other members of the lab.</p>
+                                    <div class="cv-entry-detail">
+                                        <p class="cv-entry-detail-head">Works:</p>
+                                        <p class="cv-entry-detail-info">I primarily serve as a supporter in bioinformatics for other members of the lab.</p>
                                     </div>
                                 </div>
         
@@ -223,14 +220,14 @@
                                     <div class="cv-entry-head">
                                         <p>Research Assistant</p>
                                     </div>
-                                    <div class="cv-entry-expand">
-                                        <p>Yang Lab, Westlake University</p>
-                                        <p>03/2021 - 03/2023</p>
-                                        <p>Hangzhou, CN</p>
+                                    <div class="cv-entry-subhead">
+                                        <p class="organization">Yang Lab, Westlake University</p>
+                                        <p class="date">03/2021 - 03/2023</p>
+                                        <p class="location">Hangzhou, CN</p>
                                     </div>
-                                    <div class="cv-entry-supplementary">
-                                        <p class="cv-entry-sup-head">Works:</p>
-                                        <p class="cv-entry-sup-info">My main responsibility
+                                    <div class="cv-entry-detail">
+                                        <p class="cv-entry-detail-head">Works:</p>
+                                        <p class="cv-entry-detail-info">My main responsibility
                                             in the lab is to manage data. The volume of
                                             data is at the petabyte level,
                                             so I am responsible for ensuring
@@ -251,14 +248,14 @@
                                     <div class="cv-entry-head">
                                         <p>Freelance</p>
                                     </div>
-                                    <div class="cv-entry-expand">
-                                        <p>Home</p>
-                                        <p>10/2019 - 02/2021</p>                            
-                                        <p>Yantai, CN</p>
+                                    <div class="cv-entry-subhead">
+                                        <p class="organization">Home</p>
+                                        <p class="date">10/2019 - 02/2021</p>                            
+                                        <p class="location">Yantai, CN</p>
                                     </div>
-                                    <div class="cv-entry-supplementary">
-                                        <p class="cv-entry-sup-head">Things:</p>
-                                        <p class="cv-entry-sup-info">I visited Yantai,
+                                    <div class="cv-entry-detail">
+                                        <p class="cv-entry-detail-head">Things:</p>
+                                        <p class="cv-entry-detail-info">I visited Yantai,
                                             a beautiful coastal city,
                                             where I took some time to relax
                                             and also carried out my learning plan.
@@ -274,14 +271,14 @@
                                     <div class="cv-entry-head">
                                         <p>Research Assistant</p>
                                     </div>
-                                    <div class="cv-entry-expand">
-                                        <p>Feng Lab, Institute of Microbiology, CAS</p>
-                                        <p>07/2018 - 10/2019</p>
-                                        <p>Beijing, CN</p>
+                                    <div class="cv-entry-subhead">
+                                        <p class="organization">Feng Lab, Institute of Microbiology, CAS</p>
+                                        <p class="date">07/2018 - 10/2019</p>
+                                        <p class="location">Beijing, CN</p>
                                     </div>
-                                    <div class="cv-entry-supplementary">
-                                        <p class="cv-entry-sup-head">Works:</p>
-                                        <p class="cv-entry-sup-info">This is my first job,
+                                    <div class="cv-entry-detail">
+                                        <p class="cv-entry-detail-head">Works:</p>
+                                        <p class="cv-entry-detail-info">This is my first job,
                                             and my main responsibility here is to offer technical
                                             support and software development.
                                             I also have the opportunity to participate in some projects.
@@ -295,22 +292,17 @@
                         </div>
         
         
-                        <div class="cv-block" id="projects">
-                            <p class="cv-block-head">Projects</p>
-                            <div class="cv-block-body">
+                        <div class="cv-section" id="projects">
+                            <p class="cv-section-head">Projects</p>
+                            <div class="cv-section-body">
         
                                 <div class="cv-entry" id="flml">
                                     <div class="cv-entry-head">
-                                        <p><a href="https://github.com/benjaminfang/documentation">FLML (File Layout Markup Language)</a></p>
+                                        <p><a href="https://docs-hailingfang.readthedocs.io/en/latest/file-format/index.html">FLML (File Layout Markup Language)</a></p>
                                     </div>
-                                    <div class="cv-entry-supplementary">
-                                        <p class="cv-entry-sup-head">Status:</p>
-                                        <p class="cv-entry-sup-info">Ongoing, active.</p>
-                                    </div>
-        
-                                    <div class="cv-entry-supplementary">
-                                        <p class="cv-entry-sup-head">Background and Targets:</p>
-                                        <p class="cv-entry-sup-info">In my work in software
+                                    <div class="cv-entry-detail">
+                                        <p class="cv-entry-detail-head">Background and Targets:</p>
+                                        <p class="cv-entry-detail-info">In my work in software
                                             development, I often need to parse files,
                                             which can be either binary or plaintext.
                                             To understand the structure and content of
@@ -330,32 +322,15 @@
                                             <a href="https://github.com/benjaminfang/documentation">file-format</a>.
                                         </p>
                                     </div>
-        
-                                    <div class="cv-entry-supplementary">
-                                        <p class="cv-entry-sup-head">Progress:</p>
-                                        <p class="cv-entry-sup-info"> A draft version of
-                                            the language has been written, and three file
-                                            formats have been documented using this language.
-                                            However, the language still needs a lot of
-                                            revision and improvement. Please see
-                                            <a href="https://docs-benjaminfang.readthedocs.io/en/latest/file-format/index.html">My Documentation</a> for details.
-                                        </p>
-                                    </div>
                                 </div>
                             
                                 <div class="cv-entry" id="gwastools">
                                     <div class="cv-entry-head">
                                         <p><a href="https://github.com/benjaminfang/gwastools">Gwastools</a></p>
                                     </div>
-        
-                                    <div class="cv-entry-supplementary">
-                                        <p class="cv-entry-sup-head">Status:</p>
-                                        <p class="cv-entry-sup-info">Ongoing, active.</p>
-                                    </div>
-        
-                                    <div class="cv-entry-supplementary">
-                                        <p class="cv-entry-sup-head">Background and Targets:</p>
-                                        <p class="cv-entry-sup-info">Several file formats are commonly used to store GWAS related data,
+                                    <div class="cv-entry-detail">
+                                        <p class="cv-entry-detail-head">Background and Targets:</p>
+                                        <p class="cv-entry-detail-info">Several file formats are commonly used to store GWAS related data,
                                             including PLINK files, BGEN files, BAM files, and BESD files.
                                             However, different software is required to perform operations
                                             such as printing basic file information, extracting partial
@@ -372,31 +347,17 @@
                                             I plan to use these libraries to create a
                                             software utility that can perform operations
                                             on these files more easily. The repository is located
-                                            at <a href="https://github.com/benjaminfang/gwastools">gwastools</a>.</p>
-                                    </div>
-        
-                                    <div class="cv-entry-supplementary">
-                                        <p class="cv-entry-sup-head">Progress:</p>
-                                        <p class="cv-entry-sup-info">The C libraries for the
-                                            PLINK file and BOD have been completed.
-                                            However, more coding work and iterations
-                                            are needed to finalize this project.</p>
+                                            at <a href="https://github.com/hailingfang/gwastools">gwastools</a>.</p>
                                     </div>
                                 </div>
                             
                                 <div class="cv-entry" id="biotools">
                                     <div class="cv-entry-head">
-                                        <p><a href="https://github.com/benjaminfang/biotools">Biotools</a></p>
+                                        <p><a href="https://github.com/hailingfang/biotools">Biotools</a></p>
                                     </div>
-        
-                                    <div class="cv-entry-supplementary">
-                                        <p class="cv-entry-sup-head">Status:</p>
-                                        <p class="cv-entry-sup-info">Occasional.</p>
-                                    </div>
-                                    
-                                    <div class="cv-entry-supplementary">
-                                        <p class="cv-entry-sup-head">Background and Targets:</p>
-                                        <p class="cv-entry-sup-info">I planned and carried out this
+                                    <div class="cv-entry-detail">
+                                        <p class="cv-entry-detail-head">Background and Targets:</p>
+                                        <p class="cv-entry-detail-info">I planned and carried out this
                                             project during I worked at IMCAS. As my work continued,
                                             I wrote numerous scripts and tools to fulfill my daily
                                             work requirements, and some of the code I created is reusable.
@@ -408,45 +369,35 @@
                                             and added them to this project. The code of for this project is on
                                         <a href="https://github.com/benjaminfang/biotools">biotools</a>.</p>
                                     </div>
-        
-                                    <div class="cv-entry-supplementary">
-                                        <p class="cv-entry-sup-head">Progress:</p>
-                                        <p class="cv-entry-sup-info">Classes for handling FASTA and GFF
-                                            data has been completed. And I have distributed them via PyPI
-                                            as a Python library named '<a href="https://pypi.org/project/biobrary/">biobrary</a>'.
-                                            I have integrated phylogenetic tree clustering and collapsing tools.
-                                            However, I still need to integrate the code for calling long
-                                            repeating sequences in genomes.</p>
-                                    </div>
                                 </div>
         
                             </div>
                         </div>
         
-                        <div class="cv-block" id="skills">
-                            <p  class="cv-block-head">Skills</p>
-                            <div class="cv-block-body">
+                        <div class="cv-section" id="skills">
+                            <p  class="cv-section-head">Skills</p>
+                            <div class="cv-section-body">
                                 <div class="cv-entry">
-                                    <div class="cv-entry-supplementary">
-                                        <p class="cv-entry-sup-head">Biology:</p>
-                                        <p class="cv-entry-sup-info">Cell culture, Animal dissection, Bacterial culture, PCR analysis, Color spectrum.</p>
-                                        <p class="cv-entry-sup-info second-para">I acquired the skills during my undergraduate studies through theoretical and experimental classes, and I need to review and refresh my knowledge before using them.</p>
+                                    <div class="cv-entry-detail">
+                                        <p class="cv-entry-detail-head">Biology:</p>
+                                        <p class="cv-entry-detail-info">Cell culture, Animal dissection, Bacterial culture, PCR analysis, Color spectrum.</p>
+                                        <p class="cv-entry-detail-info">I acquired the skills during my undergraduate studies through theoretical and experimental classes, and I need to review and refresh my knowledge before using them.</p>
                                     </div>
                                 </div>
         
                                 <div class="cv-entry">
-                                    <div class="cv-entry-supplementary">
-                                        <p class="cv-entry-sup-head">Bioinformatics:</p>
-                                        <p class="cv-entry-sup-info">Genome assembly of microbio, Phylogenetic tree analysis.</p>
-                                        <p class="cv-entry-sup-info second-para">I acquired that knowledge during my graduate studies and subsequently through my work.</p>
+                                    <div class="cv-entry-detail">
+                                        <p class="cv-entry-detail-head">Bioinformatics:</p>
+                                        <p class="cv-entry-detail-info">Genome assembly of microbio, Phylogenetic tree analysis.</p>
+                                        <p class="cv-entry-detail-info">I acquired that knowledge during my graduate studies and subsequently through my work.</p>
                                     </div>
                                 </div>
         
                                 <div class="cv-entry">
-                                    <div class="cv-entry-supplementary">
-                                        <p class="cv-entry-sup-head">Computer:</p>
-                                        <p class="cv-entry-sup-info">Python and C Programming, Good user of linux systerm, Computer network, front-end web developing, Vector graph and raster graph mapulation.</p>
-                                        <p class="cv-entry-sup-info second-para">I have chosen Python and C as my programming languages
+                                    <div class="cv-entry-detail">
+                                        <p class="cv-entry-detail-head">Computer:</p>
+                                        <p class="cv-entry-detail-info">Python and C Programming, Good user of linux systerm, Computer network, front-end web developing, Vector graph and raster graph mapulation.</p>
+                                        <p class="cv-entry-detail-info">I have chosen Python and C as my programming languages
                                             for my productive activities.
                                             I use Python for daily system management tasks,
                                             writing short scripts,
@@ -460,22 +411,21 @@
                                     </div>
                                 </div>
                                 <div class="cv-entry">
-                                    <div class="cv-entry-supplementary">
-                                        <p class="cv-entry-sup-head">Language:</p>
-                                        <p class="cv-entry-sup-info">IELTS: 6</p>
+                                    <div class="cv-entry-detail">
+                                        <p class="cv-entry-detail-head">Language:</p>
+                                        <p class="cv-entry-detail-info">IELTS: 6</p>
                                     </div>
                                 </div>
                             </div>
                         </div>
                         
-                        <div class="cv-block" id="course">
-                            <p class="cv-block-head">Courses</p>
-                            <div class="cv-block-body">
-                                
+                        <div class="cv-section" id="course">
+                            <p class="cv-section-head">Courses</p>
+                            <div class="cv-section-body">
                                 <div class="cv-entry">
-                                    <div class="cv-entry-supplementary">
-                                        <p class="cv-entry-sup-head">Graduate:</p>
-                                        <div class="cv-entry-sup-info">
+                                    <div class="cv-entry-detail">
+                                        <p class="cv-entry-detail-head">Graduate:</p>
+                                        <div class="cv-entry-detail-info">
                                             <p>Protein Structure and Functions, Biochemistry and Moleculer Biology, Cell Skeleton, Advanced Cell Biology, Advanced Developmental Biology,</p>
                                             <p>Bioinfomatics, Linux Operation System, Computational Biology(Perl and R Programming)</p>
                                         </div>
@@ -483,9 +433,9 @@
                                 </div>
         
                                 <div class="cv-entry">
-                                    <div class="cv-entry-supplementary">
-                                        <p class="cv-entry-sup-head">Undergraduate:</p>
-                                        <div class="cv-entry-sup-info">
+                                    <div class="cv-entry-detail">
+                                        <p class="cv-entry-detail-head">Undergraduate:</p>
+                                        <div class="cv-entry-detail-info">
                                             <p>Advanced Mathmatics B, Collage  Physics B, Collage Chemistry 1 to 3(Inorganic Chemistry, Organic Chemistry, Physical Chemistry),</p>
                                             <p>Cell Biology, Biochemistry, Genetics, Moleculer Biology, Genetic Engineering, Cell Engineering,</p>
                                             <p>Plant Biology, Animal Biology, Microbiology, Animal Histology, Animal Physiology.</p>
@@ -496,20 +446,20 @@
                             </div>
                         </div>
         
-                        <div class="cv-block" id="rewards">
-                            <p class="cv-block-head">Rewards</p>
-                            <div class="cv-block-body">
+                        <div class="cv-section" id="rewards">
+                            <p class="cv-section-head">Rewards</p>
+                            <div class="cv-section-body">
                                 <div class="cv-entry">
-                                    <div class="cv-entry-supplementary">
-                                        <p class="cv-entry-sup-head">Graduate:</p>
-                                        <div class="cv-entry-sup-info">
+                                    <div class="cv-entry-detail">
+                                        <p class="cv-entry-detail-head">Graduate:</p>
+                                        <div class="cv-entry-detail-info">
                                             <p>Graduate Second-class Scholarship(twich), Graduate New Student Scholarship</p>
                                         </div>
                                     </div>
                                 </div>
         
                                 <div class="cv-entry">
-                                    <div class="cv-entry-supplementary">
+                                    <div class="cv-entry-su">
                                         <p class="cv-entry-sup-head">Undergraduate:</p>
                                         <div class="cv-entry-sup-info">
                                             <p>Excellent Student Scholarship, Outstanding Graduate of the School, Triple-A Student </p>
@@ -520,88 +470,67 @@
                             </div>
                         </div>
         
-                        <div class="cv-block" id="publications">
-                            <p class="cv-block-head">Publications</p>
-                            <div class="cv-block-body">
-                                <div class="publication-info">
-                                    <div class="pub-name">
-                                        <p>Zhang, G., Yao, S., Liu, Y., Fang, H., Song, Y., Wang, C., Wei, D., Feng, J., 2023. <a href="https://doi.org/10.1128/aem.01738-22">Systematic discovery of
-                                            a new catalogue of tyrosine-type integrases in bacterial genomic islands</a>. Applied and Environmental Microbiology 89, e01738-22</p>
-                                    </div>
-                                    <div class="pub-contribution">
-                                        <p>Contribution:</p>
-                                        <p>Assist in identifying long repeats within bacterial genomes.
-                                            Long repetitive sequences are frequently found in bacterial genomes,
-                                            and they often consist of short repeated segments arranged in a particular pattern.
-                                            For example, long repetitive sequences may be constructed by
-                                            four short repeated segments,
-                                            labeled A, B, C, and D. In some cases, the C and D segments may be inverted.
-                                            These sequences should be classified into the same type of long repetitive sequences.
-                                            I developed a program that can identify long repetitive sequences, even when their short
-                                            segments contain variations. This program can now identify long repetitive
-                                            sequences that follow a particular sample segment pattern.</p>
-                                    </div>
+                        <div class="cv-section" id="publications">
+                            <p class="cv-section-head">Publications</p>
+                            <div class="cv-section-body">
+                                <div class="publication-entry">
+                                    <p class="pub-title">Zhang, G., Yao, S., Liu, Y., Fang, H., Song, Y., Wang, C., Wei, D., Feng, J., 2023. <a href="https://doi.org/10.1128/aem.01738-22">Systematic discovery of
+                                        a new catalogue of tyrosine-type integrases in bacterial genomic islands</a>. Applied and Environmental Microbiology 89, e01738-22</p>
+                                    <p class="contribution-key">Contribution:</p>
+                                    <p class="pub-contribution">Assist in identifying long repeats within bacterial genomes.
+                                        Long repetitive sequences are frequently found in bacterial genomes,
+                                        and they often consist of short repeated segments arranged in a particular pattern.
+                                        For example, long repetitive sequences may be constructed by
+                                        four short repeated segments,
+                                        labeled A, B, C, and D. In some cases, the C and D segments may be inverted.
+                                        These sequences should be classified into the same type of long repetitive sequences.
+                                        I developed a program that can identify long repetitive sequences, even when their short
+                                        segments contain variations. This program can now identify long repetitive
+                                        sequences that follow a particular sample segment pattern.</p>
                                 </div>
         
-                                <div class="publication-info">
-                                    <div class="pub-name">
-                                    <p>Qi, T., Wu, Y., Fang, H., Zhang, F., Liu, S., Zeng, J., Yang, J., 2022. <a href="https://doi.org/10.1038/s41588-022-01154-4">Genetic control of RNA splicing and its distinct
+                                <div class="publication-entry">
+                                    <p class="pub-title">Qi, T., Wu, Y., Fang, H., Zhang, F., Liu, S., Zeng, J., Yang, J., 2022. <a href="https://doi.org/10.1038/s41588-022-01154-4">Genetic control of RNA splicing and its distinct
                                     role in complex trait variation</a>. Nature Genetics 54, 1355–1363.</p>
-                                    </div>
-                                    <div class="pub-contribution">
-                                        <p>Contribution:</p>
-                                        <p>In this project, my main contribution is programming. Specifically, I am responsible for programming tasks.
-                                            Under Ting's supervision, I built the data portal called <a href="https://yanglab.westlake.edu.cn/data/brainmeta/cis_sqtl/">BrainMeta</a>.
-                                            The website is based on the open project <a href="https://github.com/statgen/pheweb">Pheweb</a>,
-                                            and I ran the data parse process of it and modified the webpage to adapt to our demands.
-                                            And also, I implemented the permutation module of <a href="https://yanglab.westlake.edu.cn/software/osca/#THISTLE">THISTLE</a>.</p>
-                                    </div>
+                                    <p class="contribution-key">Contribution:</p>
+                                    <p class="pub-contribution">In this project, my main contribution is programming. Specifically, I am responsible for programming tasks.
+                                        Under Ting's supervision, I built the data portal called <a href="https://yanglab.westlake.edu.cn/data/brainmeta/cis_sqtl/">BrainMeta</a>.
+                                        The website is based on the open project <a href="https://github.com/statgen/pheweb">Pheweb</a>,
+                                        and I ran the data parse process of it and modified the webpage to adapt to our demands.
+                                        And also, I implemented the permutation module of <a href="https://yanglab.westlake.edu.cn/software/osca/#THISTLE">THISTLE</a>.</p>
                                 </div>
         
-                                <div class="publication-info">
-                                    <div class="pub-name">
-                                    <p>Tang, N., Hu, J., Zhao, Y., Song, Y., Wang, C., Zhang, G., Wei, D., Fang, H., Li, C., Jia, R., Feng, J., 2022. <a href="https://doi.org/10.1093/jac/dkab380">In vivo
+                                <div class="publication-entry">
+                                    <p class="pub-title">Tang, N., Hu, J., Zhao, Y., Song, Y., Wang, C., Zhang, G., Wei, D., Fang, H., Li, C., Jia, R., Feng, J., 2022. <a href="https://doi.org/10.1093/jac/dkab380">In vivo
                                     evolution of carbapenem resistance in hypervirulent Klebsiella pneumoniae in a patient undergoing long-term treatment</a>.
                                     Journal of Antimicrobial Chemotherapy 77, 531–533.</p>
-                                    </div>
-                                    <div class="pub-contribution">
-                                        <p>Contribution:</p>
-                                        <p>I primarily assisted with phylogenetic tree clustering in this project.
-                                            When a phylogenetic tree contains thousands of nodes,
-                                            manual analysis such as clustering nodes can become difficult.
-                                            To address this, I developed a tool that automatically clusters the tree.
-                                            My tool divides the nodes into groups based on a threshold and collapses the nodes in the same group.
-                                            This produces a simplified tree that can be easily plotted. The code
-                                            is stored in repository <a href="https://github.com/benjaminfang/biotools">biotools</a>.</p>
-                                    </div>
+                                    <p class="contribution-key">Contribution:</p>
+                                    <p class="pub-contribution">I primarily assisted with phylogenetic tree clustering in this project.
+                                        When a phylogenetic tree contains thousands of nodes,
+                                        manual analysis such as clustering nodes can become difficult.
+                                        To address this, I developed a tool that automatically clusters the tree.
+                                        My tool divides the nodes into groups based on a threshold and collapses the nodes in the same group.
+                                        This produces a simplified tree that can be easily plotted. The code
+                                        is stored in repository <a href="https://github.com/benjaminfang/biotools">biotools</a>.</p>
                                 </div>
         
-                                <div class="publication-info">
-                                    <div class="pub-name">
-                                        <p>Jiang, L., Zheng, Z., Fang, H., Yang, J., 2021. <a href="https://doi.org/10.1038/s41588-021-00954-4">A generalized linear mixed model association tool for biobank-scale
-                                        data</a>. Nature Genetics 53, 1616–1621.</p>
-                                    </div>
-                                    <div class="pub-contribution">
-                                        <p>Contribution:</p>
-                                        <p>I implemented the <a href="https://yanglab.westlake.edu.cn/software/gcta/#ACAT-V">ACAT</a> module based on R scripts provided by Longda.
-                                            I improved the efficiency of the module by optimizing the data structure and program design.
-                                            As a result, the running time for the module was reduced from about 2 hours to several tens of seconds for the same data,
-                                            compared to the original R script implementation.</p>
-                                    </div>
+                                <div class="publication-entry">
+                                    <p class="pub-title">Jiang, L., Zheng, Z., Fang, H., Yang, J., 2021. <a href="https://doi.org/10.1038/s41588-021-00954-4">A generalized linear mixed model association tool for biobank-scale
+                                    data</a>. Nature Genetics 53, 1616–1621.</p>
+                                    <p class="contribution-key">Contribution:</p>
+                                    <p class="pub-contribution">I implemented the <a href="https://yanglab.westlake.edu.cn/software/gcta/#ACAT-V">ACAT</a> module based on R scripts provided by Longda.
+                                        I improved the efficiency of the module by optimizing the data structure and program design.
+                                        As a result, the running time for the module was reduced from about 2 hours to several tens of seconds for the same data,
+                                        compared to the original R script implementation.</p>
                                 </div>
         
-                                <div class="publication-info">
-                                    <div>
-                                        <p>Zhang, C., Ju, Y., Tang, N., Li, Y., Zhang, G., Song, Y., Fang, H., Yang, L., Feng, J., 2020. <a href="https://doi.org/10.1093/bib/bbz056">Systematic analysis of
-                                        supervised machine learning as an effective approach to predicate β-lactam resistance phenotype in Streptococcus
-                                        pneumoniae</a>. Briefings in Bioinformatics 21, 1347–1355.</p>
-                                    </div>
-                                    <div class="pub-contribution">
-                                        <p>Contribution:</p>
-                                        <p> I helped with rechecking the correctness of previously used protein data.</p>
-                                    </div>
+                                <div class="publication-entry">
+                                    <p class="pub-title">Zhang, C., Ju, Y., Tang, N., Li, Y., Zhang, G., Song, Y., Fang, H., Yang, L., Feng, J., 2020. <a href="https://doi.org/10.1093/bib/bbz056">Systematic analysis of
+                                    supervised machine learning as an effective approach to predicate β-lactam resistance phenotype in Streptococcus
+                                    pneumoniae</a>. Briefings in Bioinformatics 21, 1347–1355.</p>
+                                    <p class="contribution-key">Contribution:</p>
+                                    <p class="pub-contribution"> I helped with rechecking the correctness of previously used protein data.</p>
                                 </div>
-        
                             </div>
                         </div>
         
