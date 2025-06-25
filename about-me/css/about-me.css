@@ -2,7 +2,7 @@
     background-color: rgb(63, 65, 68);
 }
 
-.side-nav {
+.sticky-side {
     position: sticky;
     top: 3em;
     padding: 0;
@@ -15,13 +15,6 @@
     overflow: scroll;
 }
 
-.nav-title {
-    padding: 1em;
-    border: 0;
-    margin: 0;
-    margin-left: 2em;
-}
-
 #page-title {
     font-size: 1.7em;
     font-weight: bold;
@@ -32,38 +25,33 @@
     font-weight: bold;
 }
 
-.nav-contents {
-    padding: 1em;
-    border: 0;
-    margin: 0;
-    margin-left: 2em;
-}
-
-.nav-contents a {
-    color: rgb(38, 44, 133);
-    text-decoration: none;
-}
-
-.side-nav-l1 {
+.nav-list {
     list-style: none;
     padding: 0;
     font-size: 1.3em;
 }
 
-.side-nav-l2 {
-    font-size:  1.1em;
+.nav-list a {
+    color: rgb(38, 44, 133);
+    text-decoration: none;
+    font-size: 1.2em;
 }
 
-.side-nav-l1 > li {
-    margin-bottom: .3em;
-}
-
-.nav-footer {
-    padding: 1em;
+#page-title,
+#page-slogan,
+.nav-list {
+    padding: 1rem;
     border: 0;
     margin: 0;
-    margin-left: 2em;
+    margin-left: 2rem; 
 }
+
+#print-cv,
+#print-resume {
+    margin-left: 3rem;
+    margin-bottom: .2rem;
+}
+
 
 .main-content {
     max-width: 75em;
