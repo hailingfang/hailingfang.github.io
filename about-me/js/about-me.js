@@ -1,6 +1,6 @@
 function change_css_to_cv() {
     const my_css_link = document.querySelector("#about-me-css");
-    my_css_link.setAttribute("href", "/about-me/css/about-me-cv.css");
+    my_css_link.setAttribute("href", "./css/about-me-cv.css");
     const my_photo = document.querySelector("#myphoto img");
     my_photo.setAttribute("src", "imgs/fanghl_1inch.jpg");
     const tilte = document.querySelector("head title");
@@ -20,7 +20,7 @@ function change_css_to_cv() {
 
 function change_css_to_resume() {
     const my_css_link = document.querySelector("#about-me-css");
-    my_css_link.setAttribute("href", "/about-me/css/about-me-resume.css");
+    my_css_link.setAttribute("href", "./css/about-me-resume.css");
     const my_photo = document.querySelector("#myphoto img");
     my_photo.setAttribute("src", "imgs/fanghl_1inch.jpg");
     const tilte = document.querySelector("head title");
