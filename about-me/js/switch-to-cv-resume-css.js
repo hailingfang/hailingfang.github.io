@@ -7,7 +7,6 @@ function change_css_to_cv() {
     my_photo.setAttribute("height", "397")
     const tilte = document.querySelector("head title");
     tilte.textContent = "CV-Hailing-Fang";
-    let page_url = window.location.href;
 }
 
 
