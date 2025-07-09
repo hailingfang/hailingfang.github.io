@@ -106,6 +106,10 @@
     grid-template-columns: 7fr 1fr 30fr;
 }
 
+.infoline > span:first-child {
+    font-weight: bold;
+}
+
 #email-address {
     word-break: break-all;
 }
