@@ -1,4 +1,5 @@
-/*css for show and print the CV*/
+/*css for show and print the resume*/
+
 body {
     padding: 0;
     border: 0;
@@ -13,157 +14,136 @@ footer {
     display: none;
 }
 
-.main-wrapper .life-record {
+.main-left {
     display: none;
 }
 
-.print-cv-resume {
-    display:  none;
+.life-record {
+    display: none;
 }
 
-.main-wrapper {
-    box-sizing: border-box;
-    max-width: 790px;
+#profile {
+    display: none;
+}
+
+.main-right {
     padding: 0;
-    padding-top: 3.5em;
-    padding-bottom: 3em;
-    padding-left: 2.5em;
-    padding-right: 2.5em;
     border: 0;
-    margin: 0 auto;
+    margin: 0;
+}
 
-    display: grid;
-    grid-template-rows: auto auto auto auto;
-    align-items: stretch;
-    justify-items: stretch;
-    gap: 1.6em;
+.main-container {
+    padding: 4em 3em 3em 3em;
+    border: 0;
+    margin: 0em auto;
+    width: 65em;
 }
 
 
-/*>*/
-#myinfo {
-    grid-row: 1;
-
-    font-size: 1.05em;
-
+#contact {
+    padding: 1em 0em;
+    border: 0px;
     display: grid;
-    grid-template-columns: 4fr 1fr;
+    grid-template-columns: 7.5fr 2.5fr;
     align-items: stretch;
     justify-items: stretch;
-
-
+    margin: 0px;
+    margin-bottom: 3em;
 }
 
-#keyinfo  {
+.contact-left {
+    padding: 0px;
+    border: 0px solid red;
+    margin: 0px;
+    grid-column: 1;
+
     display: grid;
-    grid-template-columns: 1.4fr 1fr;
-    grid-template-rows: 1fr 1fr 1fr;
+    grid-template-columns: 1fr 1fr;
+    grid-template-rows: auto;
+    
+    font-size: 1.1em;
     align-items: center;
-    justify-items: start;
-}
-
-#keyinfo :last-child {
-    grid-column: 1/3;
+    justify-items: stretch;
 }
 
 .infoline {
-    padding-right: 0.5em;
+    margin-top: 0.5em;
+    margin-bottom: 0.5em;
+    display: grid;
+    justify-items: left;
+    grid-template-columns: 7fr 1fr 30fr;
 }
-
-.infoline :first-child{
-    font-weight: bold;
-}
-
-
-#myphoto img {
-    max-width: 120px;
-}
-
 
 #email-address {
     word-break: break-all;
 }
 
-/*<*/
-
-
-/*>*/
-#myprofile {
-    grid-row: 3;
-    display: none;
-
-    font-size: 1.04em;
-    line-height: 1.3em;
-    text-align: justify;
+.contact-right {
+    grid-column: 2;
+    max-width: 9em;
+    max-height: 9em;
 }
 
-#myprofile p {
-    padding: 0;
-    border: 0;
-    margin-bottom: 0.8em;
+#contact img {
+    width: 100%;
+    height: 100%;
+    object-fit: contain;
 }
 
-#myprofile p:last-child {
-    margin-bottom: 0em;
-}
-/*<*/
 
-/*>*/
-.cv-block-wrapper {
-    grid-row: 2;
+#cv {
+    margin: 0px;
+    margin-bottom: 2em;
+
 }
 
-.cv-block {
+.cv-section {
     padding: 0px;
     border: 0px solid red;
     margin: 0px;
-    margin-bottom: 2.4em;
+    margin-bottom: 3em;
     line-height: 1.3em;
 }
 
-.cv-block-head {
+.cv-section-head {
     font-weight: bold;
-    font-size: 1.32em;
+    font-size: 1.3em;
     padding: 0.2em;
     padding-left: 0.4em;
     padding-top: 0.4em;
     padding-bottom: 0.1em;
-    border: 0px solid red;
+    border: 0px;
     border-left: 0.2em solid rgba(28, 34, 36, 0.5);
     border-bottom: 0.1em solid rgba(71, 82, 85, 0.5);
     margin: 0px;
     border-top-left-radius: 0.8em;
-    margin-bottom: 1em;
+    margin-bottom: 1.8em;
 }
 
-.cv-block-body {
+.cv-section-body {
     padding: 0px;
     border: 0px solid red;
-    margin-left: 0em;
-    margin-right: 0em;
+    margin-left: 0.5em;
+    margin-right: 0.3em;
 }
 
 .cv-entry {
-    margin-bottom: 1.6em;
+    margin-bottom: 1.8em;
 }
 
 .cv-entry-head {
     padding: 0px;
-    border: 0px solid red;
+    border: 0;
     margin: 0px;
     margin-bottom: 1em;
     font-weight: bold;
-    font-size: 1.2em;
+    font-size: 1.3em;
     color: rgb(30, 76, 145);
 }
 
-.cv-entry-head a {
-    color: rgb(31, 89, 128);
-}
-
-.cv-entry-expand {
+.cv-entry-subhead {
     display: grid;
-    grid-template-columns: 53% 25% 22%;
+    grid-template-columns: 50% 25% 25%;
     padding: 0em;
     border: 0px solid red;
     margin: 0px;
@@ -173,15 +153,30 @@ footer {
     
 }
 
-.cv-entry-supplementary {
-    padding: 0em;
-    border: 0px solid red;
-    margin: 0px;
+.organization,
+.date,
+.location {
+    font-size: 1.1em;
+    font-weight: bold;
+    margin: 0;
+    padding: 0;
+    border: 0;
+}
+
+.cv-entry-detail {
+        padding: 0em;
+        border: 0px solid red;
+        margin: 0px;
 }
 
 
+#education .cv-entry-detail,
+#experience .cv-entry-detail{
+    display: none;
+}
 
-.cv-entry-sup-head {
+
+.cv-entry-detail-head {
     font-style: italic;
     font-size: 1.1em;
     font-weight: bold;
@@ -189,64 +184,48 @@ footer {
     margin-bottom: 0.3em;
 }
 
-.cv-entry-sup-info {
+.cv-entry-detail-info {
     padding: 0px;
     border: 0px solid red;
     margin: 0px;
-    margin-left: 0.2em;
+    margin-left: 0.15em;
     margin-bottom: 0.5em;
     line-height: 1.3em;
     text-align: justify;
     
 }
 
-.cv-entry-sup-info a {
-
+.cv-entry-detail-info a {
     color: rgb(54, 54, 163);
     text-decoration: underline;
-
 }
 
-.publication-info {
-    margin-bottom: 1.2em;
+
+.cv-entry-detail-info span {
+    font-weight: bold;
+}
+
+
+.publication-entry {
+    margin-top: 2em;
     line-height: 1.3em;
     text-align: justify;
 }
 
-.pub-contribution {
-    margin-top: 0.5em;
+.pub-title {
+    font-size: 1.1em;
+    margin-bottom: .5em;
 }
 
-.publication-info a {
+.contribution-key {
+    font-weight: bold;
+    margin-bottom: .5em;
+}
+
+.publication-title a {
     color: rgb(14, 85, 166);
     font-style: italic;
     text-decoration: underline;
 }
 
-.pub-contribution p:first-child {
-    font-weight: bold;
-}
 
-/*<*/
-
-#projects {
-    display: none;
-}
-
-#course {
-    display: none;
-}
-
-
-
-#education .cv-entry-supplementary {
-    display: none;
-}
-
-.cv-entry-sup-info.second-para {
-    display: none;
-}
-
-#personal-summary .cv-block-body {
-    text-align: justify;
-}
