@@ -2,6 +2,7 @@
     background-color: rgb(63, 65, 68);
 }
 
+
 .sticky-side {
     position: sticky;
     top: 3em;
@@ -103,7 +104,7 @@
     margin-bottom: 0.5em;
     display: grid;
     justify-items: left;
-    grid-template-columns: 7fr 1fr 30fr;
+    grid-template-columns: 7fr 2fr 30fr;
 }
 
 .infoline > span:first-child {
@@ -112,6 +113,10 @@
 
 #email-address {
     word-break: break-all;
+}
+
+#website {
+    display: none;
 }
 
 .contact-right {
@@ -199,7 +204,7 @@
 
 .cv-entry-subhead {
     display: grid;
-    grid-template-columns: 50% 25% 25%;
+    grid-template-columns: 4fr 4fr 3fr;
     padding: 0em;
     border: 0px solid red;
     margin: 0px;
