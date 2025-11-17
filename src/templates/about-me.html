@@ -50,186 +50,51 @@
                         </div>
                     </div>
 
-
-                    <div id="profile">
-                        <p>
-                        I earned a master’s degree in biology, with a specialization in bioinformatics, from Beijing Normal University in 2018.
-                        I have been studying and working on problems related to:
-                        1) genome assembly, genome annotation, and phylogenetic analysis of microbes;
-                        2) improving the computational efficiency of bioinformatics tools;
-                        3) cell-type identification based on RNA-seq data.
-                        </p>
-
-                        <p>
-                        My study and research interests include the origins of life, cellular mechanisms,
-                        organization mechanisms of multicellular organisms,
-                        the generation of intelligence of neural systems, and cancer therapy.
-                        I use computational approaches to explore these questions.
-                        </p>
-
-                        <p>
-                        I am always curious about the world, and learning new things excites me.
-                        Applying what I have learned to solve real-world problems gives me a sense of control
-                        over my life and the ability to make a positive impact.
-                        I prefer to work independently at first and then communicate my ideas to others in a clear,
-                        concise, and accurate manner.
-                        </p>
-
-                    </div>
-
+                    {% include "about-me-profile.html" %}
 
                     <div id="cv">
                         <div class="cv-section" id="education">
                             <p class="cv-section-head">Education</p>
                             <div class="cv-section-body">
-                                <div class="cv-entry" id="DOC">
+                            {% for edu_id, degree, university, start_date, end_date, city, paper_type, paper_title ,paper_summary in data_dic["edu"] %}
+                                <div class="cv-entry" id="{{ edu_id }}">
                                     <div class="cv-entry-head">
-                                        <p>Ph.D. student in Biology</p>
+                                        <p>{{ degree }}</p>
                                     </div>
                                     <div class="cv-entry-subhead">
-                                        <p class="organization">Shandong University</p>
-                                        <p class="date">09/2024 - 07/2025</p>
-                                        <p class="location">Qindao, CN</p>
+                                        <p class="organization">{{ university }}</p>
+                                        <p class="date">{{ start_date }} - {{ end_date }}</p>
+                                        <p class="location">{{ city }}</p>
                                     </div>
                                     <div class="cv-entry-detail">
-                                        <p class="cv-entry-detail-head"></p>
-                                        <p class="cv-entry-detail-info">I quite the doctorate project on July 1, 2025.</p>
-                                        <p class="cv-entry-detail-info"></p>
+                                        <p class="cv-entry-detail-head">{{ paper_type }}</p>
+                                        <p class="cv-entry-detail-info">{{ paper_title }}</p>
+                                        <p class="cv-entry-detail-info">{{ paper_summary }}</p>
                                     </div>
                                 </div>
-
-                                <div class="cv-entry" id="MA">
-                                    <div class="cv-entry-head">
-                                        <p>Master of Science in Biology</p>
-                                    </div>
-                                    <div class="cv-entry-subhead">
-                                        <p class="organization">Beijing Normal University</p>
-                                        <p class="date">09/2015 - 07/2018</p>
-                                        <p class="location">Beijing, CN</p>
-                                    </div>
-                                    <div class="cv-entry-detail">
-                                        <p class="cv-entry-detail-head">Thesis:</p>
-                                        <p class="cv-entry-detail-info"><span>Title: </span> An analysis of codon bias between
-                                            intrinsically disordered regions and structural domains of
-                                            orthologous single-copy genes
-                                            from human, chimpanzee and mouse genomes.
-                                        </p>
-                                        <p class="cv-entry-detail-info"><span>Summary: </span>
-                                            Codon bias, the unequal usage of synonymous codons, can significantly
-                                            influence biological processes and organism fitness.
-                                            The project compared the codon bias of orthologous single-copy
-                                            genes in IDRs and SDs across the human, chimpanzee, and mouse genomes.
-                                            Our results show that about 3% of orthologous single-copy genes in human and
-                                            chimpanzee are significantly different in codon bias between IDRs and SDs, and about 1% in
-                                            mouse genome. There are 7 gene families in which each gene is an IDRs strong codon bias gene,
-                                            and 13 gene families in which each gene is an IDRs weak codon bias gene.
-                                        </p>
-                                    </div>
-                                </div>
-
-                                <div class="cv-entry" id="BA">
-                                    <div class="cv-entry-head">
-                                        <p>Bachelor of Science in Biotechnology</p>
-                                    </div>
-                                    <div class="cv-entry-subhead">
-                                        <p class="organization">Inner Mongolia University</p>
-                                        <p class="date">09/2011 - 07/2015</p>
-                                        <p class="location">Huhhot, CN</p>
-                                    </div>
-                                    <div class="cv-entry-detail">
-                                        <p class="cv-entry-detail-head">Paper:</p>
-                                        <p class="cv-entry-detail-info"><span>Title: </span> Structure-function relationship analysis of 20
-                                            kinds of flavonoids of inhibiting HepG2 cell
-                                            proliferation.</p>
-                                        <p class="cv-entry-detail-info"><span>Summary: </span> Flavonoids is a kind of polyphenolic substances
-                                            and distribute in vegetables and fruits broadly.
-                                            Flavonoids have different anticancer activity due to different
-                                            structure. The project compare the anti-proliferation activity of 20 kinds of flavonoids,
-                                            and analyze structure-function relationship between flavonoids and anticaner activity.
-                                            The research find that: 1) flavones is more efficient than flavanones;
-                                            2) flavones’ basic structure is important to its anticancer activity;
-                                            3) flavanones have weak anticancer function may be cause by losing of 23 doubly bond;
-                                            4) 5’ have a group is important to its function;
-                                            5) phenyl B connect to 3 point is important to its anticancer activity.
-                                        </p>
-
-                                    </div>
-                                </div>
+                            {% endfor %}
                             </div>
                         </div>
 
                         <div class="cv-section" id="experience">
                             <p class="cv-section-head">Experience</p>
                             <div class="cv-section-body">
-                                <div class="cv-entry" id="westlake">
+                            {% for job_id, job_title, employer, start_date, end_date, city, responsibilities in data_dic["exp"] %}
+                                <div class="cv-entry" id="{{ job_id }}">
                                     <div class="cv-entry-head">
-                                        <p>Research Assistant</p>
+                                        <p>{{ job_title }}</p>
                                     </div>
                                     <div class="cv-entry-subhead">
-                                        <p class="organization">Shao Lab, Shandong University</p>
-                                        <p class="date">09/2023 - 08/2024</p>
-                                        <p class="location">Qingdao, CN</p>
+                                        <p class="organization">{{ impolyer }}</p>
+                                        <p class="date">{{ start_date }} - {{end_date }}</p>
+                                        <p class="location">{{ city }}</p>
                                     </div>
                                     <div class="cv-entry-detail">
                                         <p class="cv-entry-detail-head">Responsibilities:</p>
-                                        <p class="cv-entry-detail-info">I primarily serve as a supporter in bioinformatics for other members of the lab.</p>
+                                        <p class="cv-entry-detail-info">{{ responsibilities }}</p>
                                     </div>
                                 </div>
-
-                                <div class="cv-entry" id="westlake">
-                                    <div class="cv-entry-head">
-                                        <p>Research Assistant</p>
-                                    </div>
-                                    <div class="cv-entry-subhead">
-                                        <p class="organization">Yang Lab, Westlake University</p>
-                                        <p class="date">03/2021 - 03/2023</p>
-                                        <p class="location">Hangzhou, CN</p>
-                                    </div>
-                                    <div class="cv-entry-detail">
-                                        <p class="cv-entry-detail-head">Responsibilities:</p>
-                                        <p class="cv-entry-detail-info">
-                                        1) manage and download data;
-                                        2) install software and provide technical support for Linux usage;
-                                        3) address issues of software which developed by the lab;
-                                        4) develope software.
-                                        </p>
-                                    </div>
-                                </div>
-
-                                <div class="cv-entry" id="freework">
-                                    <div class="cv-entry-head">
-                                        <p>Freelance</p>
-                                    </div>
-                                    <div class="cv-entry-subhead">
-                                        <p class="organization">Home</p>
-                                        <p class="date">10/2019 - 02/2021</p>
-                                        <p class="location">Yantai, CN</p>
-                                    </div>
-                                    <div class="cv-entry-detail">
-                                        <p class="cv-entry-detail-head">Things:</p>
-                                        <p class="cv-entry-detail-info">
-                                            I learned knowledge of computer systems,
-                                            networks, and mathematics.
-                                        </p>
-                                    </div>
-                                </div>
-
-                                <div class="cv-entry" id="imcas">
-                                    <div class="cv-entry-head">
-                                        <p>Research Assistant</p>
-                                    </div>
-                                    <div class="cv-entry-subhead">
-                                        <p class="organization">Feng Lab, Institute of Microbiology, CAS</p>
-                                        <p class="date">07/2018 - 10/2019</p>
-                                        <p class="location">Beijing, CN</p>
-                                    </div>
-                                    <div class="cv-entry-detail">
-                                        <p class="cv-entry-detail-head">Responsibilities:</p>
-                                        <p class="cv-entry-detail-info">
-                                            1) develope software;
-                                            2) genome assembly, genome annotation, and phylogenetic analysis of microbes.
-                                    </div>
-                                </div>
+                            {% endfor %}
                             </div>
                         </div>
 
@@ -386,54 +251,13 @@
                         <div class="cv-section" id="publications">
                             <p class="cv-section-head">Publications</p>
                             <div class="cv-section-body">
+                            {% for id, pub_authors, pub_title, pub_journal, pub_link, pub_contributions in data_dic["pub"] %}
                                 <div class="publication-entry">
-                                    <p class="pub-title">Zhang, G., Yao, S., Liu, Y., Fang, H., Song, Y., Wang, C., Wei, D., Feng, J., 2023. <a href="https://doi.org/10.1128/aem.01738-22">Systematic discovery of
-                                        a new catalogue of tyrosine-type integrases in bacterial genomic islands</a>. Applied and Environmental Microbiology 89, e01738-22</p>
+                                    <p class="pub-title">{{ pub_authors }}. <a href="{{ pub_link }}">{{ pub_title }}</a>. {{ pub_journal }}.</p>
                                     <p class="contribution-key">Contribution:</p>
-                                    <p class="pub-contribution">Assist in identifying long repeats within bacterial genomes.
-                                        I developed a program that can identify long repetitive sequences, even when their short
-                                        segments contain variations. This program can now identify long repetitive
-                                        sequences that follow a particular simple segment pattern.</p>
+                                    <p class="pub-contribution">{{ pub_contributions }}</p>
                                 </div>
-
-                                <div class="publication-entry">
-                                    <p class="pub-title">Qi, T., Wu, Y., Fang, H., Zhang, F., Liu, S., Zeng, J., Yang, J., 2022. <a href="https://doi.org/10.1038/s41588-022-01154-4">Genetic control of RNA splicing and its distinct
-                                    role in complex trait variation</a>. Nature Genetics 54, 1355–1363.</p>
-                                    <p class="contribution-key">Contribution:</p>
-                                    <p class="pub-contribution">
-                                        I built the data portal called <a href="https://yanglab.westlake.edu.cn/data/brainmeta/cis_sqtl/">BrainMeta</a>.
-                                        The website is based on the open project <a href="https://github.com/statgen/pheweb">Pheweb</a>,
-                                        and I ran the data parsing process of Pheweb and modified the webpage to meet our needs.
-                                        I also implemented the permutation module named
-                                        <a href="https://yanglab.westlake.edu.cn/software/osca/#THISTLE">THISTLE</a>.</p>
-                                </div>
-
-                                <div class="publication-entry">
-                                    <p class="pub-title">Tang, N., Hu, J., Zhao, Y., Song, Y., Wang, C., Zhang, G., Wei, D., Fang, H., Li, C., Jia, R., Feng, J., 2022. <a href="https://doi.org/10.1093/jac/dkab380">In vivo
-                                    evolution of carbapenem resistance in hypervirulent Klebsiella pneumoniae in a patient undergoing long-term treatment</a>. Journal of Antimicrobial Chemotherapy 77, 531–533.</p>
-                                    <p class="contribution-key">Contribution:</p>
-                                    <p class="pub-contribution">I assisted with phylogenetic tree clustering in this project.
-                                        When a phylogenetic tree contains thousands of nodes, manually analyzing such tree become difficult.
-                                        To address this, I developed a tool that automatically clusters the tree.
-                                        The code is stored in repository <a href="https://github.com/benjaminfang/biotools">biotools</a>.</p>
-                                </div>
-
-                                <div class="publication-entry">
-                                    <p class="pub-title">Jiang, L., Zheng, Z., Fang, H., Yang, J., 2021. <a href="https://doi.org/10.1038/s41588-021-00954-4">A generalized linear mixed model association tool for biobank-scale
-                                    data</a>. Nature Genetics 53, 1616–1621.</p>
-                                    <p class="contribution-key">Contribution:</p>
-                                    <p class="pub-contribution">I implemented the <a href="https://yanglab.westlake.edu.cn/software/gcta/#ACAT-V">ACAT</a> module based on R scripts provided by Longda.
-                                        I improved the efficiency of the module by optimizing the data structure and program design.
-                                        </p>
-                                </div>
-
-                                <div class="publication-entry">
-                                    <p class="pub-title">Zhang, C., Ju, Y., Tang, N., Li, Y., Zhang, G., Song, Y., Fang, H., Yang, L., Feng, J., 2020. <a href="https://doi.org/10.1093/bib/bbz056">Systematic analysis of
-                                    supervised machine learning as an effective approach to predicate β-lactam resistance phenotype in Streptococcus
-                                    pneumoniae</a>. Briefings in Bioinformatics 21, 1347–1355.</p>
-                                    <p class="contribution-key">Contribution:</p>
-                                    <p class="pub-contribution"> I helped with rechecking the correctness of previously used protein data.</p>
-                                </div>
+                            {% endfor %}
                             </div>
                         </div>
 
@@ -463,239 +287,25 @@
                                 <div id="hrf3c" class="head-field">Highlight</div>
                             </div>
                             <div class="life-body">
+                            {% for id, time_mark, milestone, highlight in data_dic["timeline"] %}
                                 <div class="body-row">
-                                    <div class="brf1"><p class="brf1c">&#151;2028</p></div>
+                                    {% if time_mark != "" -%}
+                                    <div class="brf1"><p class="brf1c">&#151;{{ time_mark }}</p></div>
+                                    {%- else -%}
+                                    <div class="brf1"></div>
+                                    {%- endif %}
+                                    {% if milestone != "" -%}
+                                    <div class="brf2"><p class="brf2c">{{ milestone }}</p></div>
+                                    {%- else -%}
                                     <div class="brf2"></div>
+                                    {%- endif %}
+                                    {% if highlight != "" -%}
+                                    <div class="brf3"><p class="brf3c">{{ highlight }}</p></div>
+                                    {%- else -%}
                                     <div class="brf3"></div>
+                                    {%- endif %}
                                 </div>
-
-                                <div class="body-row">
-                                    <div class="brf1"></div>
-                                    <div class="brf2"><p class="brf2c">On 3nd October, 2025, I turned 33 years old. Version 34, Darkbeam.</p></div>
-                                    <div class="brf3"></div>
-                                </div>
-
-
-                                <div class="body-row">
-                                    <div class="brf1"></div>
-                                    <div class="brf2"><p class="brf2c">On 1st July, 2025, I quite the doctorate project.</p></div>
-                                    <div class="brf3"></div>
-                                </div>
-
-
-                                <div class="body-row">
-                                    <div class="brf1"><p class="brf1c">&#151;2025</p></div>
-                                    <div class="brf2"></div>
-                                    <div class="brf3"></div>
-                                </div>
-                                <div class="body-row">
-                                    <div class="brf1"></div>
-                                    <div class="brf2"><p class="brf2c">On 3nd October, 2024, I turned 32 years old. Version 33, Littlewonder.</p></div>
-                                    <div class="brf3"></div>
-                                </div>
-                                <div class="body-row">
-                                    <div class="brf1"></div>
-                                    <div class="brf2"><p class="brf2c">On 3nd October, 2023, I turned 31 years old. Version 32, Softwind.</p></div>
-                                    <div class="brf3"></div>
-                                </div>
-                                <div class="body-row">
-                                    <div class="brf1"></div>
-                                    <div class="brf2"><p class="brf2c">On 3nd October, 2022, I turned 30 years old. Version 31, Circleend.</p></div>
-                                    <div class="brf3"></div>
-                                </div>
-
-
-                                <div class="body-row">
-                                    <div class="brf1"><p class="brf1c">&#151;2022</p></div>
-                                    <div class="brf2"></div>
-                                    <div class="brf3"></div>
-                                </div>
-                                <div class="body-row">
-                                    <div class="brf1"></div>
-                                    <div class="brf2"></div>
-                                    <div class="brf3"><p class="brf3c">Began learning violin.</p></div>
-                                </div>
-                                <div class="body-row">
-                                    <div class="brf1"></div>
-                                    <div class="brf2"><p class="brf2c">On May 1st, 2021, I started my second job as a research assistant at Westlake University.</p></div>
-                                    <div class="brf3"></div>
-                                </div>
-                                <div class="body-row">
-                                    <div class="brf1"></div>
-                                    <div class="brf2"></div>
-                                    <div class="brf3"><p class="brf3c">Learned basic of skateboard.</p></div>
-                                </div>
-                                <div class="body-row">
-                                    <div class="brf1"></div>
-                                    <div class="brf2"><p class="brf2c">In October 2019, I quit my job and moved to Yantai to live a jobless life for 9 months, during which time I focused on learning math and computer-related topics.</p></div>
-                                    <div class="brf3"></div>
-                                </div>
-                                <div class="body-row">
-                                    <div class="brf1"></div>
-                                    <div class="brf2"><p class="brf2c">On October 3rd, 2019, I turned 28 years old. Version 29.</p></div>
-                                    <div class="brf3"></div>
-                                </div>
-
-
-                                <div class="body-row">
-                                    <div class="brf1"><p class="brf1c">&#151;2019</p></div>
-                                    <div class="brf2"></div>
-                                    <div class="brf3"></div>
-                                </div>
-                                <div class="body-row">
-                                    <div class="brf1"></div>
-                                    <div class="brf2"><p class="brf2c">Had my first job as a research assitant in Institute of
-                                            Microbiology.</p></div>
-                                    <div class="brf3"></div>
-                                </div>
-                                <div class="body-row">
-                                    <div class="brf1"></div>
-                                    <div class="brf2"><p class="brf2c">I graduated from BNU</p></div>
-                                    <div class="brf3"><p class="brf3c">I got my master degree.</p></div>
-                                </div>
-                                <div class="body-row">
-                                    <div class="brf1"></div>
-                                    <div class="brf2"><p class="brf2c">In October 2016, I decided to change my major and began studying bioinformatics.</p></div>
-                                    <div class="brf3"></div>
-                                </div>
-                                <div class="body-row">
-                                    <div class="brf1"></div>
-                                    <div class="brf2"><p class="brf2c">On October 3rd, 2016, I was 27 years old. Version 28.</p></div>
-                                    <div class="brf3"></div>
-                                </div>
-
-
-                                <div class="body-row">
-                                    <div class="brf1"><p class="brf1c">&#151;2016</p></div>
-                                    <div class="brf2"></div>
-                                    <div class="brf3"></div>
-                                </div>
-                                <div class="body-row">
-                                    <div class="brf1"></div>
-                                    <div class="brf2"></div>
-                                    <div class="brf3"></div>
-                                </div>
-                                <div class="body-row">
-                                    <div class="brf1"></div>
-                                    <div class="brf2"><p class="brf2c">In July 2015, I graduated from IMU and went to Beijing Normal University in the same year.</p></div>
-                                    <div class="brf3"><p class="brf3c">Got my bachelor degree.</p></div>
-                                </div>
-
-
-                                <div class="body-row">
-                                    <div class="brf1"><p class="brf1c">&#151;2013</p></div>
-                                    <div class="brf2"></div>
-                                    <div class="brf3"></div>
-                                </div>
-                                <div class="body-row">
-                                    <div class="brf1"></div>
-                                    <div class="brf2"><p class="brf2c">Proved L'Hopital's Rule independently.</p></div>
-                                    <div class="brf3"></div>
-                                </div>
-                                <div class="body-row">
-                                    <div class="brf1"></div>
-                                    <div class="brf2"></div>
-                                    <div class="brf3"><p class="brf3c">Near the end of my 1st year in university, I recovered from a severe illness, and I still don't know the cause of it.</p></div>
-                                </div>
-                                <div class="body-row">
-                                    <div class="brf1"></div>
-                                    <div class="brf2"><p class="brf2c">In September 2011, I started attending Inner Mongolia University.</p></div>
-                                    <div class="brf3"></div>
-                                </div>
-                                <div class="body-row">
-                                    <div class="brf1"></div>
-                                    <div class="brf2"><p class="brf2c">In Oct 2010, I was 18 years old.</p></div>
-                                    <div class="brf3"></div>
-                                </div>
-
-
-                                <div class="body-row">
-                                    <div class="brf1"><p class="brf1c">&#151;2010</p></div>
-                                    <div class="brf2"></div>
-                                    <div class="brf3"></div>
-                                </div>
-                                <div class="body-row">
-                                    <div class="brf1"></div>
-                                    <div class="brf2"></div>
-                                    <div class="brf3"><p class="brf3c">In 2nd grade, we organized a student campaign to reject summer and winter holiday homework.</p></div>
-                                </div>
-                                <div class="body-row">
-                                    <div class="brf1"></div>
-                                    <div class="brf2"><p class="brf2c">In 2008, I went to high school.</p></div>
-                                    <div class="brf3"></div>
-                                </div>
-
-
-                                <div class="body-row">
-                                    <div class="brf1"><p class="brf1c">&#151;2007</p></div>
-                                    <div class="brf2"></div>
-                                    <div class="brf3"></div>
-                                </div>
-                                <div class="body-row">
-                                    <div class="brf1"><p class="brf1c"></p></div>
-                                    <div class="brf2"></div>
-                                    <div class="brf3"><p class="brf3c">In 2nd grade, I won an award for painting.</p></div>
-                                </div>
-                                <div class="body-row">
-                                    <div class="brf1"></div>
-                                    <div class="brf2"><p class="brf2c">In July 2005, I graduated from primary school and went to middle school in the same year.</p></div>
-                                    <div class="brf3"></div>
-                                </div>
-                                <div class="body-row">
-                                    <div class="brf1"></div>
-                                    <div class="brf2"></div>
-                                    <div class="brf3"><p class="brf3c">In 6th grade, I received my first academic award for achieving a good grade in math.</p></div>
-                                </div>
-
-
-                                <div class="body-row">
-                                    <div class="brf1"><p class="brf1c">&#151;2004</p></div>
-                                    <div class="brf2"></div>
-                                    <div class="brf3"></div>
-                                </div>
-                                <div class="body-row">
-                                    <div class="brf1"></div>
-                                    <div class="brf2"><p class="brf2c">In 3rd grade, our school shut down, and we moved to a new school where I met my old friends. They are important to me.</p></div>
-                                    <div class="brf3"></div>
-                                </div>
-                                <div class="body-row">
-                                    <div class="brf1"></div>
-                                    <div class="brf2"></div>
-                                    <div class="brf3"><p class="brf3c">In 3rd grade, I rolled down a hill and injured my right wrist. I was very ill, but I survived.</p></div>
-                                </div>
-
-
-                                <div class="body-row">
-                                    <div class="brf1"><p class="brf1c">&#151;2001</p></div>
-                                    <div class="brf2"></div>
-                                    <div class="brf3"></div>
-                                </div>
-                                <div class="body-row">
-                                    <div class="brf1"></div>
-                                    <div class="brf2"><p class="brf2c">In September 1999, I went to primary school.</p></div>
-                                    <div class="brf3"></div>
-                                </div>
-
-
-                                <div class="body-row">
-                                    <div class="brf1"><p class="brf1c">&#151;1998</p></div>
-                                    <div class="brf2"></div>
-                                    <div class="brf3"></div>
-                                </div>
-
-
-                                <div class="body-row">
-                                    <div class="brf1"><p class="brf1c">&#151;1995</p></div>
-                                    <div class="brf2"></div>
-                                    <div class="brf3"></div>
-                                </div>
-
-
-                                <div class="body-row">
-                                    <div class="brf1"><p class="brf1c">&#151;1992</p></div>
-                                    <div class="brf2"><p class="brf2c">I was born on October 3rd, 1992.</p></div>
-                                    <div class="brf3"><p class="brf3c">It is most important day to me.</p></div>
-                                </div>
+                            {% endfor %}
                             </div>
                         </div>
                     </div>

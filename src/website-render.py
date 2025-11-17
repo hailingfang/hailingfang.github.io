@@ -16,6 +16,18 @@ def render(jinja_env, temp_file, dst_dire=None, data_dic=None):
     fout.close()
 
 
+def read_tsv_data(file_name):
+    fin = open(file_name)
+    data_out = [line.rstrip().split('\t') for line in fin][1:]
+    fin.close()
+    for line in data_out:
+        for idx,ele in enumerate(line):
+            if ele == "NA":
+                line[idx] = ""
+    return data_out
+
+
+
 def main():
     env = jinja2.Environment(loader=jinja2.FileSystemLoader("templates"))
 
@@ -23,7 +35,16 @@ def main():
     render(env, "index.html")
 
     #render about-me/index.html
-    render(env, "about-me.html", "about-me")
+    edu_data_file = "templates/data/about-me-education.tsv"
+    exp_data_file = "templates/data/about-me-experience.tsv"
+    pub_data_file = "templates/data/about-me-publication.tsv"
+    timeline_data_file = "templates/data/about-me-timeline.tsv"
+    about_me_data = {}
+    about_me_data["edu"] = read_tsv_data(edu_data_file)
+    about_me_data["exp"] = read_tsv_data(exp_data_file)
+    about_me_data["pub"] = read_tsv_data(pub_data_file)
+    about_me_data["timeline"] = read_tsv_data(timeline_data_file)
+    render(env, "about-me.html", "about-me", about_me_data)
 
     #render life/index.html
     render(env, "life.html", "life")
