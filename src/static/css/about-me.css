@@ -1,0 +1,431 @@
+#about-me {
+    background-color: rgb(63, 65, 68);
+}
+
+
+.sticky-side {
+    position: sticky;
+    top: 3em;
+    padding: 0;
+    border: 0;
+    margin: 0;
+    display: flex;
+    flex-direction: column;
+    align-items: start;
+    justify-content: left;
+    overflow: scroll;
+}
+
+#page-title {
+    font-size: 1.7em;
+    font-weight: bold;
+}
+
+#page-slogan {
+    font-size: 1.2em;
+    font-weight: bold;
+}
+
+.nav-list {
+    list-style: none;
+    padding: 0;
+    font-size: 1.3em;
+}
+
+.nav-list a {
+    color: rgb(38, 44, 133);
+    text-decoration: none;
+    font-size: 1.2em;
+}
+
+#page-title,
+#page-slogan,
+.nav-list {
+    padding: 1rem;
+    border: 0;
+    margin: 0;
+    margin-left: 2rem; 
+}
+
+#print-cv,
+#print-resume {
+    margin-left: 3rem;
+    margin-bottom: .2rem;
+}
+
+
+.main-container {
+    max-width: 75em;
+    padding: 0px;
+    padding-left: 2em;
+    padding-right: 2em;
+    border: 0;
+    margin: 0 auto;
+    box-sizing: content-box;
+
+    display: grid;
+    row-gap: 1em;
+    grid-template-columns: 1fr;
+    grid-template-rows: auto;
+    align-items: stretch;
+    justify-items: stretch;
+
+}
+
+#contact {
+    padding: 1em 0em;
+    border: 0px;
+    border-bottom: 2px solid rgba(49, 46, 46, 0.466);
+    display: grid;
+    grid-template-columns: 7.5fr 2.5fr;
+    align-items: stretch;
+    justify-items: stretch;
+    margin: 0px;
+    margin-bottom: 3em;
+}
+
+.contact-left {
+    padding: 0px;
+    border: 0px solid red;
+    margin: 0px;
+    grid-column: 1;
+
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    grid-template-rows: auto;
+    
+    font-size: 1.1em;
+    align-items: center;
+    justify-items: stretch;
+}
+
+.infoline {
+    margin-top: 0.5em;
+    margin-bottom: 0.5em;
+    display: grid;
+    justify-items: left;
+    grid-template-columns: 7fr 2fr 30fr;
+}
+
+.infoline > span:first-child {
+    font-weight: bold;
+}
+
+#email-address {
+    word-break: break-all;
+}
+
+#website {
+    display: none;
+}
+
+.contact-right {
+    grid-column: 2;
+    max-width: 9em;
+    max-height: 9em;
+}
+
+#contact img {
+    width: 100%;
+    height: 100%;
+    object-fit: contain;
+}
+
+
+#profile {
+    padding: 0em;
+    border: 0px;
+    margin: 0px;
+    margin-bottom: 1em;
+}
+
+#profile > p {
+    padding: 0px;
+    border: 0px;
+    margin: 0px;
+    text-align: justify;
+    margin-left: 0em;
+    margin-right: 0em;
+    margin-bottom: 0.5em;
+    line-height: 1.5em;
+    font-size: 1.2em;
+}
+
+
+#cv {
+    margin: 0px;
+    margin-bottom: 2em;
+
+}
+
+.cv-section {
+    padding: 0px;
+    border: 0px solid red;
+    margin: 0px;
+    margin-bottom: 3em;
+    line-height: 1.3em;
+}
+
+.cv-section-head {
+    font-weight: bold;
+    font-size: 1.3em;
+    padding: 0.2em;
+    padding-left: 0.4em;
+    padding-top: 0.4em;
+    padding-bottom: 0.1em;
+    border: 0px;
+    border-left: 0.2em solid rgba(28, 34, 36, 0.5);
+    border-bottom: 0.1em solid rgba(71, 82, 85, 0.5);
+    margin: 0px;
+    border-top-left-radius: 0.8em;
+    margin-bottom: 1.8em;
+}
+
+.cv-section-body {
+    padding: 0px;
+    border: 0px solid red;
+    margin-left: 0.5em;
+    margin-right: 0.3em;
+}
+
+.cv-entry {
+    margin-bottom: 1.8em;
+}
+
+.cv-entry-head {
+    padding: 0px;
+    border: 0;
+    margin: 0px;
+    margin-bottom: 1em;
+    font-weight: bold;
+    font-size: 1.3em;
+    color: rgb(30, 76, 145);
+}
+
+.cv-entry-subhead {
+    display: grid;
+    grid-template-columns: 4fr 4fr 3fr;
+    padding: 0em;
+    border: 0px solid red;
+    margin: 0px;
+    font-weight: bold;
+    font-size: 1.1em;
+    margin-bottom: 1em;
+    
+}
+
+.organization,
+.date,
+.location {
+    font-size: 1.1em;
+    font-weight: bold;
+    margin: 0;
+    padding: 0;
+    border: 0;
+}
+
+.cv-entry-detail {
+    padding: 0em;
+    border: 0px solid red;
+    margin: 0px;
+}
+
+
+.cv-entry-detail-head {
+    font-style: italic;
+    font-size: 1.1em;
+    font-weight: bold;
+    color: rgb(25, 47, 70);
+    margin-bottom: 0.3em;
+}
+
+.cv-entry-detail-info {
+    padding: 0px;
+    border: 0px solid red;
+    margin: 0px;
+    margin-left: 0.15em;
+    margin-bottom: 0.5em;
+    line-height: 1.3em;
+    text-align: justify;
+    
+}
+
+.cv-entry-detail-info a {
+    color: rgb(54, 54, 163);
+    text-decoration: underline;
+}
+
+
+.cv-entry-detail-info span {
+    font-weight: bold;
+}
+
+
+.publication-entry {
+    margin-top: 2em;
+    line-height: 1.3em;
+    text-align: justify;
+}
+
+.pub-title {
+    font-size: 1.1em;
+    margin-bottom: .5em;
+}
+
+.contribution-key {
+    font-weight: bold;
+    margin-bottom: .5em;
+}
+
+#personal-summary {
+    display: none;
+}
+
+
+
+
+
+/*>life record*/
+
+.life-record {
+    border: 0.1em solid rgba(235, 241, 241, 0.85);
+    border-top: 0.3em solid rgba(128, 128, 128, 0.5);
+    border-bottom: 0.2em dashed rgba(128, 128, 128, 0.8);
+    margin: 0px;
+
+}
+
+.life-record-wrapper {
+    padding: 0px;
+    border: 0px solid red;
+    margin: 0px;
+}
+
+.life-title {
+    padding: 0px;
+    border: 0px solid gray;
+    border-top: 0px solid gray;
+    margin: 0px;
+    margin-top: 1.5em;
+    margin-bottom: 1em;
+}
+
+.life-title > p {
+    text-align: center;
+    font-size: 1.3em;
+    font-weight: bold;
+}
+
+.life-head {
+    padding: 0px;
+    border: 0px solid red;
+    margin-bottom: 1em;
+    display: grid;
+    align-items: stretch;
+    justify-items: stretch;
+    grid-template-columns: 80px 1fr 1fr;
+}
+
+#hrf1c {
+    color: rgb(22, 94, 22);
+    background-color: rgba(191, 204, 188, 0.507);
+    font-weight: bold;
+}
+
+#hrf2c {
+    color: rgb(39, 132, 172);
+    background-color: rgba(166, 187, 204, 0.473);
+    font-weight: bold;
+}
+
+#hrf3c {
+    color: rgb(89, 89, 17);
+    background-color: rgba(154, 170, 132, 0.521);
+    font-weight: bold;
+}
+
+
+.life-body {
+    margin-bottom: 2.5em;
+
+}
+
+.body-row {
+    display: grid;
+    grid-template-columns: 80px 1fr 1fr;
+    padding: 0px;
+    border-left: 0.2em solid rgb(17, 125, 66);
+    margin: 0px;
+    align-items: center;
+    justify-items: stretch;
+}
+
+.brf1 {
+    grid-column: 1;
+    margin-top: 0.5em;
+    margin-bottom: 0.5em;
+}
+
+.brf1c {
+    text-align: left;
+    color: rgb(31, 134, 31);
+}
+
+.brf2 {
+    grid-column: 2;
+    margin-top: 0.5em;
+    margin-bottom: 0.5em;
+}
+
+.brf2c {
+    padding: 0.8em;
+    padding-left: 0.6em;
+    border: 0.1em solid rgb(123, 132, 56);
+    border-left: 0.2em solid rgb(134, 152, 40);
+    border-radius: 0.3em;
+    margin: 0px;
+    margin-right: 1em;
+    
+    color: rgb(58, 108, 148);
+    text-align: left;
+}
+
+.brf3 {
+    grid-column: 3;
+    margin-top: 0.5em;
+    margin-bottom: 0.5em;
+}
+
+.brf3c {
+    padding: 0.8em;
+    padding-left: 0.6em;
+    border: 0.1em solid rgb(75, 106, 192);
+    border-left: 0.2em solid rgb(43, 122, 187);
+    border-radius: 0.3em;
+    margin: 0px;
+    margin-right: 1em;
+    
+    color: rgb(21, 70, 33);
+    text-align: left;
+}
+
+/*<<<life record*/
+
+/*>print CV and resume*/
+.print-cv-resume {
+    padding: 0;
+    border: 0;
+    margin: 0;
+    margin-top: 1em;
+    margin-left: auto;
+    display: flex;
+    justify-content: end;
+
+}
+
+.print-cv-resume button {
+    margin: 0.3em;
+}
+
+/*<print CV and resume*/
+

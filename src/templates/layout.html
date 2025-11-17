@@ -1,0 +1,54 @@
+<!DOCTYPE html>
+<html lang="en" dir="ltr">
+    <head>
+        <!-- Google tag (gtag.js) -->
+        <script async src="https://www.googletagmanager.com/gtag/js?id=G-TE5LHLQD04"></script>
+        <script>
+        window.dataLayer = window.dataLayer || [];
+        function gtag(){dataLayer.push(arguments);}
+        gtag('js', new Date());
+        gtag('config', 'G-TE5LHLQD04');
+        </script>
+
+        <meta charset="utf-8">
+        <meta name="viewport" content="width=device-width, initial-scale=1">
+        <meta name="author" content="Hailing Fang">
+        <meta name="description" content="My website is designed to showcase and document various aspects of my life.">
+
+        <title>{% block title %}{% endblock %}</title>
+
+        <link rel="icon" href="/imgs/favicon.png">
+        <link href="/static/css/vendor/bootstrap.min.css" rel="stylesheet">
+        <link rel="stylesheet" href="/static/css/layout.css">
+
+        {% block head_block %}{% endblock %}
+    </head>
+    <body>
+        <header>
+            <div class="header-left">
+                <div id="logo-img">
+                    <a href="/index.html"><img src="/imgs/logo-fanghl.png" alt="web-logo" width="100" height="100"></a>
+                </div>
+                <div id="logo-name">
+                    <a href="/index.html">Hailing Fang</a>
+                </div>
+            </div>
+            <nav class="header-right">
+                <a href="/about-me/index.html" id="about-me">About Me</a>
+                <a href="/life/index.html" id="life">Life</a>
+                <a href="/study/index.html" id="study">Study</a>
+                <a href="/documentation/index.html" id="documentation">Documentation</a>
+            </nav>
+        </header>
+
+        <main>
+            {% block main_block %}{% endblock %}
+        </main>
+
+        <footer>
+            {% block footer_block %} {% endblock %}
+        </footer>
+    </body>
+</html>
+
+

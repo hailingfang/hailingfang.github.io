@@ -1,0 +1,534 @@
+<!DOCTYPE html>
+<html lang="zh-CN">
+    <head>
+        <meta charset="utf-8">
+        <meta name="viewport" content="width=device-width, initial-scale=1">
+        <meta name="author" content="Hailing Fang">
+        <meta name="description" content="My profile and CV.">
+        <title>resume-Hailing-Fang</title>
+        <link rel="icon" href="/imgs/favicon.png">
+        <link href="/css/vendor/bootstrap.min.css" rel="stylesheet">
+
+        <style>
+            body {
+                padding: 0;
+                border: 0;
+                margin: 0;
+            }
+
+            header {
+                display: none;
+            }
+
+            footer {
+                display: none;
+            }
+            main {
+                padding: 0;
+                border: 0;
+                margin: 0;
+            }
+
+            .main-container {
+                padding: 4em 3em 3em 3em;
+                border: 0;
+                margin: 0em auto;
+                width: 65em;
+            }
+
+
+            #contact {
+                padding: .5em 0em;
+                border: 0;
+                display: grid;
+                grid-template-columns: 10fr 2fr;
+                align-items: stretch;
+                justify-items: stretch;
+                margin: 0;
+                margin-bottom: 1em;
+            }
+
+            .contact-left {
+                padding: 0;
+                border: 0;
+                margin: 0;
+                grid-column: 1;
+
+                display: grid;
+                grid-template-columns: 1fr 1fr;
+                grid-template-rows: auto;
+                
+                font-size: 1.1em;
+                align-items: center;
+                justify-items: stretch;
+            }
+
+            .infoline {
+                margin-top: 0.2em;
+                margin-bottom: 0.2em;
+                display: grid;
+                justify-items: left;
+                grid-template-columns: 8fr 2fr 30fr;
+            }
+
+            .infoline span:first-child {
+                font-weight: bold;
+            }
+
+
+            #email-address {
+                word-break: break-all;
+            }
+
+            .contact-right {
+                grid-column: 2;
+                max-width: 9em;
+                max-height: 9em;
+            }
+
+            #contact img {
+                width: 100%;
+                height: 100%;
+                object-fit: contain;
+            }
+
+
+            #cv {
+                padding: 0;
+                border: 0;
+                margin: 0em;
+            }
+
+            .cv-section {
+                padding: 0;
+                border: 0;
+                margin: 0px;
+                margin-bottom: 1.5em;
+                line-height: 1.2em;
+            }
+
+            .cv-section-head {
+                font-weight: bold;
+                font-size: 1.3em;
+                padding: 0.2em;
+                padding-left: 0.4em;
+                padding-top: 0.4em;
+                padding-bottom: 0.1em;
+                border: 0px;
+                border-left: 0.2em solid rgba(28, 34, 36, 0.5);
+                border-bottom: 0.1em solid rgba(71, 82, 85, 0.5);
+                margin: 0px;
+                border-top-left-radius: 0.8em;
+                margin-bottom: 1.3em;
+            }
+
+            .cv-section-body {
+                padding: 0px;
+                border: 0px solid red;
+                margin-left: 0.5em;
+                margin-right: 0.3em;
+            }
+
+            .cv-entry {
+                margin-bottom: 1.3em;
+            }
+
+            .cv-entry-head {
+                padding: 0px;
+                border: 0;
+                margin: 0px;
+                margin-bottom: .8em;
+                font-weight: bold;
+                font-size: 1.2rem;
+                color: rgb(30, 76, 145);
+            }
+
+            .cv-entry-head a {
+                text-decoration: none;
+                color: rgb(30, 76, 145);
+            }
+
+            .cv-entry-subhead {
+                display: grid;
+                grid-template-columns: 4fr 4fr 3fr;
+                padding: 0em;
+                border: 0px solid red;
+                margin: 0px;
+                font-weight: bold;
+                font-size: 1.1rem;
+                margin-bottom: .8em;
+                
+            }
+
+            .organization,
+            .date,
+            .location {
+                font-size: 1.1em;
+                font-weight: bold;
+                margin: 0;
+                padding: 0;
+                border: 0;
+            }
+
+            .cv-entry-detail {
+                    padding: 0em;
+                    border: 0;
+                    margin: 0px;
+            }
+
+
+            .cv-entry-detail-head {
+                font-style: italic;
+                font-size: 1.1em;
+                font-weight: bold;
+                color: rgb(0, 0, 0);
+                margin-bottom: 0.3em;
+            }
+
+            .cv-entry-detail-info {
+                padding: 0px;
+                border: 0px solid red;
+                margin: 0px;
+                margin-left: 0.15em;
+                margin-bottom: 0.5em;
+                line-height: 1.6em;
+                text-align: justify;
+                
+            }
+
+            .cv-entry-detail-info a {
+                color: rgb(12, 91, 194);
+                text-decoration: underline;
+            }
+
+
+            .cv-entry-detail-info span {
+                font-weight: bold;
+            }
+
+
+            .publication-entry {
+                margin-bottom: .5em;
+                line-height: 1.3em;
+                text-align: justify;
+            }
+
+            .pub-title {
+                font-size: 1.1rem;
+            }
+
+            .pub-title a {
+                text-decoration: none;
+                color: rgb(14, 45, 112);
+                font-style: italic;
+            }
+
+        </style>
+    </head>
+    <body>
+        <header>
+        </header>
+
+        <main>
+            <div class="main-container">
+                <div id="contact">
+                    <div class="contact-left">
+                        <div class="infoline">
+                            <span>姓名</span><span>: </span><span>方海岭</span>
+                        </div>
+                        <div class="infoline">
+                            <span>出生日期</span><span>: </span><span>1992年10月</span>
+                        </div>
+                        <div class="infoline">
+                            <span>电子邮箱</span><span>: </span><span id="email-address">hailing.fang@outlook.com</span>
+                        </div>
+                        <div class="infoline">
+                            <span>手机号码</span><span>: </span><span>18811321192</span>
+                        </div>
+                        <div class="infoline">
+                            <span>网站</span><span>: </span><span>https://hailingfang.github.io</span>
+                        </div>
+                    </div>
+                    <div class="contact-right">
+                        <img src="/about-me/imgs/fanghl_1inch.jpg" alt="my photo" width="344" height="397">
+                    </div>
+                </div>
+    
+    
+                <div id="cv">
+                    <div class="cv-section" id="education">
+                        <p class="cv-section-head">教育经历</p>
+                        <div class="cv-section-body">
+                            <div class="cv-entry" id="DOC">
+                                <div class="cv-entry-head">
+                                    <p>博士研究生，发育生物学</p>
+                                </div>
+                                <div class="cv-entry-subhead">
+                                    <p class="organization">山东大学</p>
+                                    <p class="date">2024年9月 - 2025年7月</p>
+                                    <p class="location">青岛，中国</p>
+                                </div>
+                            </div>
+
+                            <div class="cv-entry" id="MA">
+                                <div class="cv-entry-head">
+                                    <p>理学硕士，生物学</p>
+                                </div>
+                                <div class="cv-entry-subhead">
+                                    <p class="organization">北京师范大学</p>
+                                    <p class="date">2015年9月 - 2018年7月</p>
+                                    <p class="location">北京，中国</p>
+                                </div>
+                            </div>
+    
+                            <div class="cv-entry" id="BA">
+                                <div class="cv-entry-head">
+                                    <p>理学学士，生物技术</p>
+                                </div>
+                                <div class="cv-entry-subhead">
+                                    <p class="organization">内蒙古大学</p>
+                                    <p class="date">2011年9月 - 2015年7月</p>
+                                    <p class="location">呼和浩特，中国</p>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+    
+                    <div class="cv-section" id="experience">
+                        <p class="cv-section-head">工作经历</p>
+                        <div class="cv-section-body">
+                            <div class="cv-entry" id="westlake">
+                                <div class="cv-entry-head">
+                                    <p>科研助理</p>
+                                </div>
+                                <div class="cv-entry-subhead">
+                                    <p class="organization">山东大学</p>
+                                    <p class="date">2023年9月 - 2024年8月</p>
+                                    <p class="location">青岛，中国</p>
+                                </div>
+                            </div>
+    
+                            <div class="cv-entry" id="westlake">
+                                <div class="cv-entry-head">
+                                    <p>科研助理</p>
+                                </div>
+                                <div class="cv-entry-subhead">
+                                    <p class="organization">西湖大学</p>
+                                    <p class="date">2021年3月 - 2023年3月</p>
+                                    <p class="location">杭州，中国</p>
+                                </div>
+                            </div>
+                        
+                            <div class="cv-entry" id="freework">
+                                <div class="cv-entry-head">
+                                    <p>自由职业</p>
+                                </div>
+                                <div class="cv-entry-subhead">
+                                    <p class="organization">在家</p>
+                                    <p class="date">2019年10月 - 2021年2月</p>                            
+                                    <p class="location">烟台，中国</p>
+                                </div>
+                            </div>
+                        
+                            <div class="cv-entry" id="imcas">
+                                <div class="cv-entry-head">
+                                    <p>科研助理</p>
+                                </div>
+                                <div class="cv-entry-subhead">
+                                    <p class="organization">中国科学院微生物研究所</p>
+                                    <p class="date">2018年7月 - 2019年10月</p>
+                                    <p class="location">北京，中国</p>
+                                </div>
+                            </div>     
+                        </div>
+                    </div>
+    
+    
+                    <div class="cv-section" id="projects">
+                        <p class="cv-section-head">项目</p>
+                        <div class="cv-section-body">
+    
+                            <div class="cv-entry" id="flml">
+                                <div class="cv-entry-head">
+                                    <p><a href="https://docs-hailingfang.readthedocs.io/en/latest/file-format/index.html">FLML (File Layout Markup Language)</a></p>
+                                </div>
+                                <div class="cv-entry-detail">
+                                    <p class="cv-entry-detail-head">背景和目的：</p>
+                                    <p class="cv-entry-detail-info">在软件开发工作中，我经常需要解析各种文件。这些文件的格式既有二进制的，也有纯文本的。
+                                        为了解析这些文件的结构和内容的涵义，我需要读这些文件的格式说明文档。但是阅读这些文档一方面比较耗费时间，另一方面这些文档的语言性的描述容易产生歧义。
+                                        我的目标是创建一种易于使用且准确的标记语言，用于描述二进制文件和纯文本文件的格式。
+                                        在设计好这种语言之后，我计划用它来记录生物领域及其他领域中常用的文件格式。该项目的文档位于
+                                        <a href="https://docs-hailingfang.readthedocs.io/en/latest/file-format/index.html">file-format</a>.
+                                    </p>
+                                </div>
+                            </div>
+                        
+                            <div class="cv-entry" id="gwastools">
+                                <div class="cv-entry-head">
+                                    <p><a href="https://github.com/hailingfang/gwastools">Gwastools</a></p>
+                                </div>
+                                <div class="cv-entry-detail">
+                                    <p class="cv-entry-detail-head">背景和目的：</p>
+                                    <p class="cv-entry-detail-info">在与 GWAS（全基因组关联研究）相关的数据存储中，有几种常见的文件格式，包括 PLINK 文件、BGEN 文件、BAM 文件和 BESD 文件。
+                                        然而，执行诸如打印文件基本信息、从文件中提取部分数据、将二进制数据转换为纯文本等操作时，通常需要使用不同的软件。
+                                        此外，一些软件在命令行中缺乏帮助信息，一些文件格式也缺少可供编程语言使用的 API。
+
+                                        我的项目有两个主要目标：首先，我希望开发一组 C 语言库，这些库将包含处理这些文件格式所需的核心功能，同时提供 Python API，使用户可以从 Python 中调用这些 C 库；
+                                        其次，我计划基于这些库开发一个软件工具，用于更方便地对这些文件执行各类操作。
+                                        该项目的代码仓库位于<a href="https://github.com/hailingfang/gwastools">gwastools</a>.</p>
+                                </div>
+                            </div>
+                        
+                            <div class="cv-entry" id="biotools">
+                                <div class="cv-entry-head">
+                                    <p><a href="https://github.com/hailingfang/biotools">Biotools</a></p>
+                                </div>
+                                <div class="cv-entry-detail">
+                                    <p class="cv-entry-detail-head">背景和目的：</p>
+                                    <p class="cv-entry-detail-info">我在 IMCAS 工作期间策划并开展了这个项目。随着工作的推进，
+                                        我编写了大量脚本和工具来满足日常工作的需求，其中一些代码具有可重用性。
+                                        在这个项目中，我开发了若干用于处理常见生物信息学数据的 Python 类。
+                                        此外，我还整理了自己开发的一些实用工具，包括用于系统发育树构建、节点合并与聚类、
+                                        长重复序列识别等功能的工具，并将它们加入到了该项目中。该项目的代码托管在
+                                    <a href="https://github.com/hailingfang/biotools">biotools</a>.</p>
+                                </div>
+                            </div>
+    
+                        </div>
+                    </div>
+    
+                    <div class="cv-section" id="skills">
+                        <p  class="cv-section-head">技能</p>
+                        <div class="cv-section-body">
+                            <div class="cv-entry">
+                                <div class="cv-entry-detail">
+                                    <p class="cv-entry-detail-head">计算机：</p>
+                                    <p class="cv-entry-detail-info">Python和C编程；熟练使用Linux操作系统；计算机网络；网站前端开发.</p>
+                                </div>
+                            </div>
+
+                            <div class="cv-entry">
+                                <div class="cv-entry-detail">
+                                    <p class="cv-entry-detail-head">生物信息学：</p>
+                                    <p class="cv-entry-detail-info">微生物基因组拼接注释；系统发育树构建；RNA-seq数据分析；单细胞RNA-seq数据分析；Ribo-seq数据分析。</p>
+                                </div>
+                            </div>
+
+                            <div class="cv-entry">
+                                <div class="cv-entry-detail">
+                                    <p class="cv-entry-detail-head">生物学：</p>
+                                    <p class="cv-entry-detail-info">细胞培养；动物解剖；PCR.</p>
+                                </div>
+                            </div>
+
+                            <div class="cv-entry">
+                                <div class="cv-entry-detail">
+                                    <p class="cv-entry-detail-head">外语：</p>
+                                    <p class="cv-entry-detail-info">雅思：6分</p>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                    
+                    <div class="cv-section" id="course">
+                        <p class="cv-section-head">课程</p>
+                        <div class="cv-section-body">
+                            <div class="cv-entry">
+                                <div class="cv-entry-detail">
+                                    <p class="cv-entry-detail-head">硕士研究生期间：</p>
+                                    <div class="cv-entry-detail-info">
+                                        <p>生物信息学；Linux操作系统；计算生物学(Perl和R语言编程)。</p>
+                                        <p>蛋白质结构与功能；细胞骨架；高级细胞学；高级发育生物学。</p>
+                                    </div>
+                                </div>
+                            </div>
+    
+                            <div class="cv-entry">
+                                <div class="cv-entry-detail">
+                                    <p class="cv-entry-detail-head">本科期间：</p>
+                                    <div class="cv-entry-detail-info">
+                                        <p>高等数学 B；大学物理 B；大学化学1-3 (无机及分析化学，有机化学，物理化学)。</p>
+                                        <p>细胞生物学；生物化学；遗传学；分子生物学；基因工程；细胞工程。</p>
+                                    </div>
+                                </div>
+                            </div>
+    
+                        </div>
+                    </div>
+    
+                    <div class="cv-section" id="rewards">
+                        <p class="cv-section-head">获得奖励</p>
+                        <div class="cv-section-body">
+                            <div class="cv-entry">
+                                <div class="cv-entry-detail">
+                                    <p class="cv-entry-detail-head">硕士研究生期间：</p>
+                                    <div class="cv-entry-detail-info">
+                                        <p>两次研究生奖学金（二等）；研究生新生奖学金。</p>
+                                    </div>
+                                </div>
+                            </div>
+    
+                            <div class="cv-entry">
+                                <div class="cv-entry-detail">
+                                    <p class="cv-entry-detail-head">本科期间：</p>
+                                    <div class="cv-entry-sup-info">
+                                        <p>优秀学生奖学金；三好学生；学校优秀毕业生。 </p>
+                                    </div>
+                                </div>
+                            </div>
+    
+                        </div>
+                    </div>
+    
+                    <div class="cv-section" id="publications">
+                        <p class="cv-section-head">发表文章</p>
+                        <div class="cv-section-body">
+                            <div class="publication-entry">
+                                <p class="pub-title">Zhang, G., Yao, S., Liu, Y., Fang, H., Song, Y., Wang, C., Wei, D., Feng, J., 2023. <a href="https://doi.org/10.1128/aem.01738-22">Systematic discovery of
+                                    a new catalogue of tyrosine-type integrases in bacterial genomic islands</a>. Applied and Environmental Microbiology 89, e01738-22</p>
+                            </div>
+                            <div class="publication-entry">
+                                <p class="pub-title">Qi, T., Wu, Y., Fang, H., Zhang, F., Liu, S., Zeng, J., Yang, J., 2022. <a href="https://doi.org/10.1038/s41588-022-01154-4">Genetic control of RNA splicing and its distinct
+                                role in complex trait variation</a>. Nature Genetics 54, 1355–1363.</p>
+                            </div>
+    
+                            <div class="publication-entry">
+                                <p class="pub-title">Tang, N., Hu, J., Zhao, Y., Song, Y., Wang, C., Zhang, G., Wei, D., Fang, H., Li, C., Jia, R., Feng, J., 2022. <a href="https://doi.org/10.1093/jac/dkab380">In vivo
+                                evolution of carbapenem resistance in hypervirulent Klebsiella pneumoniae in a patient undergoing long-term treatment</a>.
+                                Journal of Antimicrobial Chemotherapy 77, 531–533.</p>
+                            </div>
+    
+                            <div class="publication-entry">
+                                <p class="pub-title">Jiang, L., Zheng, Z., Fang, H., Yang, J., 2021. <a href="https://doi.org/10.1038/s41588-021-00954-4">A generalized linear mixed model association tool for biobank-scale
+                                data</a>. Nature Genetics 53, 1616–1621.</p>
+                            </div>
+    
+                            <div class="publication-entry">
+                                <p class="pub-title">Zhang, C., Ju, Y., Tang, N., Li, Y., Zhang, G., Song, Y., Fang, H., Yang, L., Feng, J., 2020. <a href="https://doi.org/10.1093/bib/bbz056">Systematic analysis of
+                                supervised machine learning as an effective approach to predicate β-lactam resistance phenotype in Streptococcus
+                                pneumoniae</a>. Briefings in Bioinformatics 21, 1347–1355.</p>
+                            </div>
+                        </div>
+                    </div>
+    
+                    <div class="cv-section" id="personal-summary">
+                        <p class="cv-section-head">个人评价</p>
+                        <div class="cv-section-body">
+                            <div class="cv-entry">
+                                <div class="cv-entry-detail">
+                                    <p class="cv-entry-detail-info">我热爱学习和技术，对包括生物、计算机和电子在内的多个领域都充满好奇心。
+                                        我坚守道德原则，追求自我提升。我性格随和，重视和谐的人际关系。在开展任何任务之前，我倾向于系统地了解相关的背景知识。</p>
+                                </div>
+                            </div>
+
+                        </div>
+                    </div>
+                </div>
+
+            </div>    
+        </main>
+
+        <footer>
+        </footer>
+    </body>
+</html>

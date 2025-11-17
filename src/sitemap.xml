@@ -1,0 +1,43 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<urlset 
+  xmlns="http://www.sitemaps.org/schemas/sitemap/0.9">
+  <url>
+    <loc>https://hailingfang.github.io/</loc>
+    <lastmod>2025-06-26</lastmod>
+    <priority>1.0</priority>
+  </url>
+  <url>
+    <loc>https://hailingfang.github.io/index.html</loc>
+    <lastmod>2025-06-26</lastmod>
+    <priority>1.0</priority>
+  </url>
+  <url>
+    <loc>https://hailingfang.github.io/about-me/index.html</loc>
+    <lastmod>2025-06-26</lastmod>
+    <priority>0.8</priority>
+  </url>
+  <url>
+    <loc>https://hailingfang.github.io/life/index.html</loc>
+    <lastmod>2025-06-26</lastmod>
+    <priority>0.8</priority>
+  </url>
+  <url>
+    <loc>https://hailingfang.github.io/study/index.html</loc>
+    <lastmod>2025-06-26</lastmod>
+    <priority>0.8</priority>
+  </url>
+
+  <url>
+    <loc>https://hailingfang.github.io/documentation/index.html</loc>
+    <lastmod>2025-06-26</lastmod>
+    <priority>0.8</priority>
+  </url>
+
+  <url>
+    <loc>https://hailingfang.github.io/legal-statements.html</loc>
+    <lastmod>2025-06-26</lastmod>
+    <priority>1.0</priority>
+  </url>
+
+</urlset>
+
