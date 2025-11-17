@@ -1,9 +1,17 @@
-# Personal website
+# Hailing Fang's Website
 
-This is my personal static website which is hosted on Github.
+This is my personal static website hosted on Github.
 
-This website is intended to introduce myself and showcase aspects of my
-life, such as my studies and daily routines.
+## Introduction
 
-The code of the website framework is free to use, but all materials are
-protected by copyright. You need to consult with me before using them.
+The website use Jinja2 as the template engine, such that install jinja2 before build the website.
+
+## Requirements
+
+Jinja2
+
+## Build
+
+At the top directory of the repository, run:
+
+`make`

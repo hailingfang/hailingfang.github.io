@@ -1,5 +1,5 @@
 <!DOCTYPE html>
-<html lang="en">
+<html lang="en" dir="ltr">
     <head>
         <!-- Google tag (gtag.js) -->
         <script async src="https://www.googletagmanager.com/gtag/js?id=G-TE5LHLQD04"></script>
@@ -13,13 +13,16 @@
         <meta charset="utf-8">
         <meta name="viewport" content="width=device-width, initial-scale=1">
         <meta name="author" content="Hailing Fang">
-        <meta name="description" content="My profile and CV.">
+        <meta name="description" content="My website is designed to showcase and document various aspects of my life.">
+
         <title>About Me | Hailing Fang</title>
+
         <link rel="icon" href="/imgs/favicon.png">
-        <link href="/css/vendor/bootstrap.min.css" rel="stylesheet">
-        <link rel="stylesheet" href="/css/layout.css">
-        <link rel="stylesheet" href="./css/about-me.css" id="about-me-css">
-        <script src="./js/switch-to-cv-resume-css.js" defer></script>
+        <link href="/static/css/vendor/bootstrap.min.css" rel="stylesheet">
+        <link rel="stylesheet" href="/static/css/layout.css">
+
+        <link rel="stylesheet" href="/static/css/about-me.css" id="about-me-css">
+        <script src="/static/js/switch-to-cv-resume-css.js" defer></script>
     </head>
     <body>
         <header>
@@ -33,9 +36,9 @@
             </div>
             <nav class="header-right">
                 <a href="/about-me/index.html" id="about-me">About Me</a>
-                <a href="/life/index.html">Life</a>
-                <a href="/study/index.html">Study</a>
-                <a href="/documentation/index.html">Documentation</a>
+                <a href="/life/index.html" id="life">Life</a>
+                <a href="/study/index.html" id="study">Study</a>
+                <a href="/documentation/index.html" id="documentation">Documentation</a>
             </nav>
         </header>
 
@@ -76,38 +79,38 @@
                             </div>
                         </div>
                         <div class="contact-right">
-                            <img src="./imgs/fanghl_1inch.jpg" alt="my photo" width="344" height="397">
+                            <img src="/about-me/imgs/fanghl_1inch.jpg" alt="my photo" width="344" height="397">
                         </div>
                     </div>
-        
-        
+
+
                     <div id="profile">
                         <p>
                         I earned a master’s degree in biology, with a specialization in bioinformatics, from Beijing Normal University in 2018.
-                        I have been studying and working on problems related to: 
-                        1) genome assembly, genome annotation, and phylogenetic analysis of microbes; 
-                        2) improving the computational efficiency of bioinformatics tools; 
+                        I have been studying and working on problems related to:
+                        1) genome assembly, genome annotation, and phylogenetic analysis of microbes;
+                        2) improving the computational efficiency of bioinformatics tools;
                         3) cell-type identification based on RNA-seq data.
                         </p>
-                        
+
                         <p>
-                        My study and research interests include the origins of life, cellular mechanisms, 
+                        My study and research interests include the origins of life, cellular mechanisms,
                         organization mechanisms of multicellular organisms,
-                        the generation of intelligence of neural systems, and cancer therapy. 
+                        the generation of intelligence of neural systems, and cancer therapy.
                         I use computational approaches to explore these questions.
                         </p>
-                        
+
                         <p>
                         I am always curious about the world, and learning new things excites me.
-                        Applying what I have learned to solve real-world problems gives me a sense of control 
-                        over my life and the ability to make a positive impact. 
-                        I prefer to work independently at first and then communicate my ideas to others in a clear, 
+                        Applying what I have learned to solve real-world problems gives me a sense of control
+                        over my life and the ability to make a positive impact.
+                        I prefer to work independently at first and then communicate my ideas to others in a clear,
                         concise, and accurate manner.
                         </p>
-                    
+
                     </div>
-        
-        
+
+
                     <div id="cv">
                         <div class="cv-section" id="education">
                             <p class="cv-section-head">Education</p>
@@ -140,12 +143,12 @@
                                     <div class="cv-entry-detail">
                                         <p class="cv-entry-detail-head">Thesis:</p>
                                         <p class="cv-entry-detail-info"><span>Title: </span> An analysis of codon bias between
-                                            intrinsically disordered regions and structural domains of 
+                                            intrinsically disordered regions and structural domains of
                                             orthologous single-copy genes
                                             from human, chimpanzee and mouse genomes.
                                         </p>
                                         <p class="cv-entry-detail-info"><span>Summary: </span>
-                                            Codon bias, the unequal usage of synonymous codons, can significantly 
+                                            Codon bias, the unequal usage of synonymous codons, can significantly
                                             influence biological processes and organism fitness.
                                             The project compared the codon bias of orthologous single-copy
                                             genes in IDRs and SDs across the human, chimpanzee, and mouse genomes.
@@ -156,7 +159,7 @@
                                         </p>
                                     </div>
                                 </div>
-        
+
                                 <div class="cv-entry" id="BA">
                                     <div class="cv-entry-head">
                                         <p>Bachelor of Science in Biotechnology</p>
@@ -175,19 +178,19 @@
                                             and distribute in vegetables and fruits broadly.
                                             Flavonoids have different anticancer activity due to different
                                             structure. The project compare the anti-proliferation activity of 20 kinds of flavonoids,
-                                            and analyze structure-function relationship between flavonoids and anticaner activity. 
+                                            and analyze structure-function relationship between flavonoids and anticaner activity.
                                             The research find that: 1) flavones is more efficient than flavanones;
-                                            2) flavones’ basic structure is important to its anticancer activity; 
+                                            2) flavones’ basic structure is important to its anticancer activity;
                                             3) flavanones have weak anticancer function may be cause by losing of 23 doubly bond;
                                             4) 5’ have a group is important to its function;
                                             5) phenyl B connect to 3 point is important to its anticancer activity.
                                         </p>
-        
+
                                     </div>
                                 </div>
                             </div>
                         </div>
-        
+
                         <div class="cv-section" id="experience">
                             <p class="cv-section-head">Experience</p>
                             <div class="cv-section-body">
@@ -205,7 +208,7 @@
                                         <p class="cv-entry-detail-info">I primarily serve as a supporter in bioinformatics for other members of the lab.</p>
                                     </div>
                                 </div>
-        
+
                                 <div class="cv-entry" id="westlake">
                                     <div class="cv-entry-head">
                                         <p>Research Assistant</p>
@@ -225,14 +228,14 @@
                                         </p>
                                     </div>
                                 </div>
-                            
+
                                 <div class="cv-entry" id="freework">
                                     <div class="cv-entry-head">
                                         <p>Freelance</p>
                                     </div>
                                     <div class="cv-entry-subhead">
                                         <p class="organization">Home</p>
-                                        <p class="date">10/2019 - 02/2021</p>                            
+                                        <p class="date">10/2019 - 02/2021</p>
                                         <p class="location">Yantai, CN</p>
                                     </div>
                                     <div class="cv-entry-detail">
@@ -243,7 +246,7 @@
                                         </p>
                                     </div>
                                 </div>
-                            
+
                                 <div class="cv-entry" id="imcas">
                                     <div class="cv-entry-head">
                                         <p>Research Assistant</p>
@@ -259,15 +262,15 @@
                                             1) develope software;
                                             2) genome assembly, genome annotation, and phylogenetic analysis of microbes.
                                     </div>
-                                </div>     
+                                </div>
                             </div>
                         </div>
-        
-        
+
+
                         <div class="cv-section" id="projects">
                             <p class="cv-section-head">Projects</p>
                             <div class="cv-section-body">
-        
+
                                 <div class="cv-entry" id="flml">
                                     <div class="cv-entry-head">
                                         <p><a href="https://docs-hailingfang.readthedocs.io/en/latest/file-format/index.html">FLML (File Layout Markup Language)</a></p>
@@ -281,7 +284,7 @@
                                         </p>
                                     </div>
                                 </div>
-                            
+
                                 <div class="cv-entry" id="gwastools">
                                     <div class="cv-entry-head">
                                         <p><a href="https://github.com/benjaminfang/gwastools">Gwastools</a></p>
@@ -289,10 +292,10 @@
                                     <div class="cv-entry-detail">
                                         <p class="cv-entry-detail-head">Background and Targets:</p>
                                         <p class="cv-entry-detail-info">
-                                            Several file formats are commonly used to store GWAS-related data, 
-                                            including PLINK, BGEN, BAM, and BESD files. 
-                                            However, different software tools are required to perform operations 
-                                            such as printing basic file information, extracting subsets of data, 
+                                            Several file formats are commonly used to store GWAS-related data,
+                                            including PLINK, BGEN, BAM, and BESD files.
+                                            However, different software tools are required to perform operations
+                                            such as printing basic file information, extracting subsets of data,
                                             and converting binary data into plain text.
 
                                             The project has two main objectives:
@@ -303,7 +306,7 @@
                                             </p>
                                     </div>
                                 </div>
-                            
+
                                 <div class="cv-entry" id="biotools">
                                     <div class="cv-entry-head">
                                         <p><a href="https://github.com/hailingfang/biotools">Biotools</a></p>
@@ -318,10 +321,10 @@
                                         </p>
                                     </div>
                                 </div>
-        
+
                             </div>
                         </div>
-        
+
                         <div class="cv-section" id="skills">
                             <p  class="cv-section-head">Skills</p>
                             <div class="cv-section-body">
@@ -329,8 +332,8 @@
                                 <div class="cv-entry">
                                     <div class="cv-entry-detail">
                                         <p class="cv-entry-detail-head">Computer:</p>
-                                        <p class="cv-entry-detail-info">Python and C Programming, A good user of linux systerm, 
-                                        Computer network, front-end web developing, 
+                                        <p class="cv-entry-detail-info">Python and C Programming, A good user of linux systerm,
+                                        Computer network, front-end web developing,
                                         Vector graph and raster graph mapulation.</p>
                                     </div>
                                 </div>
@@ -345,7 +348,7 @@
                                 <div class="cv-entry">
                                     <div class="cv-entry-detail">
                                         <p class="cv-entry-detail-head">Biology:</p>
-                                        <p class="cv-entry-detail-info">Cell culture, Animal dissection, Bacterial culture, 
+                                        <p class="cv-entry-detail-info">Cell culture, Animal dissection, Bacterial culture,
                                         PCR analysis, Color spectrum.</p>
                                     </div>
                                 </div>
@@ -359,7 +362,7 @@
                                 </div>
                             </div>
                         </div>
-                        
+
                         <div class="cv-section" id="course">
                             <p class="cv-section-head">Courses</p>
                             <div class="cv-section-body">
@@ -367,28 +370,28 @@
                                     <div class="cv-entry-detail">
                                         <p class="cv-entry-detail-head">Graduate:</p>
                                         <div class="cv-entry-detail-info">
-                                            <p>Protein Structure and Functions, Biochemistry and Moleculer Biology, Cell Skeleton, 
+                                            <p>Protein Structure and Functions, Biochemistry and Moleculer Biology, Cell Skeleton,
                                             Advanced Cell Biology, Advanced Developmental Biology.</p>
                                             <p>Bioinfomatics, Linux Operation System, Computational Biology(Perl and R Programming).</p>
                                         </div>
                                     </div>
                                 </div>
-        
+
                                 <div class="cv-entry">
                                     <div class="cv-entry-detail">
                                         <p class="cv-entry-detail-head">Undergraduate:</p>
                                         <div class="cv-entry-detail-info">
-                                            <p>Advanced Mathmatics B, Collage  Physics B, 
+                                            <p>Advanced Mathmatics B, Collage  Physics B,
                                             Collage Chemistry 1 to 3(Inorganic Chemistry, Organic Chemistry, Physical Chemistry).</p>
                                             <p>Cell Biology, Biochemistry, Genetics, Moleculer Biology, Genetic Engineering, Cell Engineering.</p>
                                             <p>Plant Biology, Animal Biology, Microbiology, Animal Histology, Animal Physiology.</p>
                                         </div>
                                     </div>
                                 </div>
-        
+
                             </div>
                         </div>
-        
+
                         <div class="cv-section" id="rewards">
                             <p class="cv-section-head">Rewards</p>
                             <div class="cv-section-body">
@@ -400,7 +403,7 @@
                                         </div>
                                     </div>
                                 </div>
-        
+
                                 <div class="cv-entry">
                                     <div class="cv-entry-detail">
                                         <p class="cv-entry-detail-head">Undergraduate:</p>
@@ -409,10 +412,10 @@
                                         </div>
                                     </div>
                                 </div>
-        
+
                             </div>
                         </div>
-        
+
                         <div class="cv-section" id="publications">
                             <p class="cv-section-head">Publications</p>
                             <div class="cv-section-body">
@@ -425,7 +428,7 @@
                                         segments contain variations. This program can now identify long repetitive
                                         sequences that follow a particular simple segment pattern.</p>
                                 </div>
-        
+
                                 <div class="publication-entry">
                                     <p class="pub-title">Qi, T., Wu, Y., Fang, H., Zhang, F., Liu, S., Zeng, J., Yang, J., 2022. <a href="https://doi.org/10.1038/s41588-022-01154-4">Genetic control of RNA splicing and its distinct
                                     role in complex trait variation</a>. Nature Genetics 54, 1355–1363.</p>
@@ -434,10 +437,10 @@
                                         I built the data portal called <a href="https://yanglab.westlake.edu.cn/data/brainmeta/cis_sqtl/">BrainMeta</a>.
                                         The website is based on the open project <a href="https://github.com/statgen/pheweb">Pheweb</a>,
                                         and I ran the data parsing process of Pheweb and modified the webpage to meet our needs.
-                                        I also implemented the permutation module named 
+                                        I also implemented the permutation module named
                                         <a href="https://yanglab.westlake.edu.cn/software/osca/#THISTLE">THISTLE</a>.</p>
                                 </div>
-        
+
                                 <div class="publication-entry">
                                     <p class="pub-title">Tang, N., Hu, J., Zhao, Y., Song, Y., Wang, C., Zhang, G., Wei, D., Fang, H., Li, C., Jia, R., Feng, J., 2022. <a href="https://doi.org/10.1093/jac/dkab380">In vivo
                                     evolution of carbapenem resistance in hypervirulent Klebsiella pneumoniae in a patient undergoing long-term treatment</a>. Journal of Antimicrobial Chemotherapy 77, 531–533.</p>
@@ -447,7 +450,7 @@
                                         To address this, I developed a tool that automatically clusters the tree.
                                         The code is stored in repository <a href="https://github.com/benjaminfang/biotools">biotools</a>.</p>
                                 </div>
-        
+
                                 <div class="publication-entry">
                                     <p class="pub-title">Jiang, L., Zheng, Z., Fang, H., Yang, J., 2021. <a href="https://doi.org/10.1038/s41588-021-00954-4">A generalized linear mixed model association tool for biobank-scale
                                     data</a>. Nature Genetics 53, 1616–1621.</p>
@@ -456,7 +459,7 @@
                                         I improved the efficiency of the module by optimizing the data structure and program design.
                                         </p>
                                 </div>
-        
+
                                 <div class="publication-entry">
                                     <p class="pub-title">Zhang, C., Ju, Y., Tang, N., Li, Y., Zhang, G., Song, Y., Fang, H., Yang, L., Feng, J., 2020. <a href="https://doi.org/10.1093/bib/bbz056">Systematic analysis of
                                     supervised machine learning as an effective approach to predicate β-lactam resistance phenotype in Streptococcus
@@ -466,7 +469,7 @@
                                 </div>
                             </div>
                         </div>
-        
+
                         <div class="cv-section" id="personal-summary">
                             <p class="cv-section-head">Personal Summary</p>
                             <div class="cv-section-body">
@@ -481,7 +484,7 @@
                             </div>
                         </div>
                     </div>
-        
+
                     <div class="life-record" id="timeline">
                         <div class="life-record-wrapper">
                             <div class="life-title">
@@ -534,7 +537,7 @@
                                     <div class="brf3"></div>
                                 </div>
 
-                                
+
                                 <div class="body-row">
                                     <div class="brf1"><p class="brf1c">&#151;2022</p></div>
                                     <div class="brf2"></div>
@@ -720,7 +723,7 @@
                                     <div class="brf3"></div>
                                 </div>
 
-                                
+
                                 <div class="body-row">
                                     <div class="brf1"><p class="brf1c">&#151;1992</p></div>
                                     <div class="brf2"><p class="brf2c">I was born on October 3rd, 1992.</p></div>
@@ -729,15 +732,13 @@
                             </div>
                         </div>
                     </div>
-                </div>    
+                </div>
             </div>
         </main>
 
         <footer>
-            <div class="footer-left">
-            </div>
-            <div class="footer-right">
-            </div>
+            
         </footer>
     </body>
 </html>
+
