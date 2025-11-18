@@ -18,8 +18,6 @@ move_files:
 	rm -rf about-me
 	mv src/about-me .
 	cp src/templates/resume-cn.html about-me/
-	mkdir about-me/imgs
-	cp src/templates/imgs/about-me/* about-me/imgs/
 	
 	rm -rf life
 	mv src/life .

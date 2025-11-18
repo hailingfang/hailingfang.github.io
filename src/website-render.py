@@ -1,5 +1,7 @@
 import jinja2
 import os
+import shutil
+import datetime
 
 
 def render(jinja_env, temp_file, dst_dire=None, data_dic=None):
@@ -24,8 +26,25 @@ def read_tsv_data(file_name):
         for idx,ele in enumerate(line):
             if ele == "NA":
                 line[idx] = ""
+    data_out.reverse()
     return data_out
 
+
+def format_mark_data(date_str):
+    year = int(date_str[: 4])
+    month = int(date_str[4: 6])
+    day = int(date_str[6: 8])
+    hour = date_str[8: 10]
+    minute = date_str[10: 12]
+
+    print(year, month, day)
+    date_time = datetime.datetime(year, month, day)
+
+    date_time_str = date_time.strftime("%b %d, %Y")
+    if hour and minute:
+        date_time_str = hour + ":" + minute + " " + date_time_str
+    
+    return date_time_str
 
 
 def main():
@@ -44,10 +63,36 @@ def main():
     about_me_data["exp"] = read_tsv_data(exp_data_file)
     about_me_data["pub"] = read_tsv_data(pub_data_file)
     about_me_data["timeline"] = read_tsv_data(timeline_data_file)
+    if not os.path.exists("about-me"):
+        os.mkdir("about-me")
+    if not os.path.exists("about-me/imgs"):
+        os.mkdir("about-me/imgs")
+    shutil.copy("templates/imgs/about-me/fanghl_1inch.jpg", "about-me/imgs/fanghl_1inch.jpg")
     render(env, "about-me.html", "about-me", about_me_data)
 
     #render life/index.html
-    render(env, "life.html", "life")
+    life_marks_file = "templates/data/life-marks.tsv"
+    life_data = {}
+    life_data["marks"] = read_tsv_data(life_marks_file)
+    for line in life_data["marks"]:
+        line[-1] = line[-1].split(";")
+    if not os.path.exists("life"):
+        os.mkdir("life")
+    if not os.path.exists("life/imgs"):
+        os.mkdir("life/imgs")
+    for line in life_data["marks"]:
+        pic_link_s = []
+        mark_id, mark_date, mark_words, mark_pic_s = line
+        mark_pic_dire = os.path.join("life/imgs", "mark-" + mark_date + "-" + mark_id)
+        if not os.path.exists(mark_pic_dire):
+            os.mkdir(mark_pic_dire)
+        for pic in mark_pic_s:
+            dst_pic = os.path.join(mark_pic_dire, os.path.basename(pic))
+            shutil.copy(pic, dst_pic)
+            pic_link_s.append(os.path.join("/", dst_pic))
+        line[-1] = pic_link_s
+        line[1] = format_mark_data(mark_date)
+    render(env, "life.html", "life", life_data)
 
     #render study/index.html
     render(env, "study.html", "study")

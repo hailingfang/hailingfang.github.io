@@ -22,6 +22,51 @@
             </div>
 
             <div class="main-right">
+                <div class="main-container">
+                    <div class="marks" id="marks">
+                        <p class="marks-head">Marks</p>
+                        <div class="marks-body">
+                            {% for id, data, words, imgs_link_s in data_dic["marks"] %}
+                            <div class="marks-entry">
+                                <div class="marks-entry-date">{{ data }}</div>
+                                <div class="marks-entry-words">{{ words }}</div>
+                                <div class="marks-entry-pictures">
+                                {% for img_link in imgs_link_s %}
+                                    <img class="marks-picture-ele" src="{{ img_link}}" width="250">
+                                {% endfor %}
+                                </div>
+                            </div>
+                            {% endfor %}
+                        </div>
+                    </div>
+
+                    <div class="articles" id="articles">
+                        <p class="articles-head">Articles</p>
+                        <div class="articles-body">
+                            <div class="articles-entry">
+                                <div class="articles-entry-date"></div>
+                                <div class="articles-entry-title"></div>
+                                <div class="articles-entry-abstract">
+                                    <a><p></p></a>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+
+                    <div class="lists" id="lists">
+                        <p class="lists-head">Lists</p>
+                        <div class="lists-body">
+                            <div class="lists-entry">
+                                <div class="lists-entry-date"></div>
+                                <div class="lists-entry-title"></div>
+                                <div class="lists-entry-abstract">
+                                    <a><p></p></a>
+                                </div>
+                            </div>
+                        </div>
+
+                    </div>
+                </div>
             </div>
 {%- endblock %}
 

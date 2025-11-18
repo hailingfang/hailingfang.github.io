@@ -46,3 +46,70 @@
     margin-left: 2rem; 
 }
 
+.main-container {
+    max-width: 75em;
+    padding: 0;
+    border: 0;
+    margin: 0 auto;
+}
+
+.marks,
+.articles,
+.lists {
+    padding: 1em;
+    border: 0;
+    margin-bottom: 3em;
+}
+
+.marks-head,
+.articles-head,
+.lists-head {
+    font-size: 1.7em;
+    font-weight: bold;
+    margin-bottom: 1em;
+}
+
+.marks-body,
+.articles-body,
+.lists-body {
+    margin-bottom: 1em;
+}
+
+.marks-entry,
+.articles-entry,
+.lists-entry {
+    padding: 0;
+    border: 0;
+    margin-left: 1em;
+    margin-bottom: 1.6em;
+    width: calc(255px * 3);
+}
+
+.marks-entry-date,
+.articles-entry-date,
+.lists-entry-date {
+    font-size: .8em;
+    font-weight: bold;
+    font-family: fantasy;
+}
+
+.marks-entry-words {
+    font-size: 1.3em;
+    font-family: serif;
+
+    padding: .3em;
+    border: 0;
+    margin: .2em 0;
+}
+
+.marks-entry-pictures {
+    display: grid;
+    grid-template-columns: 1fr 1fr 1fr;
+    gap: 3px;
+}
+
+.marks-picture-ele {
+    width: 250px;
+    border-radius: 5px;
+    border: 1px solid rgba(241, 236, 236, 0.8);
+}
