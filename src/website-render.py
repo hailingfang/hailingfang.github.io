@@ -66,9 +66,9 @@ def main():
         os.mkdir("about-me")
     if not os.path.exists("about-me/imgs"):
         os.mkdir("about-me/imgs")
-    shutil.copy("materials//about-me/imgs/fanghl_1inch.jpg", "about-me/imgs/fanghl_1inch.jpg")
-    render(env, "about-me.html", "about-me", about_me_data)
+    shutil.copy("materials/about-me/fanghailing-photo.jpg", "about-me/fanghailing-photo.jpg")
     shutil.copy("templates/resume-cn.html", "about-me/resume-cn.html")
+    render(env, "about-me.html", "about-me", about_me_data)
 
     #render life/index.html
     life_marks_file = "materials/life/life-marks.tsv"
