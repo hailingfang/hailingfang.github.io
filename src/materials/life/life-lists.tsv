@@ -1,0 +1,3 @@
+id	title	descriptions	render	input
+1	Music	A list of music that I favor.	rst2html5	materials/life/lists/music.rst
+2	Movies and TV Series	Movies and TV series that I favor.	rst2html5	materials/life/lists/movies-and-tv-series.rst

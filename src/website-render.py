@@ -2,6 +2,7 @@ import jinja2
 import os
 import shutil
 import datetime
+import subprocess as sp
 
 
 def render(jinja_env, temp_file, dst_dire=None, data_dic=None):
@@ -18,7 +19,7 @@ def render(jinja_env, temp_file, dst_dire=None, data_dic=None):
     fout.close()
 
 
-def read_tsv_data(file_name):
+def read_tsv_data(file_name, reverse=True):
     fin = open(file_name)
     data_out = [line.rstrip().split('\t') for line in fin][1:]
     fin.close()
@@ -26,7 +27,9 @@ def read_tsv_data(file_name):
         for idx,ele in enumerate(line):
             if ele == "NA":
                 line[idx] = ""
-    data_out.reverse()
+    if reverse:
+        data_out.reverse()
+
     return data_out
 
 
@@ -53,27 +56,32 @@ def main():
     render(env, "index.html")
 
     #render about-me/index.html
+    about_me_data = {}
+    if not os.path.exists("about-me"):
+        os.mkdir("about-me")
+
     edu_data_file = "materials/about-me/about-me-education.tsv"
     exp_data_file = "materials/about-me/about-me-experience.tsv"
     pub_data_file = "materials/about-me/about-me-publication.tsv"
     timeline_data_file = "materials/about-me/about-me-timeline.tsv"
-    about_me_data = {}
     about_me_data["edu"] = read_tsv_data(edu_data_file)
     about_me_data["exp"] = read_tsv_data(exp_data_file)
     about_me_data["pub"] = read_tsv_data(pub_data_file)
     about_me_data["timeline"] = read_tsv_data(timeline_data_file)
-    if not os.path.exists("about-me"):
-        os.mkdir("about-me")
+
     shutil.copy("materials/about-me/fanghailing-photo.jpg", "about-me/fanghailing-photo.jpg")
     shutil.copy("templates/resume-cn.html", "about-me/resume-cn.html")
+
     render(env, "about-me.html", "about-me", about_me_data)
 
+
     #render life/index.html
-    life_marks_file = "materials/life/life-marks.tsv"
     life_data = {}
-    life_data["marks"] = read_tsv_data(life_marks_file)
     if not os.path.exists("life"):
         os.mkdir("life")
+
+    life_marks_file = "materials/life/life-marks.tsv"
+    life_data["marks"] = read_tsv_data(life_marks_file)
     if not os.path.exists("life/marks"):
         os.mkdir("life/marks")
     for line in life_data["marks"]:
@@ -90,6 +98,20 @@ def main():
             pic_link_s.append(os.path.join("/", dst_pic))
         line[-1] = pic_link_s
         line[1] = format_mark_data(mark_date)
+
+    life_lists_file = "materials/life/life-lists.tsv"
+    life_data["lists"] = read_tsv_data(life_lists_file)
+    if not os.path.exists("life/lists"):
+        os.mkdir("life/lists")
+    for line in life_data["lists"]:
+        list_id, title, description, file_render, input_file = line
+        output_file = os.path.join("life/lists/", os.path.basename(input_file) + ".html")
+        if file_render == "rst2html5":
+            sp.run([file_render, input_file, "--output", output_file])
+            line.append("/" + output_file)
+        else:
+            print("not support this render")
+            line.append("/404.html")
     render(env, "life.html", "life", life_data)
 
     #render study/index.html

@@ -26,7 +26,7 @@
                     <div class="marks" id="marks">
                         <p class="marks-head">Marks</p>
                         <div class="marks-body">
-                            {% for id, data, words, imgs_link_s in data_dic["marks"] %}
+                            {% for marks_id, data, words, imgs_link_s in data_dic["marks"] %}
                             <div class="marks-entry">
                                 <div class="marks-entry-date">{{ data }}</div>
                                 <div class="marks-entry-words">{{ words }}</div>
@@ -56,13 +56,12 @@
                     <div class="lists" id="lists">
                         <p class="lists-head">Lists</p>
                         <div class="lists-body">
-                            <div class="lists-entry">
-                                <div class="lists-entry-date"></div>
-                                <div class="lists-entry-title"></div>
-                                <div class="lists-entry-abstract">
-                                    <a><p></p></a>
-                                </div>
+                            {% for list_id, list_title, list_description, file_render, input_file, list_url in data_dic["lists"] %}
+                            <div class="lists-entry" id="{{ "list" + list_id }}">
+                                <a href="{{ list_url }}"><div class="lists-entry-title">{{ list_title }}</div></a>
+                                <p class="lists-entry-description">{{ list_description }}</p>
                             </div>
+                            {% endfor %}
                         </div>
 
                     </div>

@@ -11,6 +11,7 @@ website:
 move_files:
 	cp -r src/static .
 	cp src/templates/legal-statements.html .
+	cp src/templates/404.html .
 	cp src/sitemap.xml .
 
 	cp src/favicon.png .
