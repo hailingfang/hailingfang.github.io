@@ -1,4 +1,3 @@
-
 .PHONY: all
 all: website move_files
 	@echo "Done."
@@ -13,13 +12,14 @@ move_files:
 	cp -r src/static .
 	cp src/templates/legal-statements.html .
 	cp src/sitemap.xml .
+
 	cp src/favicon.png .
 	cp src/weblogo.png .
 	mv src/index.html .
+
 	rm -rf about-me
 	mv src/about-me .
-	cp src/templates/resume-cn.html about-me/
-	
+
 	rm -rf life
 	mv src/life .
 	
