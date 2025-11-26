@@ -64,8 +64,6 @@ def main():
     about_me_data["timeline"] = read_tsv_data(timeline_data_file)
     if not os.path.exists("about-me"):
         os.mkdir("about-me")
-    if not os.path.exists("about-me/imgs"):
-        os.mkdir("about-me/imgs")
     shutil.copy("materials/about-me/fanghailing-photo.jpg", "about-me/fanghailing-photo.jpg")
     shutil.copy("templates/resume-cn.html", "about-me/resume-cn.html")
     render(env, "about-me.html", "about-me", about_me_data)
