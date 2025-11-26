@@ -54,10 +54,10 @@ def main():
     render(env, "index.html")
 
     #render about-me/index.html
-    edu_data_file = "templates/data/about-me-education.tsv"
-    exp_data_file = "templates/data/about-me-experience.tsv"
-    pub_data_file = "templates/data/about-me-publication.tsv"
-    timeline_data_file = "templates/data/about-me-timeline.tsv"
+    edu_data_file = "materials/about-me/about-me-education.tsv"
+    exp_data_file = "materials/about-me/about-me-experience.tsv"
+    pub_data_file = "materials/about-me/about-me-publication.tsv"
+    timeline_data_file = "materials/about-me/about-me-timeline.tsv"
     about_me_data = {}
     about_me_data["edu"] = read_tsv_data(edu_data_file)
     about_me_data["exp"] = read_tsv_data(exp_data_file)
@@ -67,23 +67,23 @@ def main():
         os.mkdir("about-me")
     if not os.path.exists("about-me/imgs"):
         os.mkdir("about-me/imgs")
-    shutil.copy("templates/imgs/about-me/fanghl_1inch.jpg", "about-me/imgs/fanghl_1inch.jpg")
+    shutil.copy("materials//about-me/imgs/fanghl_1inch.jpg", "about-me/imgs/fanghl_1inch.jpg")
     render(env, "about-me.html", "about-me", about_me_data)
 
     #render life/index.html
-    life_marks_file = "templates/data/life-marks.tsv"
+    life_marks_file = "materials/life/life-marks.tsv"
     life_data = {}
     life_data["marks"] = read_tsv_data(life_marks_file)
-    for line in life_data["marks"]:
-        line[-1] = line[-1].split(";")
     if not os.path.exists("life"):
         os.mkdir("life")
-    if not os.path.exists("life/imgs"):
-        os.mkdir("life/imgs")
+    if not os.path.exists("life/marks"):
+        os.mkdir("life/marks")
+    for line in life_data["marks"]:
+        line[-1] = line[-1].split(";")
     for line in life_data["marks"]:
         pic_link_s = []
         mark_id, mark_date, mark_words, mark_pic_s = line
-        mark_pic_dire = os.path.join("life/imgs", "mark-" + mark_date + "-" + mark_id)
+        mark_pic_dire = os.path.join("life/marks", "mark-" + mark_date + "-" + mark_id)
         if not os.path.exists(mark_pic_dire):
             os.mkdir(mark_pic_dire)
         for pic in mark_pic_s:
