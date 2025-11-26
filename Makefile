@@ -11,9 +11,10 @@ website:
 .PHONY: move_files
 move_files:
 	cp -r src/static .
-	cp -r src/imgs .
 	cp src/templates/legal-statements.html .
 	cp src/sitemap.xml .
+	cp src/favicon.png .
+	cp src/weblogo.png .
 	mv src/index.html .
 	rm -rf about-me
 	mv src/about-me .

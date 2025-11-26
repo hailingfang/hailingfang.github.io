@@ -37,7 +37,6 @@ def format_mark_data(date_str):
     hour = date_str[8: 10]
     minute = date_str[10: 12]
 
-    print(year, month, day)
     date_time = datetime.datetime(year, month, day)
 
     date_time_str = date_time.strftime("%b %d, %Y")
